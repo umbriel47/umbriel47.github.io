@@ -8,21 +8,22 @@ def create_post_template(title):
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     # 生成文件名（使用当前日期和标题）
-    filename = f"{datetime.now().strftime('%Y-%m-%d')}-{title}.md"
+    # 确保文件创建在_posts目录下
+    posts_dir = "_posts"
+    if not os.path.exists(posts_dir):
+        os.makedirs(posts_dir)
+    filename = os.path.join(posts_dir, f"{datetime.now().strftime('%Y-%m-%d')}-{title}.md")
     
     # 创建文件内容
     content = f"""---
-title: {title}
-toc: false
-comments: true
-mathjax: true
-date: {current_time}
-categories:
-tags:
+layout: post
+title:  {title}
+date:   {current_time} +0800
+categories: daily
 ---
 
 ----------------
-原创文章如转载，请注明出处""本文首发于blog.infplus.top"
+原创文章如转载，请注明出处""aicracker.com"
 """
     
     # 写入文件
