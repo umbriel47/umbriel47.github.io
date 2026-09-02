@@ -1,45 +1,1455 @@
-# Publications, sorted by `year`, newest first.
-# Every text field takes an `en:` and a `zh:` value. `links` may hold any of
-# journal / preprint / pdf / code — the title links to the first one present.
+# Publications, newest first (sorted by `year` at render time).
+#
+# Titles and abstracts are kept in English in both languages: a paper title is
+# a citable string, and a translated one cannot be searched for. Only `venue`
+# carries a per-language value; the surrounding UI comes from _data/i18n.yml.
+#
+# Generated from the Google Scholar profile; abstracts come from PubMed,
+# Crossref, arXiv, bioRxiv and OpenReview.
 
-- key: example-2024-generative-chemistry
+- key: ocoo-t
+  year: 2026
+  authors: "D. Jiang, Z. An, Y. Zhao, L. Lai"
+  title:
+    en: "OCOO-T: A Simple and Scalable Virtual Cell Model for Transcriptional Perturbation Response Prediction"
+    zh: "OCOO-T: A Simple and Scalable Virtual Cell Model for Transcriptional Perturbation Response Prediction"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      Predicting single-cell transcriptional responses to genetic, chemical
+      and cytokine perturbations is a fundamental challenge in computational
+      biology and AI Virtual Cell (AIVC) modeling, with direct implications
+      for drug discovery and the elucidation of gene regulatory networks.
+      Existing approaches often rely on auxiliary cell-state encoders,
+      hierarchical variational autoencoders, dedicated Transformer
+      encoder-decoder modules, or gene-interaction priors to compress
+      high-dimensional expression profiles into latent representations. While
+      effective, these designs increase architectural complexity and may limit
+      scalability and generalizability. This paper introduces OCOO-T 1, a
+      minimalist flow-matching-based AIVC model for transcriptional
+      perturbation response prediction. OCOO-T utilizes a vanilla Transformer
+      stack that operates directly on continuous gene expression profiles and
+      formulates perturbation response prediction as a continuous-time
+      denoising process. Perturbation embeddings, dosage information, and
+      cell-line/cell-type specificity are integrated through adaptive layer
+      normalization and in-context tokens. Comprehensive evaluations on
+      Tahoe100M, Replogle, and PBMC benchmarks demonstrate that OCOO-T
+      achieves state-of-the-art performance across diverse perturbations and
+      cell types while effectively scaling to long transcriptional profiles
+      through patching and depatching of cellular contexts. By leveraging the
+      simplicity of Transformer-based denoising for single-cell omics, OCOO-T
+      provides an effective and scalable framework for in-silico cellular
+      simulation.
+    zh: >-
+      Predicting single-cell transcriptional responses to genetic, chemical
+      and cytokine perturbations is a fundamental challenge in computational
+      biology and AI Virtual Cell (AIVC) modeling, with direct implications
+      for drug discovery and the elucidation of gene regulatory networks.
+      Existing approaches often rely on auxiliary cell-state encoders,
+      hierarchical variational autoencoders, dedicated Transformer
+      encoder-decoder modules, or gene-interaction priors to compress
+      high-dimensional expression profiles into latent representations. While
+      effective, these designs increase architectural complexity and may limit
+      scalability and generalizability. This paper introduces OCOO-T 1, a
+      minimalist flow-matching-based AIVC model for transcriptional
+      perturbation response prediction. OCOO-T utilizes a vanilla Transformer
+      stack that operates directly on continuous gene expression profiles and
+      formulates perturbation response prediction as a continuous-time
+      denoising process. Perturbation embeddings, dosage information, and
+      cell-line/cell-type specificity are integrated through adaptive layer
+      normalization and in-context tokens. Comprehensive evaluations on
+      Tahoe100M, Replogle, and PBMC benchmarks demonstrate that OCOO-T
+      achieves state-of-the-art performance across diverse perturbations and
+      cell types while effectively scaling to long transcriptional profiles
+      through patching and depatching of cellular contexts. By leveraging the
+      simplicity of Transformer-based denoising for single-cell omics, OCOO-T
+      provides an effective and scalable framework for in-silico cellular
+      simulation.
+  links:
+    preprint: "https://doi.org/10.64898/2026.06.08.731000"
+
+- key: sidiff
+  year: 2026
+  authors: "Z. Yue, H. Zhang, X. Gao, S. Shu, L. Lai"
+  title:
+    en: "siDiff: De Novo siRNA Design via Efficacy-Guided Discrete Masked Diffusion"
+    zh: "siDiff: De Novo siRNA Design via Efficacy-Guided Discrete Masked Diffusion"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      Target-conditioned de novo siRNA design requires capturing both target
+      mRNA binding context and internal siRNA sequence-activity rules.
+      Traditional computational pipelines predominantly rely on discriminative
+      prediction models that rank pre-filtered candidate pools. However, these
+      approaches struggle with generalization on novel target genes and often
+      overlook potent candidates due to dataset size constraints and motif
+      overfitting. To reconcile generation precision with sequence diversity,
+      we propose siDiff, an efficacy-guided discrete diffusion framework for
+      target-conditioned de novo siRNA design. siDiff pairs a discrete-masked
+      diffusion transformer—which models the underlying sequence distribution
+      over functional duplexes—with a mask-robust efficacy guidance model.
+      During inference, we introduce a biology-aware, three-stage sampling
+      mechanism that performs structural candidate filtering, dynamic
+      unmasking guidance, and cluster-aware redundancy mitigation. This dual
+      mechanism enables the diffusion process to explore broad sequence spaces
+      while the efficacy model prevents distributional shift toward
+      non-functional candidates. Extensive experiments across four datasets,
+      including the public Takayuki benchmark and three curated patent
+      datasets, demonstrate that siDiff significantly outperforms
+      state-of-the-art discriminative baselines and discrete diffusion models,
+      achieving relative hit-rate improvements of over 30% and demonstrating
+      superior generalization on out-of-distribution gene targets. The source
+      code and related materials are available at
+      https://github.com/cybericha/siDiff.
+    zh: >-
+      Target-conditioned de novo siRNA design requires capturing both target
+      mRNA binding context and internal siRNA sequence-activity rules.
+      Traditional computational pipelines predominantly rely on discriminative
+      prediction models that rank pre-filtered candidate pools. However, these
+      approaches struggle with generalization on novel target genes and often
+      overlook potent candidates due to dataset size constraints and motif
+      overfitting. To reconcile generation precision with sequence diversity,
+      we propose siDiff, an efficacy-guided discrete diffusion framework for
+      target-conditioned de novo siRNA design. siDiff pairs a discrete-masked
+      diffusion transformer—which models the underlying sequence distribution
+      over functional duplexes—with a mask-robust efficacy guidance model.
+      During inference, we introduce a biology-aware, three-stage sampling
+      mechanism that performs structural candidate filtering, dynamic
+      unmasking guidance, and cluster-aware redundancy mitigation. This dual
+      mechanism enables the diffusion process to explore broad sequence spaces
+      while the efficacy model prevents distributional shift toward
+      non-functional candidates. Extensive experiments across four datasets,
+      including the public Takayuki benchmark and three curated patent
+      datasets, demonstrate that siDiff significantly outperforms
+      state-of-the-art discriminative baselines and discrete diffusion models,
+      achieving relative hit-rate improvements of over 30% and demonstrating
+      superior generalization on out-of-distribution gene targets. The source
+      code and related materials are available at
+      https://github.com/cybericha/siDiff.
+  links:
+    preprint: "https://doi.org/10.64898/2026.08.11.744092"
+
+- key: tsc6-toxicology
+  year: 2026
+  authors: "G. Zhang, X. Huang, Y. Fang, T. Liu, C. Fan, B. Li, L. Lai"
+  title:
+    en: "Toxicological evaluation of peptide compound TSC6: A 13-week subchronic toxicity and genotoxicity study"
+    zh: "Toxicological evaluation of peptide compound TSC6: A 13-week subchronic toxicity and genotoxicity study"
+  venue:
+    en: "Food and Chemical Toxicology"
+    zh: "Food and Chemical Toxicology"
+  abstract:
+    en: >-
+      TSC6-peptide is an 8-amino acid synthetic peptide compound that inhibits
+      intestinal α-amylase upon oral administration to control the digestion
+      and absorption of starchy foods. However, its toxicological safety and
+      other scientific evidence remain to be established. Given the potential
+      utility of TSC6-peptide as an α-amylase inhibitor, this study conducted
+      in vivo and in vitro experiments to support its safety profile. In
+      reverse mutation and mammalian micronucleus assays revealed no
+      genotoxicity for TSC6-peptide. Meanwhile, in the 90-day dietary toxicity
+      study in rats, the NOAEL was 500 mg/kg bw/day for male rats following
+      TSC6-peptide administration and the LOAEL for female rats was 50 mg/kg
+      bw/day. These results indicate that TSC6-peptide possesses controllable
+      safety as an α-amylase inhibitor.
+    zh: >-
+      TSC6-peptide is an 8-amino acid synthetic peptide compound that inhibits
+      intestinal α-amylase upon oral administration to control the digestion
+      and absorption of starchy foods. However, its toxicological safety and
+      other scientific evidence remain to be established. Given the potential
+      utility of TSC6-peptide as an α-amylase inhibitor, this study conducted
+      in vivo and in vitro experiments to support its safety profile. In
+      reverse mutation and mammalian micronucleus assays revealed no
+      genotoxicity for TSC6-peptide. Meanwhile, in the 90-day dietary toxicity
+      study in rats, the NOAEL was 500 mg/kg bw/day for male rats following
+      TSC6-peptide administration and the LOAEL for female rats was 50 mg/kg
+      bw/day. These results indicate that TSC6-peptide possesses controllable
+      safety as an α-amylase inhibitor.
+  links:
+    journal: "https://doi.org/10.1016/j.fct.2026.116131"
+
+- key: attention-cell-image
+  year: 2025
+  authors: "X. Gao, F. Zhang, X. Guo, M. Yao, X. Wang, D. Chen, G. Zhang, X. Wang, L. Lai"
+  title:
+    en: "Attention-based deep learning for accurate cell image analysis"
+    zh: "Attention-based deep learning for accurate cell image analysis"
+  venue:
+    en: "Scientific Reports 15, 1265"
+    zh: "Scientific Reports 15, 1265"
+  abstract:
+    en: >-
+      High-content analysis (HCA) holds enormous potential for drug discovery
+      and research, but widely used methods can be cumbersome and yield
+      inaccurate results. Noisy and redundant signals in cell images impede
+      accurate deep learning-based image analysis. To address these issues, we
+      introduce X-Profiler, a novel HCA method that combines cellular
+      experiments, image processing, and deep learning modeling. X-Profiler
+      combines the convolutional neural network and Transformer to encode
+      high-content images, effectively filtering out noisy signals and
+      precisely characterizing cell phenotypes. In comparative tests on
+      drug-induced cardiotoxicity, mitochondrial toxicity classification, and
+      compound classification, X-Profiler outperformed both DeepProfiler and
+      CellProfiler, as two highly recognized and representative methods in
+      this field. Our results demonstrate the utility and versatility of
+      X-Profiler, and we anticipate its wide application in HCA for advancing
+      drug development and disease research.
+    zh: >-
+      High-content analysis (HCA) holds enormous potential for drug discovery
+      and research, but widely used methods can be cumbersome and yield
+      inaccurate results. Noisy and redundant signals in cell images impede
+      accurate deep learning-based image analysis. To address these issues, we
+      introduce X-Profiler, a novel HCA method that combines cellular
+      experiments, image processing, and deep learning modeling. X-Profiler
+      combines the convolutional neural network and Transformer to encode
+      high-content images, effectively filtering out noisy signals and
+      precisely characterizing cell phenotypes. In comparative tests on
+      drug-induced cardiotoxicity, mitochondrial toxicity classification, and
+      compound classification, X-Profiler outperformed both DeepProfiler and
+      CellProfiler, as two highly recognized and representative methods in
+      this field. Our results demonstrate the utility and versatility of
+      X-Profiler, and we anticipate its wide application in HCA for advancing
+      drug development and disease research.
+  links:
+    journal: "https://doi.org/10.1038/s41598-025-85608-9"
+    preprint: "https://doi.org/10.21203/rs.3.rs-3933549/v1"
+
+- key: bioscientist-agent
+  year: 2025
+  authors: "F. Zhang, Y. Zhao, W. Zhang, L. Lai"
+  title:
+    en: "BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation"
+    zh: "BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      Drug discovery is protracted, resource-intensive, and afflicted by
+      attrition rates exceeding 90 %, which leaves most diseases, particularly
+      rare or neglected indications, without effective therapies. Drug
+      repurposing offers a cost effective alternative, yet systematic
+      identification of novel drug indication pairs and mechanistic rationales
+      remains hindered by the scale and heterogeneity of biomedical knowledge.
+      We present BioScientist Agent, an end to end framework that unifies a
+      billion-fact biomedical knowledge graph with (i) a variational graph
+      auto-encoder for representation learning and link prediction driven drug
+      repurposing, (ii) a reinforcement learning module that traverses the
+      graph to recover biologically plausible mechanistic paths, and (iii) A
+      large language model (LLM) multi-agent layer that orchestrates these
+      components, enabling inference of target pathways for a drug disease
+      pair, and automatic generation of coherent causal reports. In all
+      downstream tasks, the BioScientist Agent surpasses existing state of the
+      art baseline models across various metrics and provides mechanistic
+      explanations consistent with the literature. Its open and modular design
+      accelerates hypothesis generation and reduces experimental overhead in
+      early stage discovery.
+    zh: >-
+      Drug discovery is protracted, resource-intensive, and afflicted by
+      attrition rates exceeding 90 %, which leaves most diseases, particularly
+      rare or neglected indications, without effective therapies. Drug
+      repurposing offers a cost effective alternative, yet systematic
+      identification of novel drug indication pairs and mechanistic rationales
+      remains hindered by the scale and heterogeneity of biomedical knowledge.
+      We present BioScientist Agent, an end to end framework that unifies a
+      billion-fact biomedical knowledge graph with (i) a variational graph
+      auto-encoder for representation learning and link prediction driven drug
+      repurposing, (ii) a reinforcement learning module that traverses the
+      graph to recover biologically plausible mechanistic paths, and (iii) A
+      large language model (LLM) multi-agent layer that orchestrates these
+      components, enabling inference of target pathways for a drug disease
+      pair, and automatic generation of coherent causal reports. In all
+      downstream tasks, the BioScientist Agent surpasses existing state of the
+      art baseline models across various metrics and provides mechanistic
+      explanations consistent with the literature. Its open and modular design
+      accelerates hypothesis generation and reduces experimental overhead in
+      early stage discovery.
+  links:
+    preprint: "https://doi.org/10.1101/2025.08.08.669291"
+
+- key: mrna2vec
+  year: 2025
+  authors: "H. Zhang, X. Gao, J. Zhang, L. Lai"
+  title:
+    en: "mRNA2vec: mRNA Embedding with Language Model in the 5'UTR-CDS for mRNA Design"
+    zh: "mRNA2vec: mRNA Embedding with Language Model in the 5'UTR-CDS for mRNA Design"
+  venue:
+    en: "Proceedings of the AAAI Conference on Artificial Intelligence 39(1), 1057-1065"
+    zh: "AAAI 2025, 39(1), 1057-1065"
+  abstract:
+    en: >-
+      Messenger RNA (mRNA)-based vaccines are accelerating the discovery of
+      new drugs and revolutionizing the pharmaceutical industry. However,
+      selecting particular mRNA sequences for vaccines and therapeutics from
+      extensive mRNA libraries is costly. Effective mRNA therapeutics require
+      carefully designed sequences with optimized expression levels and
+      stability. This paper proposes a novel contextual language model
+      (LM)-based embedding method: mRNA2vec. In contrast to existing mRNA
+      embedding approaches, our method is based on the self-supervised
+      teacher-student learning framework of data2vec. We jointly use the 5'
+      untranslated region (UTR) and coding sequence (CDS) region as the input
+      sequences. We adapt our LM-based approach specifically to mRNA by 1)
+      considering the importance of location on the mRNA sequence with
+      probabilistic masking, 2) using Minimum Free Energy (MFE) prediction and
+      Secondary Structure (SS) classification as additional pretext tasks.
+      mRNA2vec demonstrates significant improvements in translation efficiency
+      (TE) and expression level (EL) prediction tasks in UTR compared to SOTA
+      methods such as UTR-LM. It also gives a competitive performance in mRNA
+      stability and protein production level tasks in CDS such as CodonBERT.
+    zh: >-
+      Messenger RNA (mRNA)-based vaccines are accelerating the discovery of
+      new drugs and revolutionizing the pharmaceutical industry. However,
+      selecting particular mRNA sequences for vaccines and therapeutics from
+      extensive mRNA libraries is costly. Effective mRNA therapeutics require
+      carefully designed sequences with optimized expression levels and
+      stability. This paper proposes a novel contextual language model
+      (LM)-based embedding method: mRNA2vec. In contrast to existing mRNA
+      embedding approaches, our method is based on the self-supervised
+      teacher-student learning framework of data2vec. We jointly use the 5'
+      untranslated region (UTR) and coding sequence (CDS) region as the input
+      sequences. We adapt our LM-based approach specifically to mRNA by 1)
+      considering the importance of location on the mRNA sequence with
+      probabilistic masking, 2) using Minimum Free Energy (MFE) prediction and
+      Secondary Structure (SS) classification as additional pretext tasks.
+      mRNA2vec demonstrates significant improvements in translation efficiency
+      (TE) and expression level (EL) prediction tasks in UTR compared to SOTA
+      methods such as UTR-LM. It also gives a competitive performance in mRNA
+      stability and protein production level tasks in CDS such as CodonBERT.
+  links:
+    journal: "https://doi.org/10.1609/aaai.v39i1.32092"
+    preprint: "http://arxiv.org/abs/2408.09048v2"
+
+- key: sidpt
+  year: 2025
+  authors: "H. Zhang, X. Gao, L. Lai"
+  title:
+    en: "siDPT: siRNA efficacy prediction via debiased preference-pair transformer"
+    zh: "siDPT: siRNA efficacy prediction via debiased preference-pair transformer"
+  venue:
+    en: "arXiv:2509.15664"
+    zh: "arXiv:2509.15664"
+  abstract:
+    en: >-
+      Small interfering RNA (siRNA) is a short double-stranded RNA molecule
+      (about 21-23 nucleotides) with the potential to cure diseases by
+      silencing the function of target genes. Due to its well-understood
+      mechanism, many siRNA-based drugs have been evaluated in clinical
+      trials. However, selecting effective binding regions and designing siRNA
+      sequences requires extensive experimentation, making the process costly.
+      As genomic resources and publicly available siRNA datasets continue to
+      grow, data-driven models can be leveraged to better understand
+      siRNA-mRNA interactions. To fully exploit such data, curating
+      high-quality siRNA datasets is essential to minimize experimental errors
+      and noise. We propose siDPT: siRNA efficacy Prediction via Debiased
+      Preference-Pair Transformer, a framework that constructs a
+      preference-pair dataset and designs an siRNA-mRNA interactive
+      transformer with debiased ranking objectives to improve siRNA inhibition
+      prediction and generalization. We evaluate our approach using two public
+      datasets and one newly collected patent dataset. Our model demonstrates
+      substantial improvement in Pearson correlation and strong performance
+      across other metrics.
+    zh: >-
+      Small interfering RNA (siRNA) is a short double-stranded RNA molecule
+      (about 21-23 nucleotides) with the potential to cure diseases by
+      silencing the function of target genes. Due to its well-understood
+      mechanism, many siRNA-based drugs have been evaluated in clinical
+      trials. However, selecting effective binding regions and designing siRNA
+      sequences requires extensive experimentation, making the process costly.
+      As genomic resources and publicly available siRNA datasets continue to
+      grow, data-driven models can be leveraged to better understand
+      siRNA-mRNA interactions. To fully exploit such data, curating
+      high-quality siRNA datasets is essential to minimize experimental errors
+      and noise. We propose siDPT: siRNA efficacy Prediction via Debiased
+      Preference-Pair Transformer, a framework that constructs a
+      preference-pair dataset and designs an siRNA-mRNA interactive
+      transformer with debiased ranking objectives to improve siRNA inhibition
+      prediction and generalization. We evaluate our approach using two public
+      datasets and one newly collected patent dataset. Our model demonstrates
+      substantial improvement in Pearson correlation and strong performance
+      across other metrics.
+  links:
+    preprint: "http://arxiv.org/abs/2509.15664v1"
+
+- key: antibody-pretraining
   year: 2024
-  authors: "A. Author, B. Author, C. Author"
+  authors: "X. Gao, C. Cao, C. He, L. Lai"
   title:
-    en: "A generative model for molecular design"
-    zh: "面向分子设计的生成模型"
+    en: "Pre-training with a rational approach for antibody sequence representation"
+    zh: "Pre-training with a rational approach for antibody sequence representation"
   venue:
-    en: "Journal of Example Research"
-    zh: "示例研究学报"
+    en: "Frontiers in Immunology 15, 1468599"
+    zh: "Frontiers in Immunology 15, 1468599"
   abstract:
     en: >-
-      We describe a generative approach to designing small molecules under
-      synthesisability constraints, and evaluate it against retrospective
-      benchmarks drawn from published medicinal chemistry campaigns.
+      Introduction Antibodies represent a specific class of proteins produced
+      by the adaptive immune system in response to pathogens. Mining the
+      information embedded in antibody amino acid sequences can benefit both
+      antibody property prediction and novel therapeutic development. However,
+      antibodies possess unique features that should be incorporated using
+      specifically designed training methods, leaving room for improvement in
+      pre-training models for antibody sequences. Methods In this study, we
+      present a Pre-trained model of Antibody sequences trained with a
+      Rational Approach for antibodies (PARA). PARA employs a strategy
+      conforming to antibody sequence patterns and an advanced natural
+      language processing self-encoding model structure. This approach
+      addresses the limitations of existing protein pre-training models, which
+      primarily utilize language models without fully considering the
+      differences between protein sequences and language sequences. Results We
+      demonstrate PARA’s performance on several tasks by comparing it to
+      various published pre-training models of antibodies. The results show
+      that PARA significantly outperforms existing models on these tasks,
+      suggesting that PARA has an advantage in capturing antibody sequence
+      information. Discussion The antibody latent representation provided by
+      PARA can substantially facilitate studies in relevant areas. We believe
+      that PARA’s superior performance in capturing antibody sequence
+      information offers significant potential for both antibody property
+      prediction and the development of novel therapeutics. PARA is available
+      at https://github.com/xtalpi-xic.
     zh: >-
-      我们提出了一种在可合成性约束下设计小分子的生成式方法，并在若干来自已发表
-      药物化学项目的回顾性基准上进行了评估。
+      Introduction Antibodies represent a specific class of proteins produced
+      by the adaptive immune system in response to pathogens. Mining the
+      information embedded in antibody amino acid sequences can benefit both
+      antibody property prediction and novel therapeutic development. However,
+      antibodies possess unique features that should be incorporated using
+      specifically designed training methods, leaving room for improvement in
+      pre-training models for antibody sequences. Methods In this study, we
+      present a Pre-trained model of Antibody sequences trained with a
+      Rational Approach for antibodies (PARA). PARA employs a strategy
+      conforming to antibody sequence patterns and an advanced natural
+      language processing self-encoding model structure. This approach
+      addresses the limitations of existing protein pre-training models, which
+      primarily utilize language models without fully considering the
+      differences between protein sequences and language sequences. Results We
+      demonstrate PARA’s performance on several tasks by comparing it to
+      various published pre-training models of antibodies. The results show
+      that PARA significantly outperforms existing models on these tasks,
+      suggesting that PARA has an advantage in capturing antibody sequence
+      information. Discussion The antibody latent representation provided by
+      PARA can substantially facilitate studies in relevant areas. We believe
+      that PARA’s superior performance in capturing antibody sequence
+      information offers significant potential for both antibody property
+      prediction and the development of novel therapeutics. PARA is available
+      at https://github.com/xtalpi-xic.
   links:
-    journal: "https://example.com/journal-article"
-    preprint: "https://example.com/preprint"
-    code: "https://example.com/code"
+    journal: "https://doi.org/10.3389/fimmu.2024.1468599"
 
-- key: example-2022-sparse-dynamics
-  year: 2022
-  authors: "A. Author, D. Author"
+- key: asms-drug-discovery
+  year: 2024
+  authors: "S. Ma, C. Hu, T. Wang, F. Shi, C. Zhao, N. Wang, M. Yang, J. Yan, J. Luo, et al."
   title:
-    en: "Learning dynamics from sparse observations"
-    zh: "从稀疏观测中学习动力学"
+    en: "Evolving drug discovery using AI, automation, and ASMS through an integrated d-preMTA-MTA strategy for target-focused library exploration"
+    zh: "Evolving drug discovery using AI, automation, and ASMS through an integrated d-preMTA-MTA strategy for target-focused library exploration"
   venue:
-    en: "Proceedings of the Example Conference"
-    zh: "示例学术会议论文集"
+    en: "preprint"
+    zh: "Research Square (preprint)"
   abstract:
     en: >-
-      Recovering the governing equations of a system from irregularly sampled
-      trajectories, with an analysis of when the recovered dynamics generalise
-      beyond the observed regime.
+      In the realm of drug discovery, the Design-Make-Test-Analyses (DMTA)
+      cycle plays a pivotal role, with the “M” phase often emerging as a
+      bottleneck. Numerous endeavors have sought to expedite this phase,
+      employing technologies like robotic arms, flow chemistry, and other
+      devices for automated synthesis. This paper introduces “preMTA” as a
+      game-changer, leveraging artificial intelligence (AI)-based molecular
+      generative models, automated synthesis workflows, and the ASMS platform,
+      creating the “D-preMTA-MTA” cycle. During the “preMTA” phase,
+      AI-designed chemical spaces for specific targets are explored.
+      Microgram-scaled target compounds are efficiently prepared through
+      pooling reactions and streamlined work-ups via automated synthesis
+      workflows. These compounds are then screened using ASMS to rank them
+      based on competitive binding affinity. This strategic approach enables
+      the subsequent MTA phase to focus on potent binders. Validation of this
+      approach involved the discovery of novel inhibitors for T-cell protein
+      tyrosine phosphatase (TCPTP or PTPN2). In the “D” phase, a
+      target-focused library of 696 compounds was designed, with 140 strong
+      binders swiftly identified in the “preMTA” phase. Subsequently, 51 of
+      these compounds were scale-up synthesized and confirmed with IC 50
+      values ranging from 16 nM to 277 nM, with 17 exhibiting IC 50 values
+      below 50 nM. The efficacy and seamless integration of each phase in the
+      “D-preMTA-MTA” cycle can be attributed to a) the use of a
+      synthesis-oriented molecular generative method streamlining automated
+      synthesis, b) the deployment of a versatile and adaptable robotic arm
+      capable of multitasking, and c) the implementation of ASMS screening
+      methods reducing both synthetic and bio-testing complexities.
     zh: >-
-      从非均匀采样的轨迹中恢复系统的控制方程，并分析所恢复的动力学在何种条件下
-      能够推广到观测区间之外。
+      In the realm of drug discovery, the Design-Make-Test-Analyses (DMTA)
+      cycle plays a pivotal role, with the “M” phase often emerging as a
+      bottleneck. Numerous endeavors have sought to expedite this phase,
+      employing technologies like robotic arms, flow chemistry, and other
+      devices for automated synthesis. This paper introduces “preMTA” as a
+      game-changer, leveraging artificial intelligence (AI)-based molecular
+      generative models, automated synthesis workflows, and the ASMS platform,
+      creating the “D-preMTA-MTA” cycle. During the “preMTA” phase,
+      AI-designed chemical spaces for specific targets are explored.
+      Microgram-scaled target compounds are efficiently prepared through
+      pooling reactions and streamlined work-ups via automated synthesis
+      workflows. These compounds are then screened using ASMS to rank them
+      based on competitive binding affinity. This strategic approach enables
+      the subsequent MTA phase to focus on potent binders. Validation of this
+      approach involved the discovery of novel inhibitors for T-cell protein
+      tyrosine phosphatase (TCPTP or PTPN2). In the “D” phase, a
+      target-focused library of 696 compounds was designed, with 140 strong
+      binders swiftly identified in the “preMTA” phase. Subsequently, 51 of
+      these compounds were scale-up synthesized and confirmed with IC 50
+      values ranging from 16 nM to 277 nM, with 17 exhibiting IC 50 values
+      below 50 nM. The efficacy and seamless integration of each phase in the
+      “D-preMTA-MTA” cycle can be attributed to a) the use of a
+      synthesis-oriented molecular generative method streamlining automated
+      synthesis, b) the deployment of a versatile and adaptable robotic arm
+      capable of multitasking, and c) the implementation of ASMS screening
+      methods reducing both synthetic and bio-testing complexities.
   links:
-    preprint: "https://example.com/preprint"
+    preprint: "https://doi.org/10.21203/rs.3.rs-3753964/v1"
+
+- key: ml-pbpk
+  year: 2024
+  authors: "Y. Li, Z. Wang, Y. Li, J. Du, X. Gao, Y. Li, L. Lai"
+  title:
+    en: "A combination of machine learning and PBPK modeling approach for pharmacokinetics prediction of small molecules in humans"
+    zh: "A combination of machine learning and PBPK modeling approach for pharmacokinetics prediction of small molecules in humans"
+  venue:
+    en: "Pharmaceutical Research 41(7), 1369-1379"
+    zh: "Pharmaceutical Research 41(7), 1369-1379"
+  abstract:
+    en: >-
+      Purpose: Recently, there has been rapid development in model-informed
+      drug development, which has the potential to reduce animal experiments
+      and accelerate drug discovery. Physiologically based pharmacokinetic
+      (PBPK) and machine learning (ML) models are commonly used in early drug
+      discovery to predict drug properties. However, basic PBPK models require
+      a large number of molecule-specific inputs from in vitro experiments,
+      which hinders the efficiency and accuracy of these models. To address
+      this issue, this paper introduces a new computational platform that
+      combines ML and PBPK models. The platform predicts molecule PK profiles
+      with high accuracy and without the need for experimental data. Methods:
+      This study developed a whole-body PBPK model and ML models of plasma
+      protein fraction unbound ($$f_{up}$$ f up), Caco-2 cell permeability,
+      and total plasma clearance to predict the PK of small molecules after
+      intravenous administration. Pharmacokinetic profiles were simulated
+      using a “bottom-up” PBPK modeling approach with ML inputs. Additionally,
+      40 compounds were used to evaluate the platform’s accuracy. Results:
+      Results showed that the ML-PBPK model predicted the area under the
+      concentration-time curve (AUC) with 65.0 $$\%$$ % accuracy within a
+      2-fold range, which was higher than using in vitro inputs with 47.5
+      $$\%$$ % accuracy. Conclusion: The ML-PBPK model platform provides high
+      accuracy in prediction and reduces the number of experiments and time
+      required compared to traditional PBPK approaches. The platform
+      successfully predicts human PK parameters without in vitro and in vivo
+      experiments and can potentially guide early drug discovery and
+      development.
+    zh: >-
+      Purpose: Recently, there has been rapid development in model-informed
+      drug development, which has the potential to reduce animal experiments
+      and accelerate drug discovery. Physiologically based pharmacokinetic
+      (PBPK) and machine learning (ML) models are commonly used in early drug
+      discovery to predict drug properties. However, basic PBPK models require
+      a large number of molecule-specific inputs from in vitro experiments,
+      which hinders the efficiency and accuracy of these models. To address
+      this issue, this paper introduces a new computational platform that
+      combines ML and PBPK models. The platform predicts molecule PK profiles
+      with high accuracy and without the need for experimental data. Methods:
+      This study developed a whole-body PBPK model and ML models of plasma
+      protein fraction unbound ($$f_{up}$$ f up), Caco-2 cell permeability,
+      and total plasma clearance to predict the PK of small molecules after
+      intravenous administration. Pharmacokinetic profiles were simulated
+      using a “bottom-up” PBPK modeling approach with ML inputs. Additionally,
+      40 compounds were used to evaluate the platform’s accuracy. Results:
+      Results showed that the ML-PBPK model predicted the area under the
+      concentration-time curve (AUC) with 65.0 $$\%$$ % accuracy within a
+      2-fold range, which was higher than using in vitro inputs with 47.5
+      $$\%$$ % accuracy. Conclusion: The ML-PBPK model platform provides high
+      accuracy in prediction and reduces the number of experiments and time
+      required compared to traditional PBPK approaches. The platform
+      successfully predicts human PK parameters without in vitro and in vivo
+      experiments and can potentially guide early drug discovery and
+      development.
+  links:
+    journal: "https://doi.org/10.1007/s11095-024-03725-y"
+
+- key: molecule-generation-platform
+  year: 2024
+  authors: "L. Zheng, F. Shi, C. Peng, M. Xu, F. Fan, Y. Li, L. Zhang, J. Du, Z. Wang, Z. Lin, et al."
+  title:
+    en: "Application scenario-oriented molecule generation platform developed for drug discovery"
+    zh: "Application scenario-oriented molecule generation platform developed for drug discovery"
+  venue:
+    en: "Methods 222, 112-121"
+    zh: "Methods 222, 112-121"
+  abstract:
+    en: >-
+      Design of molecules for candidate compound selection is one of the
+      central challenges in drug discovery due to the complexity of chemical
+      space and requirement of multi-parameter optimization. Here we present
+      an application scenario-oriented platform (ID4Idea) for molecule
+      generation in different scenarios of drug discovery. This platform
+      utilizes both library or rule based and generative based algorithms
+      (VAE, RNN, GAN, etc.), in combination with various AI learning types
+      (pre-training, transfer learning, reinforcement learning, active
+      learning, etc.) and input representations (1D SMILES, 2D graph, 3D
+      shape, binding site, pharmacophore, etc.), to enable customized
+      solutions for a given molecular design scenario. Besides the usual
+      generation followed screening protocol, goal-directed molecule
+      generation can also be conducted towards predefined goals, enhancing the
+      efficiency of hit identification, lead finding, and lead optimization.
+      We demonstrate the effectiveness of ID4Idea platform through case
+      studies, showcasing customized solutions for different design tasks
+      using various input information, such as binding pockets,
+      pharmacophores, and compound representations. In addition, remaining
+      challenges are discussed to unlock the full potential of AI models in
+      drug discovery and pave the way for the development of novel
+      therapeutics.
+    zh: >-
+      Design of molecules for candidate compound selection is one of the
+      central challenges in drug discovery due to the complexity of chemical
+      space and requirement of multi-parameter optimization. Here we present
+      an application scenario-oriented platform (ID4Idea) for molecule
+      generation in different scenarios of drug discovery. This platform
+      utilizes both library or rule based and generative based algorithms
+      (VAE, RNN, GAN, etc.), in combination with various AI learning types
+      (pre-training, transfer learning, reinforcement learning, active
+      learning, etc.) and input representations (1D SMILES, 2D graph, 3D
+      shape, binding site, pharmacophore, etc.), to enable customized
+      solutions for a given molecular design scenario. Besides the usual
+      generation followed screening protocol, goal-directed molecule
+      generation can also be conducted towards predefined goals, enhancing the
+      efficiency of hit identification, lead finding, and lead optimization.
+      We demonstrate the effectiveness of ID4Idea platform through case
+      studies, showcasing customized solutions for different design tasks
+      using various input information, such as binding pockets,
+      pharmacophores, and compound representations. In addition, remaining
+      challenges are discussed to unlock the full potential of AI models in
+      drug discovery and pave the way for the development of novel
+      therapeutics.
+  links:
+    journal: "https://doi.org/10.1016/j.ymeth.2023.12.009"
+
+- key: net-transporter
+  year: 2024
+  authors: "W. Ji, A. Miao, K. Liang, J. Liu, Y. Qi, Y. Zhou, X. Duan, J. Sun, L. Lai, J.-X. Wu"
+  title:
+    en: "Substrate binding and inhibition mechanism of norepinephrine transporter"
+    zh: "Substrate binding and inhibition mechanism of norepinephrine transporter"
+  venue:
+    en: "Nature 633, 473-479"
+    zh: "Nature 633, 473-479"
+  abstract:
+    en: >-
+      Norepinephrine transporter (NET; encoded by SLC6A2) reuptakes the
+      majority of the released noradrenaline back to the presynaptic
+      terminals, thereby affecting the synaptic noradrenaline level1. Genetic
+      mutations and dysregulation of NET are associated with a spectrum of
+      neurological conditions in humans, making NET an important therapeutic
+      target1. However, the structure and mechanism of NET remain unclear.
+      Here we provide cryogenic electron microscopy structures of the human
+      NET (hNET) in three functional states-the apo state, and in states bound
+      to the substrate meta-iodobenzylguanidine (MIBG) or the orthosteric
+      inhibitor radafaxine. These structures were captured in an inward-facing
+      conformation, with a tightly sealed extracellular gate and an open
+      intracellular gate. The substrate MIBG binds at the centre of hNET.
+      Radafaxine also occupies the substrate-binding site and might block the
+      structural transition of hNET for inhibition. These structures provide
+      insights into the mechanism of substrate recognition and orthosteric
+      inhibition of hNET.
+    zh: >-
+      Norepinephrine transporter (NET; encoded by SLC6A2) reuptakes the
+      majority of the released noradrenaline back to the presynaptic
+      terminals, thereby affecting the synaptic noradrenaline level1. Genetic
+      mutations and dysregulation of NET are associated with a spectrum of
+      neurological conditions in humans, making NET an important therapeutic
+      target1. However, the structure and mechanism of NET remain unclear.
+      Here we provide cryogenic electron microscopy structures of the human
+      NET (hNET) in three functional states-the apo state, and in states bound
+      to the substrate meta-iodobenzylguanidine (MIBG) or the orthosteric
+      inhibitor radafaxine. These structures were captured in an inward-facing
+      conformation, with a tightly sealed extracellular gate and an open
+      intracellular gate. The substrate MIBG binds at the centre of hNET.
+      Radafaxine also occupies the substrate-binding site and might block the
+      structural transition of hNET for inhibition. These structures provide
+      insights into the mechanism of substrate recognition and orthosteric
+      inhibition of hNET.
+  links:
+    journal: "https://doi.org/10.1038/s41586-024-07810-5"
+
+- key: sc-mamba2
+  year: 2024
+  authors: "Y. Zhao, B. Zhao, F. Zhang, C. He, W. Wu, L. Lai"
+  title:
+    en: "Sc-mamba2: leveraging state-space models for efficient single-cell ultra-long transcriptome modeling"
+    zh: "Sc-mamba2: leveraging state-space models for efficient single-cell ultra-long transcriptome modeling"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      AO_SCPLOWBSTRACTC_SCPLOWThe rapid advancement of single-cell sequencing
+      technology has significantly deepened our understanding of cellular
+      heterogeneity, yet it concurrently presents substantial challenges for
+      the unified modeling of single-cell data. Simultaneously, pre-trained
+      foundation models have achieved notable success in domains such as
+      natural language processing and image analysis. However, extending these
+      models to accommodate ultra-long single-cell transcriptome sequences,
+      characterized by an extensive number of genes, remains a formidable
+      task. In this study, we introduce SC-MAMBA2, based on the MAMBA2
+      architecture, meticulously designed with a bidirectional modeling
+      approach tailored for single-cell transcriptomics data. As the first
+      single-cell foundation model to integrate state-space models (SSMs)
+      underlying MAMBA2 architecture, SC-MAMBA2 features over 625 million
+      parameters, covers more than 60,000 genes, and was pre-trained on a
+      dataset of over 57 million cells, making it the most comprehensive
+      solution for processing ultra-long transcriptome sequences. Extensive
+      bench-marking across a diverse array of downstream tasks consistently
+      demonstrates that SC-MAMBA2 surpasses state-of-the-art models,
+      delivering superior accuracy and enhanced computational efficiency.
+    zh: >-
+      AO_SCPLOWBSTRACTC_SCPLOWThe rapid advancement of single-cell sequencing
+      technology has significantly deepened our understanding of cellular
+      heterogeneity, yet it concurrently presents substantial challenges for
+      the unified modeling of single-cell data. Simultaneously, pre-trained
+      foundation models have achieved notable success in domains such as
+      natural language processing and image analysis. However, extending these
+      models to accommodate ultra-long single-cell transcriptome sequences,
+      characterized by an extensive number of genes, remains a formidable
+      task. In this study, we introduce SC-MAMBA2, based on the MAMBA2
+      architecture, meticulously designed with a bidirectional modeling
+      approach tailored for single-cell transcriptomics data. As the first
+      single-cell foundation model to integrate state-space models (SSMs)
+      underlying MAMBA2 architecture, SC-MAMBA2 features over 625 million
+      parameters, covers more than 60,000 genes, and was pre-trained on a
+      dataset of over 57 million cells, making it the most comprehensive
+      solution for processing ultra-long transcriptome sequences. Extensive
+      bench-marking across a diverse array of downstream tasks consistently
+      demonstrates that SC-MAMBA2 surpasses state-of-the-art models,
+      delivering superior accuracy and enhanced computational efficiency.
+  links:
+    preprint: "https://doi.org/10.1101/2024.09.30.615775"
+
+- key: wuren-epitope
+  year: 2024
+  authors: "X. Wang, X. Gao, X. Fan, Z. Huai, G. Zhang, M. Yao, T. Wang, X. Huang, L. Lai"
+  title:
+    en: "WUREN: Whole-modal union representation for epitope prediction"
+    zh: "WUREN: Whole-modal union representation for epitope prediction"
+  venue:
+    en: "Computational and Structural Biotechnology Journal 23, 2122-2131"
+    zh: "Computational and Structural Biotechnology Journal 23, 2122-2131"
+  abstract:
+    en: >-
+      B-cell epitope identification plays a vital role in the development of
+      vaccines, therapies, and diagnostic tools. Currently, molecular docking
+      tools in B-cell epitope prediction are heavily influenced by empirical
+      parameters and require significant computational resources, rendering a
+      great challenge to meet large-scale prediction demands. When predicting
+      epitopes from antigen-antibody complex, current artificial intelligence
+      algorithms cannot accurately implement the prediction due to
+      insufficient protein feature representations, indicating novel algorithm
+      is desperately needed for efficient protein information extraction. In
+      this paper, we introduce a multimodal model called WUREN (Whole-modal
+      Union Representation for Epitope predictioN), which effectively combines
+      sequence, graph, and structural features. It achieved AUC-PR scores of
+      0.213 and 0.193 on the solved structures and AlphaFold-generated
+      structures, respectively, for the independent test proteins selected
+      from DiscoTope3 benchmark. Our findings indicate that WUREN is an
+      efficient feature extraction model for protein complexes, with the
+      generalizable application potential in the development of protein-based
+      drugs. Moreover, the streamlined framework of WUREN could be readily
+      extended to model similar biomolecules, such as nucleic acids,
+      carbohydrates, and lipids.
+    zh: >-
+      B-cell epitope identification plays a vital role in the development of
+      vaccines, therapies, and diagnostic tools. Currently, molecular docking
+      tools in B-cell epitope prediction are heavily influenced by empirical
+      parameters and require significant computational resources, rendering a
+      great challenge to meet large-scale prediction demands. When predicting
+      epitopes from antigen-antibody complex, current artificial intelligence
+      algorithms cannot accurately implement the prediction due to
+      insufficient protein feature representations, indicating novel algorithm
+      is desperately needed for efficient protein information extraction. In
+      this paper, we introduce a multimodal model called WUREN (Whole-modal
+      Union Representation for Epitope predictioN), which effectively combines
+      sequence, graph, and structural features. It achieved AUC-PR scores of
+      0.213 and 0.193 on the solved structures and AlphaFold-generated
+      structures, respectively, for the independent test proteins selected
+      from DiscoTope3 benchmark. Our findings indicate that WUREN is an
+      efficient feature extraction model for protein complexes, with the
+      generalizable application potential in the development of protein-based
+      drugs. Moreover, the streamlined framework of WUREN could be readily
+      extended to model similar biomolecules, such as nucleic acids,
+      carbohydrates, and lipids.
+  links:
+    journal: "https://doi.org/10.1016/j.csbj.2024.05.023"
+
+- key: more-is-different
+  year: 2023
+  authors: "X. Gao, X. Guo, F. Zhang, M. Yao, X. Wang, D. Chen, X. Wang, L. Lai"
+  title:
+    en: "More is different: drug property analysis on cellular high-content images using deep learning"
+    zh: "More is different: drug property analysis on cellular high-content images using deep learning"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      High-content analysis (HCA) holds enormous potential for drug discovery
+      and research, but widely used methods can be cumbersome and yield
+      inaccurate results. Noise and high similarity in cell images impede the
+      accuracy of deep learning-based image analysis. To address these issues,
+      we introduce More Is Different (MID), a novel HCA method that combines
+      cellular experiments, image processing, and deep learning modeling. MID
+      effectively combines the convolutional neural network and Transformer to
+      encode high-content images, effectively filtering out noisy signals and
+      characterizing cell phenotypes with high precision. In comparative tests
+      on drug-induced cardiotoxicity and mitochondrial toxicity
+      classification, as well as compound classification, MID outperformed
+      both DeepProfiler and CellProfiler, which are two highly recognized
+      methods in HCA. We believe that our results demonstrate the utility and
+      versatility of MID and anticipate its widespread adoption in HCA for
+      advancing drug development and disease research.
+    zh: >-
+      High-content analysis (HCA) holds enormous potential for drug discovery
+      and research, but widely used methods can be cumbersome and yield
+      inaccurate results. Noise and high similarity in cell images impede the
+      accuracy of deep learning-based image analysis. To address these issues,
+      we introduce More Is Different (MID), a novel HCA method that combines
+      cellular experiments, image processing, and deep learning modeling. MID
+      effectively combines the convolutional neural network and Transformer to
+      encode high-content images, effectively filtering out noisy signals and
+      characterizing cell phenotypes with high precision. In comparative tests
+      on drug-induced cardiotoxicity and mitochondrial toxicity
+      classification, as well as compound classification, MID outperformed
+      both DeepProfiler and CellProfiler, which are two highly recognized
+      methods in HCA. We believe that our results demonstrate the utility and
+      versatility of MID and anticipate its widespread adoption in HCA for
+      advancing drug development and disease research.
+  links:
+    preprint: "https://doi.org/10.1101/2023.04.10.536183"
+
+- key: sur2-vasodilator
+  year: 2022
+  authors: "D. Ding, J.-X. Wu, X. Duan, S. Ma, L. Lai, L. Chen"
+  title:
+    en: "Structural identification of vasodilator binding sites on the SUR2 subunit"
+    zh: "Structural identification of vasodilator binding sites on the SUR2 subunit"
+  venue:
+    en: "Nature Communications 13, 2675"
+    zh: "Nature Communications 13, 2675"
+  abstract:
+    en: >-
+      ATP-sensitive potassium channels (KATP), composed of Kir6 and SUR
+      subunits, convert the metabolic status of the cell into electrical
+      signals. Pharmacological activation of SUR2-containing KATP channels by
+      class of small molecule drugs known as KATP openers leads to
+      hyperpolarization of excitable cells and to vasodilation. Thus, KATP
+      openers could be used to treat cardiovascular diseases. However, where
+      these vasodilators bind to KATP and how they activate the channel
+      remains elusive. Here, we present cryo-EM structures of SUR2A and SUR2B
+      subunits in complex with Mg-nucleotides and P1075 or levcromakalim, two
+      chemically distinct KATP openers that are specific to SUR2. Both P1075
+      and levcromakalim bind to a common site in the transmembrane domain
+      (TMD) of the SUR2 subunit, which is between TMD1 and TMD2 and is
+      embraced by TM10, TM11, TM12, TM14, and TM17. These KATP openers
+      synergize with Mg-nucleotides to stabilize SUR2 in the NBD-dimerized
+      occluded state to activate the channel.
+    zh: >-
+      ATP-sensitive potassium channels (KATP), composed of Kir6 and SUR
+      subunits, convert the metabolic status of the cell into electrical
+      signals. Pharmacological activation of SUR2-containing KATP channels by
+      class of small molecule drugs known as KATP openers leads to
+      hyperpolarization of excitable cells and to vasodilation. Thus, KATP
+      openers could be used to treat cardiovascular diseases. However, where
+      these vasodilators bind to KATP and how they activate the channel
+      remains elusive. Here, we present cryo-EM structures of SUR2A and SUR2B
+      subunits in complex with Mg-nucleotides and P1075 or levcromakalim, two
+      chemically distinct KATP openers that are specific to SUR2. Both P1075
+      and levcromakalim bind to a common site in the transmembrane domain
+      (TMD) of the SUR2 subunit, which is between TMD1 and TMD2 and is
+      embraced by TM10, TM11, TM12, TM14, and TM17. These KATP openers
+      synergize with Mg-nucleotides to stabilize SUR2 in the NBD-dimerized
+      occluded state to activate the channel.
+  links:
+    journal: "https://doi.org/10.1038/s41467-022-30428-y"
+
+- key: bayesopt-penicillin
+  year: 2021
+  authors: "Q. Liang, L. Lai"
+  title:
+    en: "Scalable Bayesian optimization accelerates process optimization of penicillin production"
+    zh: "Scalable Bayesian optimization accelerates process optimization of penicillin production"
+  venue:
+    en: "NeurIPS 2021 AI for Science Workshop"
+    zh: "NeurIPS 2021 AI for Science Workshop"
+  abstract:
+    en: >-
+      While Bayesian Optimization (BO) has emerged as sample-efficient
+      optimization method for accelerating drug discovery, it has rarely been
+      applied to the process optimization of pharmaceutical manufacturing,
+      which traditionally has relied on human-intuition, along with
+      trial-and-error and slow cycles of learning. The combinatorial and
+      hierarchical complexity of such process control also introduce
+      challenges related to high-dimensional design spaces and requirements of
+      larger scale observations, in which BO has typically scaled poorly. In
+      this paper, we use penicillin production as a case study to demonstrate
+      the efficacy of BO in accelerating the optimization of typical
+      pharmaceutical manufacturing processes. To overcome the challenges
+      raised by high dimensionality, we apply a trust region BO approach
+      (TuRBO) for global optimization of penicillin yield and empirically show
+      that it outperforms other BO and random baselines. We also extend the
+      study by leveraging BO in the context of multi-objective optimization,
+      allowing us to further evaluate the trade-offs between penicillin yield,
+      production time, and CO$_2$ emission as by-product. Through quantifying
+      the performance of BO across high-dimensional and multi-objective drug
+      production optimization processes, we hope to popularize application of
+      BO in this field, and encourage closer collaboration between machine
+      learning and broader scientific communities.
+    zh: >-
+      While Bayesian Optimization (BO) has emerged as sample-efficient
+      optimization method for accelerating drug discovery, it has rarely been
+      applied to the process optimization of pharmaceutical manufacturing,
+      which traditionally has relied on human-intuition, along with
+      trial-and-error and slow cycles of learning. The combinatorial and
+      hierarchical complexity of such process control also introduce
+      challenges related to high-dimensional design spaces and requirements of
+      larger scale observations, in which BO has typically scaled poorly. In
+      this paper, we use penicillin production as a case study to demonstrate
+      the efficacy of BO in accelerating the optimization of typical
+      pharmaceutical manufacturing processes. To overcome the challenges
+      raised by high dimensionality, we apply a trust region BO approach
+      (TuRBO) for global optimization of penicillin yield and empirically show
+      that it outperforms other BO and random baselines. We also extend the
+      study by leveraging BO in the context of multi-objective optimization,
+      allowing us to further evaluate the trade-offs between penicillin yield,
+      production time, and CO$_2$ emission as by-product. Through quantifying
+      the performance of BO across high-dimensional and multi-objective drug
+      production optimization processes, we hope to popularize application of
+      BO in this field, and encourage closer collaboration between machine
+      learning and broader scientific communities.
+  links:
+    preprint: "https://openreview.net/forum?id=UVdSYXMNdOe"
+
+- key: her2-tmd-mutation
+  year: 2021
+  authors: "Z. Jia, J. Xing, J. Li, W. Wang, Y. Wang, Y. Song, X. Yang, J. Xue, J. Ye, B. Li, et al."
+  title:
+    en: "HER2 transmembrane domain mutation: comprehensive characteristics and real-world evidence of treatment response in Chinese lung adenocarcinoma"
+    zh: "HER2 transmembrane domain mutation: comprehensive characteristics and real-world evidence of treatment response in Chinese lung adenocarcinoma"
+  venue:
+    en: "Translational Lung Cancer Research 10(3), 1383"
+    zh: "Translational Lung Cancer Research 10(3), 1383"
+  abstract:
+    en: >-
+      Background: HER2 transmembrane domain (TMD) mutation has been reported
+      as a rare driver mutation associated with advanced stage disease and a
+      poor prognosis in patients with lung adenocarcinoma (LUAD). We aimed to
+      comprehensively profile the genetic landscape and treatment response
+      information of HER2 TMD-mutant LUAD. Methods: An in-house database of
+      7,812 LUAD patients was screened for mutation prevalence. A multi-center
+      cohort of 16 HER2 V659E-mutant patients and an external cohort of 38
+      HER2-mutant patients from cBioPortal with overall survival (OS) data
+      were analyzed. Eight patients from the in-house cohort were included in
+      the real-world study of treatment response. Molecular docking simulation
+      and binding affinity prediction were performed. Results: In Chinese
+      LUAD, the prevalence of HER2 TMD mutation was 0.18% (14/7,812), and
+      0.14% (11/7,812) for the HER2 V659E mutation. The most recurrent
+      co-alteration was TP53 mutation (n=4, 25%) and HER2 amplification (n=2,
+      12.5%). TMD-mutant patients were diagnosed at more advance stages
+      (P<0.001) and had poorer OS (median OS 10.0 vs. 61.6 months, HR =7.9,
+      95% CI: 1.0-61.0, P<0.001) than non-TMD mutations. The overall response
+      rate of targeted therapy, chemo-based therapy, and immunotherapy was
+      57.1%, 22.2%, and 0%, respectively. We postulated to challenge the
+      resistance of tyrosine kinase inhibitor (TKI) with another with stronger
+      binding energy to HER2 and supported the conclusion with a successful
+      case. Additionally, we demonstrated a three-month response to the
+      off-label use of pyrotinib in fifth-line therapy. Conclusions: Comapred
+      with non-TMD mtuations, HER2 TMD mutation is a rare driver mutation with
+      poorer prognosis in LUAD. Targeted therapy is the dominant choice for
+      patients harboring this targetable mutation and longer OS could possibly
+      be achieved through rechallenge with TKI of stronger binding affinity.
+      Response to fifth-line pyrotinib was observed.
+    zh: >-
+      Background: HER2 transmembrane domain (TMD) mutation has been reported
+      as a rare driver mutation associated with advanced stage disease and a
+      poor prognosis in patients with lung adenocarcinoma (LUAD). We aimed to
+      comprehensively profile the genetic landscape and treatment response
+      information of HER2 TMD-mutant LUAD. Methods: An in-house database of
+      7,812 LUAD patients was screened for mutation prevalence. A multi-center
+      cohort of 16 HER2 V659E-mutant patients and an external cohort of 38
+      HER2-mutant patients from cBioPortal with overall survival (OS) data
+      were analyzed. Eight patients from the in-house cohort were included in
+      the real-world study of treatment response. Molecular docking simulation
+      and binding affinity prediction were performed. Results: In Chinese
+      LUAD, the prevalence of HER2 TMD mutation was 0.18% (14/7,812), and
+      0.14% (11/7,812) for the HER2 V659E mutation. The most recurrent
+      co-alteration was TP53 mutation (n=4, 25%) and HER2 amplification (n=2,
+      12.5%). TMD-mutant patients were diagnosed at more advance stages
+      (P<0.001) and had poorer OS (median OS 10.0 vs. 61.6 months, HR =7.9,
+      95% CI: 1.0-61.0, P<0.001) than non-TMD mutations. The overall response
+      rate of targeted therapy, chemo-based therapy, and immunotherapy was
+      57.1%, 22.2%, and 0%, respectively. We postulated to challenge the
+      resistance of tyrosine kinase inhibitor (TKI) with another with stronger
+      binding energy to HER2 and supported the conclusion with a successful
+      case. Additionally, we demonstrated a three-month response to the
+      off-label use of pyrotinib in fifth-line therapy. Conclusions: Comapred
+      with non-TMD mtuations, HER2 TMD mutation is a rare driver mutation with
+      poorer prognosis in LUAD. Targeted therapy is the dominant choice for
+      patients harboring this targetable mutation and longer OS could possibly
+      be achieved through rechallenge with TKI of stronger binding affinity.
+      Response to fifth-line pyrotinib was observed.
+  links:
+    journal: "https://doi.org/10.21037/tlcr-21-107"
+
+- key: katp-nucleotide
+  year: 2021
+  authors: "M. Wang, J.-X. Wu, D. Ding, X. Duan, S. Ma, L. Lai, L. Chen"
+  title:
+    en: "Structural insights into the mechanism of nucleotide regulation of pancreatic KATP channel"
+    zh: "Structural insights into the mechanism of nucleotide regulation of pancreatic KATP channel"
+  venue:
+    en: "bioRxiv"
+    zh: "bioRxiv"
+  abstract:
+    en: >-
+      ATP-sensitive potassium channels (KATP) are metabolic sensors that
+      convert the intracellular ATP/ADP ratio to the excitability of cells.
+      They are involved in many physiological processes and implicated in
+      several human diseases. Here we present the cryo-EM structures of the
+      pancreatic KATP channel in both the closed state and the pre-open state,
+      resolved in the same sample. The nucleotides bind at the inhibitory
+      sites of the Kir6.2 channel in the closed state but not in the pre-open
+      state. Structural comparisons reveal the mechanism for ATP inhibition
+      and Mg-ADP activation, two fundamental properties of KATP channels.
+      Moreover, the structure also uncovers the activation mechanism of
+      diazoxide-type KATP openers.
+    zh: >-
+      ATP-sensitive potassium channels (KATP) are metabolic sensors that
+      convert the intracellular ATP/ADP ratio to the excitability of cells.
+      They are involved in many physiological processes and implicated in
+      several human diseases. Here we present the cryo-EM structures of the
+      pancreatic KATP channel in both the closed state and the pre-open state,
+      resolved in the same sample. The nucleotides bind at the inhibitory
+      sites of the Kir6.2 channel in the closed state but not in the pre-open
+      state. Structural comparisons reveal the mechanism for ATP inhibition
+      and Mg-ADP activation, two fundamental properties of KATP channels.
+      Moreover, the structure also uncovers the activation mechanism of
+      diazoxide-type KATP openers.
+  links:
+    preprint: "https://doi.org/10.1101/2021.11.29.470334"
+
+- key: sars-cov-2-affinity-maturation
+  year: 2021
+  authors: "T. Xue, W. Wu, N. Guo, C. Wu, J. Huang, L. Lai, H. Liu, Y. Li, T. Wang, Y. Wang"
+  title:
+    en: "Single point mutations can potentially enhance infectivity of SARS-CoV-2 revealed by in silico affinity maturation and SPR assay"
+    zh: "Single point mutations can potentially enhance infectivity of SARS-CoV-2 revealed by in silico affinity maturation and SPR assay"
+  venue:
+    en: "RSC Advances 11(24), 14737-14745"
+    zh: "RSC Advances 11(24), 14737-14745"
+  abstract:
+    en: >-
+      The RBD (receptor binding domain) of the SARS-CoV-2 virus S (spike)
+      protein mediates viral cell attachment and serves as a promising target
+      for therapeutics development. Mutations on the S-RBD may alter its
+      affinity to the cell receptor and affect the potency of vaccines and
+      antibodies. Here we used an in silico approach to predict how mutations
+      on RBD affect its binding affinity to hACE2 (human
+      angiotensin-converting enzyme2). The effect of all single point
+      mutations on the interface was predicted. SPR assay results show that 6
+      out of 9 selected mutations can strengthen binding affinity. Our
+      prediction has reasonable agreement with the previous deep mutational
+      scan results and recently reported mutants. Our work demonstrated the in
+      silico method as a powerful tool to forecast more powerful virus
+      mutants, which will significantly benefit the development of broadly
+      neutralizing vaccine and antibody.
+    zh: >-
+      The RBD (receptor binding domain) of the SARS-CoV-2 virus S (spike)
+      protein mediates viral cell attachment and serves as a promising target
+      for therapeutics development. Mutations on the S-RBD may alter its
+      affinity to the cell receptor and affect the potency of vaccines and
+      antibodies. Here we used an in silico approach to predict how mutations
+      on RBD affect its binding affinity to hACE2 (human
+      angiotensin-converting enzyme2). The effect of all single point
+      mutations on the interface was predicted. SPR assay results show that 6
+      out of 9 selected mutations can strengthen binding affinity. Our
+      prediction has reasonable agreement with the previous deep mutational
+      scan results and recently reported mutants. Our work demonstrated the in
+      silico method as a powerful tool to forecast more powerful virus
+      mutants, which will significantly benefit the development of broadly
+      neutralizing vaccine and antibody.
+  links:
+    journal: "https://doi.org/10.1039/d1ra00426c"
+
+- key: ellipsoid-diffusion
+  year: 2016
+  authors: "Y. Peng, L. Lai, Y.-S. Tai, K. Zhang, X. Xu, X. Cheng"
+  title:
+    en: "Diffusion of ellipsoids in bacterial suspensions"
+    zh: "Diffusion of ellipsoids in bacterial suspensions"
+  venue:
+    en: "Physical Review Letters 116, 068303"
+    zh: "Physical Review Letters 116, 068303"
+  abstract:
+    en: >-
+      Active fluids such as swarming bacteria and motile colloids exhibit
+      exotic properties different from conventional equilibrium materials. As
+      a peculiar example, a spherical tracer immersed inside active fluids
+      shows an enhanced translational diffusion, orders of magnitude stronger
+      than its intrinsic Brownian motion. Here, rather than spherical tracers,
+      we investigate the diffusion of isolated ellipsoids in a
+      quasi-two-dimensional bacterial bath. Our study shows a nonlinear
+      enhancement of both translational and rotational diffusions of
+      ellipsoids. More importantly, we uncover an anomalous coupling between
+      particles' translation and rotation that is strictly prohibited in
+      Brownian diffusion. The coupling reveals a counterintuitive anisotropic
+      particle diffusion, where an ellipsoid diffuses fastest along its minor
+      axis in its body frame. Combining experiments with theoretical modeling,
+      we show that such an anomalous diffusive behavior arises from the
+      generic straining flow of swimming bacteria. Our work illustrates an
+      unexpected feature of active fluids and deepens our understanding of
+      transport processes in microbiological systems.
+    zh: >-
+      Active fluids such as swarming bacteria and motile colloids exhibit
+      exotic properties different from conventional equilibrium materials. As
+      a peculiar example, a spherical tracer immersed inside active fluids
+      shows an enhanced translational diffusion, orders of magnitude stronger
+      than its intrinsic Brownian motion. Here, rather than spherical tracers,
+      we investigate the diffusion of isolated ellipsoids in a
+      quasi-two-dimensional bacterial bath. Our study shows a nonlinear
+      enhancement of both translational and rotational diffusions of
+      ellipsoids. More importantly, we uncover an anomalous coupling between
+      particles' translation and rotation that is strictly prohibited in
+      Brownian diffusion. The coupling reveals a counterintuitive anisotropic
+      particle diffusion, where an ellipsoid diffuses fastest along its minor
+      axis in its body frame. Combining experiments with theoretical modeling,
+      we show that such an anomalous diffusive behavior arises from the
+      generic straining flow of swimming bacteria. Our work illustrates an
+      unexpected feature of active fluids and deepens our understanding of
+      transport processes in microbiological systems.
+  links:
+    journal: "https://doi.org/10.1103/PhysRevLett.116.068303"
+
+- key: rbc-stiffening
+  year: 2015
+  authors: "L. Lai, X. Xu, C. T. Lim, J. Cao"
+  title:
+    en: "Stiffening of red blood cells induced by cytoskeleton disorders: a joint theory-experiment study"
+    zh: "Stiffening of red blood cells induced by cytoskeleton disorders: a joint theory-experiment study"
+  venue:
+    en: "Biophysical Journal 109(11), 2287-2294"
+    zh: "Biophysical Journal 109(11), 2287-2294"
+  abstract:
+    en: >-
+      The functions and elasticities of the cell are largely related to the
+      structures of the cytoskeletons underlying the lipid bilayer. Among
+      various cell types, the red blood cell (RBC) possesses a relatively
+      simple cytoskeletal structure. Underneath the membrane, the RBC
+      cytoskeleton takes the form of a two-dimensional triangular network,
+      consisting of nodes of actins (and other proteins) and edges of
+      spectrins. Recent experiments focusing on the malaria-infected RBCs
+      (iRBCs) show that there is a correlation between the elongation of
+      spectrins in the cytoskeletal network and the stiffening of the iRBCs.
+      Here we rationalize the correlation between these two observations by
+      combining the wormlike chain model for single spectrins and the
+      effective medium theory for the network elasticity. We specifically
+      focus on how the disorders in the cytoskeletal network affect its
+      macroscopic elasticity. Analytical and numerical solutions from our
+      model reveal that the stiffness of the membrane increases with
+      increasing end-to-end distances of spectrins, but has a nonmonotonic
+      dependence on the variance of the end-to-end distance distributions.
+      These predictions are verified quantitatively by our atomic force
+      microscopy and micropipette aspiration measurements of iRBCs. The model
+      may, from a molecular level, provide guidelines for future
+      identification of new treatment methods for RBC-related diseases, such
+      as malaria infection.
+    zh: >-
+      The functions and elasticities of the cell are largely related to the
+      structures of the cytoskeletons underlying the lipid bilayer. Among
+      various cell types, the red blood cell (RBC) possesses a relatively
+      simple cytoskeletal structure. Underneath the membrane, the RBC
+      cytoskeleton takes the form of a two-dimensional triangular network,
+      consisting of nodes of actins (and other proteins) and edges of
+      spectrins. Recent experiments focusing on the malaria-infected RBCs
+      (iRBCs) show that there is a correlation between the elongation of
+      spectrins in the cytoskeletal network and the stiffening of the iRBCs.
+      Here we rationalize the correlation between these two observations by
+      combining the wormlike chain model for single spectrins and the
+      effective medium theory for the network elasticity. We specifically
+      focus on how the disorders in the cytoskeletal network affect its
+      macroscopic elasticity. Analytical and numerical solutions from our
+      model reveal that the stiffness of the membrane increases with
+      increasing end-to-end distances of spectrins, but has a nonmonotonic
+      dependence on the variance of the end-to-end distance distributions.
+      These predictions are verified quantitatively by our atomic force
+      microscopy and micropipette aspiration measurements of iRBCs. The model
+      may, from a molecular level, provide guidelines for future
+      identification of new treatment methods for RBC-related diseases, such
+      as malaria infection.
+  links:
+    journal: "https://doi.org/10.1016/j.bpj.2015.10.036"
+
+- key: spectrin-axon
+  year: 2014
+  authors: "L. Lai, J. Cao"
+  title:
+    en: "Spectrins in axonal cytoskeletons: dynamics revealed by extensions and fluctuations"
+    zh: "Spectrins in axonal cytoskeletons: dynamics revealed by extensions and fluctuations"
+  venue:
+    en: "The Journal of Chemical Physics 141(1)"
+    zh: "The Journal of Chemical Physics 141(1)"
+  abstract:
+    en: >-
+      The macroscopic properties, the properties of individual components, and
+      how those components interact with each other are three important
+      aspects of a composited structure. An understanding of the interplay
+      between them is essential in the study of complex systems. Using axonal
+      cytoskeleton as an example system, here we perform a theoretical study
+      of slender structures that can be coarse-grained as a simple smooth
+      three-dimensional curve. We first present a generic model for such
+      systems based on the fundamental theorem of curves. We use this generic
+      model to demonstrate the applicability of the well-known worm-like chain
+      (WLC) model to the network level and investigate the situation when the
+      system is stretched by strong forces (weakly bending limit). We
+      specifically studied recent experimental observations that revealed the
+      hitherto unknown periodic cytoskeleton structure of axons and measured
+      the longitudinal fluctuations. Instead of focusing on single molecules,
+      we apply analytical results from the WLC model to both single molecule
+      and network levels and focus on the relations between extensions and
+      fluctuations. We show how this approach introduces constraints to
+      possible local dynamics of the spectrin tetramers in the axonal
+      cytoskeleton and finally suggests simple but self-consistent dynamics of
+      spectrins in which the spectrins in one spatial period of axons
+      fluctuate in-sync.
+    zh: >-
+      The macroscopic properties, the properties of individual components, and
+      how those components interact with each other are three important
+      aspects of a composited structure. An understanding of the interplay
+      between them is essential in the study of complex systems. Using axonal
+      cytoskeleton as an example system, here we perform a theoretical study
+      of slender structures that can be coarse-grained as a simple smooth
+      three-dimensional curve. We first present a generic model for such
+      systems based on the fundamental theorem of curves. We use this generic
+      model to demonstrate the applicability of the well-known worm-like chain
+      (WLC) model to the network level and investigate the situation when the
+      system is stretched by strong forces (weakly bending limit). We
+      specifically studied recent experimental observations that revealed the
+      hitherto unknown periodic cytoskeleton structure of axons and measured
+      the longitudinal fluctuations. Instead of focusing on single molecules,
+      we apply analytical results from the WLC model to both single molecule
+      and network levels and focus on the relations between extensions and
+      fluctuations. We show how this approach introduces constraints to
+      possible local dynamics of the spectrin tetramers in the axonal
+      cytoskeleton and finally suggests simple but self-consistent dynamics of
+      spectrins in which the spectrins in one spatial period of axons
+      fluctuate in-sync.
+  links:
+    journal: "https://doi.org/10.1063/1.4885720"
+
+- key: bubble-nonlinear-resonance
+  year: 2013
+  authors: "L. Lai, N. C. Keim, K. Fezzaa, W. W. Zhang, S. R. Nagel"
+  title:
+    en: "Vibration and Nonlinear Resonance in the Break-up of an Underwater Bubble"
+    zh: "Vibration and Nonlinear Resonance in the Break-up of an Underwater Bubble"
+  venue:
+    en: "arXiv:1307.6420"
+    zh: "arXiv:1307.6420"
+  abstract:
+    en: >-
+      We use high-speed X-ray phase-contrast imaging, weakly nonlinear
+      analysis and boundary integral simulations to characterize the final
+      stage of underwater bubble break-up. The X-ray imaging study shows that
+      an initial azimuthal perturbation to the shape of the bubble neck gives
+      rise to oscillations that increasingly distort the cross-section shape.
+      These oscillations terminate in a pinch-off where the bubble surface
+      develops concave regions that contact similar to what occurs when two
+      liquid drops coalesce. We also present a weakly nonlinear analysis that
+      shows that this coalescence-like mode of pinch-off occurs when the
+      initial shape oscillation interferes constructively with the higher
+      harmonics it generates and thus reinforce each other's effects in
+      bringing about bubble break-up. Finally we present numerical results
+      that confirm the weakly nonlinear analysis scenario as well as provide
+      insight into observed shape reversals. They demonstrate that when the
+      oscillations interfere destructively, a qualitatively different mode of
+      pinch-off results where the cross-section profile of the bubble neck
+      develops sharply-curved regions.
+    zh: >-
+      We use high-speed X-ray phase-contrast imaging, weakly nonlinear
+      analysis and boundary integral simulations to characterize the final
+      stage of underwater bubble break-up. The X-ray imaging study shows that
+      an initial azimuthal perturbation to the shape of the bubble neck gives
+      rise to oscillations that increasingly distort the cross-section shape.
+      These oscillations terminate in a pinch-off where the bubble surface
+      develops concave regions that contact similar to what occurs when two
+      liquid drops coalesce. We also present a weakly nonlinear analysis that
+      shows that this coalescence-like mode of pinch-off occurs when the
+      initial shape oscillation interferes constructively with the higher
+      harmonics it generates and thus reinforce each other's effects in
+      bringing about bubble break-up. Finally we present numerical results
+      that confirm the weakly nonlinear analysis scenario as well as provide
+      insight into observed shape reversals. They demonstrate that when the
+      oscillations interfere destructively, a qualitatively different mode of
+      pinch-off results where the cross-section profile of the bubble neck
+      develops sharply-curved regions.
+  links:
+    preprint: "http://arxiv.org/abs/1307.6420v1"
+
+- key: malaria-cytoadherence
+  year: 2013
+  authors: "X. Xu, A. K. Efremov, A. Li, L. Lai, M. Dao, C. T. Lim, J. Cao"
+  title:
+    en: "Probing the cytoadherence of malaria infected red blood cells under flow"
+    zh: "Probing the cytoadherence of malaria infected red blood cells under flow"
+  venue:
+    en: "PLoS ONE 8(5), e64763"
+    zh: "PLoS ONE 8(5), e64763"
+  abstract:
+    en: >-
+      Malaria is one of the most widespread and deadly human parasitic
+      diseases caused by the Plasmodium (P.) species with the P. falciparum
+      being the most deadly. The parasites are capable of invading red blood
+      cells (RBCs) during infection. At the late stage of parasites'
+      development, the parasites export proteins to the infected RBCs (iRBC)
+      membrane and bind to receptors of surface proteins on the endothelial
+      cells that line microvasculature walls. Resulting adhesion of iRBCs to
+      microvasculature is one of the main sources of most complications during
+      malaria infection. Therefore, it is important to develop a versatile and
+      simple experimental method to quantitatively investigate iRBCs
+      cytoadhesion and binding kinetics. Here, we developed an advanced flow
+      based adhesion assay to demonstrate that iRBC's adhesion to endothelial
+      CD36 receptor protein coated channels is a bistable process possessing a
+      hysteresis loop. This finding confirms a recently developed model of
+      cell adhesion which we used to fit our experimental data. We measured
+      the contact area of iRBC under shear flow at different stages of
+      infection using Total Internal Reflection Fluorescence (TIRF), and also
+      adhesion receptor and ligand binding kinetics using Atomic Force
+      Microscopy (AFM). With these parameters, we reproduced in our model the
+      experimentally observed changes in adhesion properties of iRBCs
+      accompanying parasite maturation and investigated the main mechanisms
+      responsible for these changes, which are the contact area during the
+      shear flow as well as the rupture area size.
+    zh: >-
+      Malaria is one of the most widespread and deadly human parasitic
+      diseases caused by the Plasmodium (P.) species with the P. falciparum
+      being the most deadly. The parasites are capable of invading red blood
+      cells (RBCs) during infection. At the late stage of parasites'
+      development, the parasites export proteins to the infected RBCs (iRBC)
+      membrane and bind to receptors of surface proteins on the endothelial
+      cells that line microvasculature walls. Resulting adhesion of iRBCs to
+      microvasculature is one of the main sources of most complications during
+      malaria infection. Therefore, it is important to develop a versatile and
+      simple experimental method to quantitatively investigate iRBCs
+      cytoadhesion and binding kinetics. Here, we developed an advanced flow
+      based adhesion assay to demonstrate that iRBC's adhesion to endothelial
+      CD36 receptor protein coated channels is a bistable process possessing a
+      hysteresis loop. This finding confirms a recently developed model of
+      cell adhesion which we used to fit our experimental data. We measured
+      the contact area of iRBC under shear flow at different stages of
+      infection using Total Internal Reflection Fluorescence (TIRF), and also
+      adhesion receptor and ligand binding kinetics using Atomic Force
+      Microscopy (AFM). With these parameters, we reproduced in our model the
+      experimentally observed changes in adhesion properties of iRBCs
+      accompanying parasite maturation and investigated the main mechanisms
+      responsible for these changes, which are the contact area during the
+      shear flow as well as the rupture area size.
+  links:
+    journal: "https://doi.org/10.1371/journal.pone.0064763"
+
+- key: curvature-singularity
+  year: 2012
+  authors: "L. Lai"
+  title:
+    en: "Curvature singularity in the asymmetric breakup of an underwater air bubble"
+    zh: "Curvature singularity in the asymmetric breakup of an underwater air bubble"
+  venue:
+    en: "Physics of Fluids 24(10)"
+    zh: "Physics of Fluids 24(10)"
+  abstract:
+    en: >-
+      The presence of slight azimuthal asymmetry in the initial shape of an
+      underwater bubble entirely alters the final breakup dynamics. Here, I
+      examine the influence of initial asymmetry on the final breakup by
+      simulating the bubble surface evolution as a Hamiltonian evolution
+      corresponding to an inviscid, two-dimensional, planar implosion. I find
+      two types of breakups: a previously reported coalescence mode in which
+      distant regions along the air-water surface curve inwards and eventually
+      collide with finite speed, and a hitherto uncharacterized cusp-like mode
+      where the surface develops sharp tips whose radii of curvature are much
+      smaller than the average neck radius. I present three sets of results
+      that characterize the nature of this cusp mode. First, I show that the
+      cusp-like mode corresponds to a phase space trajectory that passes close
+      to a saddle-node structure. In other words, an evolution towards a
+      cross-section shape with sharp tips invariably later evolves away from
+      it. In phase space, this saddle-node separates coalescence modes whose
+      coalescence planes lie along different spatial orientations. Second, I
+      show that the formation of the sharp tips can be interpreted as a weakly
+      first-order transition which becomes second-order, corresponding to the
+      formation of a finite-time curvature singularity, in the limit that the
+      initial perturbation amplitude approaches zero. Third, I show that, as
+      the curvature singularity is approached, the maximum surface curvature
+      diverges approximately as (tc − t)−0.8, where tc is the onset time of
+      the singularity and the maximum velocity diverges approximately as (tc −
+      t)−0.4. In practice, these divergences imply that viscous drag and
+      compressibility of the gas flow, two effects not included in my
+      analysis, become significant as the interface evolves towards the
+      curvature singularity.
+    zh: >-
+      The presence of slight azimuthal asymmetry in the initial shape of an
+      underwater bubble entirely alters the final breakup dynamics. Here, I
+      examine the influence of initial asymmetry on the final breakup by
+      simulating the bubble surface evolution as a Hamiltonian evolution
+      corresponding to an inviscid, two-dimensional, planar implosion. I find
+      two types of breakups: a previously reported coalescence mode in which
+      distant regions along the air-water surface curve inwards and eventually
+      collide with finite speed, and a hitherto uncharacterized cusp-like mode
+      where the surface develops sharp tips whose radii of curvature are much
+      smaller than the average neck radius. I present three sets of results
+      that characterize the nature of this cusp mode. First, I show that the
+      cusp-like mode corresponds to a phase space trajectory that passes close
+      to a saddle-node structure. In other words, an evolution towards a
+      cross-section shape with sharp tips invariably later evolves away from
+      it. In phase space, this saddle-node separates coalescence modes whose
+      coalescence planes lie along different spatial orientations. Second, I
+      show that the formation of the sharp tips can be interpreted as a weakly
+      first-order transition which becomes second-order, corresponding to the
+      formation of a finite-time curvature singularity, in the limit that the
+      initial perturbation amplitude approaches zero. Third, I show that, as
+      the curvature singularity is approached, the maximum surface curvature
+      diverges approximately as (tc − t)−0.8, where tc is the onset time of
+      the singularity and the maximum velocity diverges approximately as (tc −
+      t)−0.4. In practice, these divergences imply that viscous drag and
+      compressibility of the gas flow, two effects not included in my
+      analysis, become significant as the interface evolves towards the
+      curvature singularity.
+  links:
+    journal: "https://doi.org/10.1063/1.4758280"
+
+- key: asymmetric-disconnection
+  year: 2009
+  authors: "K. S. Turitsyn, L. Lai, W. W. Zhang"
+  title:
+    en: "Asymmetric disconnection of an underwater air bubble: Persistent neck vibrations evolve into a smooth contact"
+    zh: "Asymmetric disconnection of an underwater air bubble: Persistent neck vibrations evolve into a smooth contact"
+  venue:
+    en: "Physical Review Letters 103, 124501"
+    zh: "Physical Review Letters 103, 124501"
+  abstract:
+    en: >-
+      The disconnection of an underwater bubble illustrates how slight initial
+      asymmetries can prevent the formation of a finite-time singularity.
+      Creating a singularity by focusing a finite amount of energy dynamically
+      into a vanishingly small amount of material requires that the initial
+      condition be perfectly symmetric. In reality, imperfections are always
+      present. We show a slight azimuthal asymmetry in the initial shape of
+      the bubble neck excites vibrations that persist over time. As a result,
+      the focusing singularity is generically preempted by a smooth contact.
+    zh: >-
+      The disconnection of an underwater bubble illustrates how slight initial
+      asymmetries can prevent the formation of a finite-time singularity.
+      Creating a singularity by focusing a finite amount of energy dynamically
+      into a vanishingly small amount of material requires that the initial
+      condition be perfectly symmetric. In reality, imperfections are always
+      present. We show a slight azimuthal asymmetry in the initial shape of
+      the bubble neck excites vibrations that persist over time. As a result,
+      the focusing singularity is generically preempted by a smooth contact.
+  links:
+    journal: "https://doi.org/10.1103/PhysRevLett.103.124501"
