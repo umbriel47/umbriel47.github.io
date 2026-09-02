@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign novels = site.data.fictions | where: "slug", page.novel -%}
+{%- assign novel = novels[0] -%}
+{%- if lang == 'zh' -%}{%- assign pool = site.fictions_zh -%}{%- else -%}{%- assign pool = site.fictions_en -%}{%- endif -%}
+{%- assign chapters = pool | where: "novel", page.novel | sort: "order" -%}
+
+{%- assign prev = nil -%}{%- assign next = nil -%}{%- assign seen = false -%}
+{%- for ch in chapters -%}
+  {%- if seen and next == nil -%}{%- assign next = ch -%}{%- endif -%}
+  {%- if ch.url == page.url -%}{%- assign seen = true -%}{%- endif -%}
+  {%- unless seen -%}{%- assign prev = ch -%}{%- endunless -%}
+{%- endfor -%}
+
+<div class="wrap with-rail">
+  {%- include chapter-nav.html novel=novel chapters=chapters lang=lang current=page.url -%}
+
+  <article class="rail-main prose-page">
+    <header class="page-head">
+      <p class="post-meta">
+        <a href="{{ '/' | append: lang | append: '/fictions/' | append: page.novel | append: '/' | relative_url }}">{{ novel.title[lang] | default: novel.title.en }}</a>
+        <span class="dot">·</span>{% if lang == 'zh' %}第 {{ page.order }} 章{% else %}{{ t.ui.chapter }} {{ page.order }}{% endif %}
+      </p>
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+
+    <div class="prose fiction-prose">
+      {{ content }}
+    </div>
+
+    <nav class="chapter-pager" aria-label="{{ t.ui.chapters }}">
+      {%- if prev -%}
+        <a class="pager prev" href="{{ prev.url | relative_url }}"><span>← {{ t.ui.prev_chapter }}</span><strong>{{ prev.title }}</strong></a>
+      {%- else -%}<span class="pager empty-pager"></span>{%- endif -%}
+      {%- if next -%}
+        <a class="pager next" href="{{ next.url | relative_url }}"><span>{{ t.ui.next_chapter }} →</span><strong>{{ next.title }}</strong></a>
+      {%- else -%}<span class="pager empty-pager"></span>{%- endif -%}
+    </nav>
+  </article>
+</div>

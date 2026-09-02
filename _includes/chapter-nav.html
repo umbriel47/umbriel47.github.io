@@ -1,0 +1,22 @@
+{%- comment -%} params: novel (data entry), chapters (sorted docs), lang, current (url or nil) {%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+<aside class="chapter-rail">
+  <input type="checkbox" id="rail-toggle" class="rail-toggle" hidden>
+  <label for="rail-toggle" class="rail-handle">{{ t.ui.chapters }}</label>
+  <nav class="rail-inner" aria-label="{{ t.ui.chapters }}">
+    <a class="rail-novel" href="{{ '/' | append: include.lang | append: '/fictions/' | append: include.novel.slug | append: '/' | relative_url }}">
+      {{ include.novel.title[include.lang] | default: include.novel.title.en }}
+    </a>
+    <ol class="rail-list">
+      {%- for ch in include.chapters -%}
+        <li{% if ch.url == include.current %} class="is-current" aria-current="page"{% endif %}>
+          <a href="{{ ch.url | relative_url }}">
+            <span class="rail-num">{{ ch.order }}</span>
+            <span class="rail-name">{{ ch.title }}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ol>
+    <a class="rail-back" href="{{ '/' | append: include.lang | append: '/fictions/' | relative_url }}">← {{ t.ui.back_to_fictions }}</a>
+  </nav>
+</aside>

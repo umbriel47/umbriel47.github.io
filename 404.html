@@ -1,25 +1,35 @@
 ---
 permalink: /404.html
-layout: default
+layout: null
+sitemap: false
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · {{ site.title }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem('theme');
+        if (s === 'dark' || s === 'light') document.documentElement.dataset.theme = s;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="gate">
+    <div>
+      <h1>404</h1>
+      <p>This page does not exist. 页面不存在。</p>
+      <nav class="gate-links">
+        <a href="{{ '/en/' | relative_url }}">English home</a>
+        <a href="{{ '/zh/' | relative_url }}" lang="zh-Hans">中文首页</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

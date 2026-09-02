@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign pubs = site.data.publications | sort: "year" | reverse -%}
+
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  {%- assign current_year = '' -%}
+  <ol class="pub-list">
+    {%- for pub in pubs -%}
+      {%- if pub.year != current_year -%}
+        {%- assign current_year = pub.year -%}
+        <li class="pub-year" aria-hidden="true">{{ pub.year }}</li>
+      {%- endif -%}
+      <li class="pub">
+        <h3 class="pub-title">
+          {%- assign href = pub.links.journal | default: pub.links.preprint | default: pub.links.pdf -%}
+          {%- if href -%}
+            <a href="{{ href }}" target="_blank" rel="noopener">{{ pub.title[lang] | default: pub.title.en }}</a>
+          {%- else -%}
+            {{ pub.title[lang] | default: pub.title.en }}
+          {%- endif -%}
+        </h3>
+        <p class="pub-authors">{{ pub.authors }}</p>
+        <p class="pub-venue"><em>{{ pub.venue[lang] | default: pub.venue.en }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}</p>
+
+        {%- assign abs = pub.abstract[lang] | default: pub.abstract.en -%}
+        {%- if abs -%}
+        <details class="pub-abstract">
+          <summary>{{ t.ui.show_abstract }}</summary>
+          <p>{{ abs }}</p>
+        </details>
+        {%- endif -%}
+
+        <p class="pub-links">
+          {%- if pub.links.journal %}<a href="{{ pub.links.journal }}" target="_blank" rel="noopener">{{ t.ui.read_paper }}</a>{% endif -%}
+          {%- if pub.links.preprint %}<a href="{{ pub.links.preprint }}" target="_blank" rel="noopener">{{ t.ui.preprint }}</a>{% endif -%}
+          {%- if pub.links.pdf %}<a href="{{ pub.links.pdf }}" target="_blank" rel="noopener">{{ t.ui.pdf }}</a>{% endif -%}
+          {%- if pub.links.code %}<a href="{{ pub.links.code }}" target="_blank" rel="noopener">{{ t.ui.code }}</a>{% endif -%}
+        </p>
+      </li>
+    {%- endfor -%}
+  </ol>
+</div>

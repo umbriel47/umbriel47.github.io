@@ -1,0 +1,32 @@
+# Artworks. `image` may be a path in this repo (keep files web-sized) or an
+# absolute external URL. `thumb` is optional; the full image is used without it.
+
+- key: study-01
+  year: 2025
+  image: /assets/img/arts/study-01.svg
+  title:
+    en: "Study I"
+    zh: "习作一"
+  medium:
+    en: "Ink on paper"
+    zh: "纸本水墨"
+
+- key: study-02
+  year: 2024
+  image: /assets/img/arts/study-02.svg
+  title:
+    en: "Study II"
+    zh: "习作二"
+  medium:
+    en: "Digital"
+    zh: "数字绘画"
+
+- key: study-03
+  year: 2023
+  image: /assets/img/arts/study-03.svg
+  title:
+    en: "Study III"
+    zh: "习作三"
+  medium:
+    en: "Acrylic on canvas"
+    zh: "布面丙烯"

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign works = site.data.arts | sort: "year" | reverse -%}
+
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  <ul class="art-grid">
+    {%- for w in works -%}
+      <li class="art-item">
+        <figure>
+          <a href="{{ w.image | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ w.thumb | default: w.image | relative_url }}" alt="{{ w.title[lang] | default: w.title.en }}" loading="lazy">
+          </a>
+          <figcaption>
+            <strong>{{ w.title[lang] | default: w.title.en }}</strong>
+            <span class="art-meta">{{ w.medium[lang] | default: w.medium.en }}{% if w.year %} · {{ w.year }}{% endif %}</span>
+            {%- assign note = w.note[lang] | default: w.note.en -%}
+            {%- if note %}<span class="art-note">{{ note }}</span>{% endif -%}
+          </figcaption>
+        </figure>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

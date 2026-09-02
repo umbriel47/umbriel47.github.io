@@ -1,0 +1,26 @@
+# Music. Each release uses exactly one source:
+#   audio: /assets/audio/foo.mp3   — a file committed to this repo
+#   embed: https://…               — an embeddable player URL (SoundCloud,
+#                                    Bandcamp, YouTube /embed/…)
+#   link:  https://…               — a plain outbound link
+
+- key: first-album
+  year: 2025
+  cover: /assets/img/music/first-album.svg
+  title:
+    en: "First Album"
+    zh: "第一张专辑"
+  kind:
+    en: "Album"
+    zh: "专辑"
+  link: "https://soundcloud.com/"
+
+- key: first-track
+  year: 2024
+  title:
+    en: "First Track"
+    zh: "第一首单曲"
+  kind:
+    en: "Single"
+    zh: "单曲"
+  link: "https://soundcloud.com/"

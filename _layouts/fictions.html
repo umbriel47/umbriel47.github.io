@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- if lang == 'zh' -%}{%- assign chapters = site.fictions_zh -%}{%- else -%}{%- assign chapters = site.fictions_en -%}{%- endif -%}
+
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  <ul class="novel-list">
+    {%- for novel in site.data.fictions -%}
+      {%- assign own = chapters | where: "novel", novel.slug -%}
+      <li class="novel-card">
+        <a class="novel-cover" href="{{ '/' | append: lang | append: '/fictions/' | append: novel.slug | append: '/' | relative_url }}">
+          {%- if novel.cover -%}
+            <img src="{{ novel.cover | relative_url }}" alt="" loading="lazy">
+          {%- else -%}
+            <span class="novel-cover-fallback" aria-hidden="true">{{ novel.title[lang] | default: novel.title.en | slice: 0 }}</span>
+          {%- endif -%}
+        </a>
+        <div class="novel-body">
+          <h3 class="novel-title">
+            <a href="{{ '/' | append: lang | append: '/fictions/' | append: novel.slug | append: '/' | relative_url }}">{{ novel.title[lang] | default: novel.title.en }}</a>
+          </h3>
+          <p class="novel-meta">
+            <span class="badge badge-{{ novel.status }}">{% if novel.status == 'completed' %}{{ t.ui.completed }}{% else %}{{ t.ui.ongoing }}{% endif %}</span>
+            <span class="dot">·</span>{% if lang == "zh" %}{{ own.size }} {{ t.ui.chapter_unit }}{% else %}{{ own.size }} {% if own.size == 1 %}{{ t.ui.chapters_one }}{% else %}{{ t.ui.chapters }}{% endif %}{% endif %}
+          </p>
+          <p class="novel-blurb">{{ novel.blurb[lang] | default: novel.blurb.en }}</p>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

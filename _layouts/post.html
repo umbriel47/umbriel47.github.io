@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- if lang == 'zh' -%}
+  {%- assign minutes = words | divided_by: 350 | plus: 1 -%}
+{%- else -%}
+  {%- assign minutes = words | divided_by: 220 | plus: 1 -%}
+{%- endif -%}
+
+{%- assign other = t.other_lang -%}
+{%- assign twin = nil -%}
+{%- if page.ref -%}
+  {%- for p in site.posts -%}
+    {%- if p.ref == page.ref and p.lang == other -%}{%- assign twin = p -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<article class="wrap prose-page h-entry">
+  <header class="page-head">
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+        {%- if lang == 'zh' -%}{{ page.date | date: "%Y年%-m月%-d日" }}{%- else -%}{{ page.date | date: "%B %-d, %Y" }}{%- endif -%}
+      </time>
+      <span class="dot">·</span>{{ minutes }} {{ t.ui.read_time }}
+      {%- if twin %}<span class="dot">·</span><a href="{{ twin.url | relative_url }}" lang="{{ site.data.i18n[other].html_lang }}">{{ t.ui.translation_available }}</a>{% endif -%}
+    </p>
+    <h1 class="page-title p-name">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+    {%- if page.tags and page.tags.size > 0 -%}
+    <p class="tag-row">{% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</p>
+    {%- endif -%}
+  </header>
+
+  <div class="prose e-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-foot">
+    <a class="back-link" href="{{ '/' | append: lang | append: '/blog/' | relative_url }}">← {{ t.ui.back_to_blog }}</a>
+  </footer>
+</article>

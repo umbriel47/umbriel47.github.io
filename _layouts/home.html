@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: "lang", lang -%}
+
+<section class="hero wrap">
+  <h1 class="hero-title">{{ page.heading | default: site.title }}</h1>
+  {%- if page.subtitle %}<p class="hero-sub">{{ page.subtitle }}</p>{% endif -%}
+  <div class="prose hero-bio">{{ content }}</div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <h2>{{ t.ui.latest_writing }}</h2>
+    <a class="section-more" href="{{ '/' | append: lang | append: '/blog/' | relative_url }}">{{ t.ui.all_posts }} →</a>
+  </div>
+  {%- if posts.size == 0 -%}
+    <p class="empty">{{ t.ui.no_posts }}</p>
+  {%- else -%}
+    <ul class="post-list">
+      {%- for post in posts limit: 4 -%}
+        {%- include post-card.html post=post lang=lang -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</section>

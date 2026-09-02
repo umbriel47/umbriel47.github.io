@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  <ul class="card-grid">
+    <li class="big-card">
+      <a href="{{ '/' | append: lang | append: '/hobbies/arts/' | relative_url }}">
+        <h2>{{ t.nav.arts }}</h2>
+        <p>{{ page.arts_blurb }}</p>
+        <span class="card-cta">{{ t.ui.view }} →</span>
+      </a>
+    </li>
+    <li class="big-card">
+      <a href="{{ '/' | append: lang | append: '/hobbies/music/' | relative_url }}">
+        <h2>{{ t.nav.music }}</h2>
+        <p>{{ page.music_blurb }}</p>
+        <span class="card-cta">{{ t.ui.listen }} →</span>
+      </a>
+    </li>
+  </ul>
+</div>

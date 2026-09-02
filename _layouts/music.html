@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign releases = site.data.music | sort: "year" | reverse -%}
+
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  <ul class="music-list">
+    {%- for r in releases -%}
+      <li class="music-item">
+        <div class="music-head">
+          {%- if r.cover -%}<img class="music-cover" src="{{ r.cover | relative_url }}" alt="" loading="lazy">{%- endif -%}
+          <div>
+            <h3 class="music-title">{{ r.title[lang] | default: r.title.en }}</h3>
+            <p class="music-meta">
+              {{ r.kind[lang] | default: r.kind.en }}{% if r.year %} · {{ r.year }}{% endif %}
+            </p>
+            {%- assign note = r.note[lang] | default: r.note.en -%}
+            {%- if note %}<p class="music-note">{{ note }}</p>{% endif -%}
+          </div>
+        </div>
+
+        {%- comment -%}
+          Two sources are supported per release: a local file committed under
+          assets/audio (`audio:`) or an external player (`embed:`).
+        {%- endcomment -%}
+        {%- if r.audio -%}
+          <audio controls preload="none" src="{{ r.audio | relative_url }}">
+            <a href="{{ r.audio | relative_url }}">{{ t.ui.listen }}</a>
+          </audio>
+        {%- elsif r.embed -%}
+          <div class="embed-frame">
+            <iframe src="{{ r.embed }}" title="{{ r.title[lang] | default: r.title.en }}"
+                    loading="lazy" allow="autoplay; encrypted-media; fullscreen"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        {%- elsif r.link -%}
+          <p class="music-links"><a href="{{ r.link }}" target="_blank" rel="noopener">{{ t.ui.listen }} →</a></p>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

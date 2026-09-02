@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign posts = site.posts | where: "lang", lang -%}
+
+<div class="wrap">
+  <header class="page-head">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif -%}
+  </header>
+
+  {%- if content != '' %}<div class="prose intro">{{ content }}</div>{% endif -%}
+
+  {%- if posts.size == 0 -%}
+    <p class="empty">{{ t.ui.no_posts }}</p>
+  {%- else -%}
+    <ul class="post-list">
+      {%- for post in posts -%}
+        {%- include post-card.html post=post lang=lang -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

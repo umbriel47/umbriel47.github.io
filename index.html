@@ -1,0 +1,47 @@
+---
+layout: null
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="zh-Hans" href="{{ '/zh/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem('theme');
+        if (s === 'dark' || s === 'light') document.documentElement.dataset.theme = s;
+      } catch (e) {}
+      // English is the default landing language. The browser's own locale is
+      // deliberately not consulted; only an explicit switch by the visitor
+      // (stored by assets/js/site.js) sends them anywhere else.
+      var pick = '{{ site.default_lang }}';
+      try {
+        var saved = localStorage.getItem('lang');
+        if (saved === 'en' || saved === 'zh') pick = saved;
+      } catch (e) {}
+      location.replace('{{ "/" | relative_url }}' + pick + '/');
+    })();
+  </script>
+</head>
+<body>
+  <div class="gate">
+    <div>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.tagline }}</p>
+      <nav class="gate-links">
+        <a href="{{ '/en/' | relative_url }}" hreflang="en">English</a>
+        <a href="{{ '/zh/' | relative_url }}" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

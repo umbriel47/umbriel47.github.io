@@ -1,0 +1,102 @@
+# UI strings. Every visible chrome string lives here so that adding a third
+# language later means adding one block, not editing every layout.
+en:
+  locale: en_US
+  html_lang: en
+  name: English
+  other_lang: zh
+  other_lang_label: 中文
+  nav:
+    blogs: Blogs
+    publications: Publications
+    fictions: Fictions
+    hobbies: Hobbies
+    arts: Arts
+    music: Music
+  ui:
+    home: Home
+    latest_writing: Latest writing
+    all_posts: All posts
+    read_more: Read
+    read_time: min read
+    posted_on: Published
+    updated_on: Updated
+    no_posts: Nothing here yet.
+    back_to_blog: All posts
+    back_to_fictions: All fiction
+    chapters: Chapters
+    chapters_one: Chapter
+    chapter: Chapter
+    prev_chapter: Previous
+    next_chapter: Next
+    abstract: Abstract
+    show_abstract: Abstract
+    hide_abstract: Hide abstract
+    read_paper: Journal
+    preprint: Preprint
+    pdf: PDF
+    code: Code
+    year: Year
+    status: Status
+    ongoing: Ongoing
+    completed: Completed
+    listen: Listen
+    view: View
+    translation_available: 中文版
+    no_translation: No translation yet
+    subscribe: RSS
+    toggle_theme: Toggle colour scheme
+    skip_to_content: Skip to content
+    contact: Elsewhere
+    copyright: All rights reserved.
+
+zh:
+  locale: zh_CN
+  html_lang: zh-Hans
+  name: 中文
+  other_lang: en
+  other_lang_label: English
+  nav:
+    blogs: 文章
+    publications: 论文
+    fictions: 小说
+    hobbies: 爱好
+    arts: 艺术
+    music: 音乐
+  ui:
+    home: 首页
+    latest_writing: 最近的文章
+    all_posts: 全部文章
+    read_more: 阅读
+    read_time: 分钟
+    posted_on: 发表于
+    updated_on: 更新于
+    no_posts: 暂时还没有内容。
+    back_to_blog: 全部文章
+    back_to_fictions: 全部小说
+    chapters: 目录
+    chapters_one: 目录
+    chapter_unit: 章
+    chapter: 第
+    prev_chapter: 上一章
+    next_chapter: 下一章
+    abstract: 摘要
+    show_abstract: 摘要
+    hide_abstract: 收起摘要
+    read_paper: 期刊
+    preprint: 预印本
+    pdf: PDF
+    code: 代码
+    year: 年份
+    status: 状态
+    ongoing: 连载中
+    completed: 已完结
+    listen: 收听
+    view: 查看
+    translation_available: English
+    no_translation: 暂无翻译
+    subscribe: 订阅
+    toggle_theme: 切换配色
+    skip_to_content: 跳到正文
+    contact: 联系方式
+    copyright: 版权所有。

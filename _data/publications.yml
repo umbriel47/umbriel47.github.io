@@ -1,0 +1,45 @@
+# Publications, sorted by `year`, newest first.
+# Every text field takes an `en:` and a `zh:` value. `links` may hold any of
+# journal / preprint / pdf / code — the title links to the first one present.
+
+- key: example-2024-generative-chemistry
+  year: 2024
+  authors: "A. Author, B. Author, C. Author"
+  title:
+    en: "A generative model for molecular design"
+    zh: "面向分子设计的生成模型"
+  venue:
+    en: "Journal of Example Research"
+    zh: "示例研究学报"
+  abstract:
+    en: >-
+      We describe a generative approach to designing small molecules under
+      synthesisability constraints, and evaluate it against retrospective
+      benchmarks drawn from published medicinal chemistry campaigns.
+    zh: >-
+      我们提出了一种在可合成性约束下设计小分子的生成式方法，并在若干来自已发表
+      药物化学项目的回顾性基准上进行了评估。
+  links:
+    journal: "https://example.com/journal-article"
+    preprint: "https://example.com/preprint"
+    code: "https://example.com/code"
+
+- key: example-2022-sparse-dynamics
+  year: 2022
+  authors: "A. Author, D. Author"
+  title:
+    en: "Learning dynamics from sparse observations"
+    zh: "从稀疏观测中学习动力学"
+  venue:
+    en: "Proceedings of the Example Conference"
+    zh: "示例学术会议论文集"
+  abstract:
+    en: >-
+      Recovering the governing equations of a system from irregularly sampled
+      trajectories, with an analysis of when the recovered dynamics generalise
+      beyond the observed regime.
+    zh: >-
+      从非均匀采样的轨迹中恢复系统的控制方程，并分析所恢复的动力学在何种条件下
+      能够推广到观测区间之外。
+  links:
+    preprint: "https://example.com/preprint"

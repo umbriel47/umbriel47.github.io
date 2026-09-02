@@ -1,0 +1,66 @@
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign base = '/' | append: lang -%}
+{%- assign other = t.other_lang -%}
+
+{%- comment -%}
+  Language switcher target: the twin document if one exists, otherwise the
+  other language's home page. Never a 404.
+{%- endcomment -%}
+{%- assign switch_url = '/' | append: other | append: '/' -%}
+{%- if page.ref -%}
+  {%- for p in site.posts -%}
+    {%- if p.ref == page.ref and p.lang == other -%}{%- assign switch_url = p.url -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign twins = site.pages | where: "ref", page.ref -%}
+  {%- for p in twins -%}
+    {%- if p.lang == other -%}{%- assign switch_url = p.url -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<a class="skip-link" href="#content">{{ t.ui.skip_to_content }}</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ base | append: '/' | relative_url }}">
+      <span class="brand-name">{{ site.title }}</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="{{ t.ui.home }}">
+      <a href="{{ base | append: '/blog/' | relative_url }}"
+         {% if page.section == 'blogs' %}aria-current="page"{% endif %}>{{ t.nav.blogs }}</a>
+      <a href="{{ base | append: '/publications/' | relative_url }}"
+         {% if page.section == 'publications' %}aria-current="page"{% endif %}>{{ t.nav.publications }}</a>
+      <a href="{{ base | append: '/fictions/' | relative_url }}"
+         {% if page.section == 'fictions' %}aria-current="page"{% endif %}>{{ t.nav.fictions }}</a>
+
+      <div class="nav-group">
+        <a href="{{ base | append: '/hobbies/' | relative_url }}"
+           {% if page.section == 'hobbies' %}aria-current="page"{% endif %}>{{ t.nav.hobbies }}</a>
+        <div class="nav-submenu">
+          <a href="{{ base | append: '/hobbies/arts/' | relative_url }}">{{ t.nav.arts }}</a>
+          <a href="{{ base | append: '/hobbies/music/' | relative_url }}">{{ t.nav.music }}</a>
+        </div>
+      </div>
+
+      <span class="nav-tools">
+        <a class="lang-switch" href="{{ switch_url | relative_url }}"
+           lang="{{ site.data.i18n[other].html_lang }}"
+           hreflang="{{ site.data.i18n[other].html_lang }}">{{ t.other_lang_label }}</a>
+        <button type="button" class="theme-toggle" data-theme-toggle
+                aria-label="{{ t.ui.toggle_theme }}" title="{{ t.ui.toggle_theme }}">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false">
+            <path class="icon-sun" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.41-1.41M4.93 19.07l1.41-1.41m11.32 0 1.41 1.41M4.93 4.93l1.41 1.41" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <circle class="icon-sun" cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" fill="none"/>
+            <path class="icon-moon" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </span>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{%- comment -%} Novel detail page. Front matter: novel: <slug>, lang. {%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign novels = site.data.fictions | where: "slug", page.novel -%}
+{%- assign novel = novels[0] -%}
+{%- if lang == 'zh' -%}{%- assign pool = site.fictions_zh -%}{%- else -%}{%- assign pool = site.fictions_en -%}{%- endif -%}
+{%- assign chapters = pool | where: "novel", page.novel | sort: "order" -%}
+
+<div class="wrap with-rail">
+  {%- include chapter-nav.html novel=novel chapters=chapters lang=lang current=nil -%}
+
+  <article class="rail-main">
+    <header class="page-head novel-head">
+      {%- if novel.cover -%}<img class="novel-head-cover" src="{{ novel.cover | relative_url }}" alt="" loading="lazy">{%- endif -%}
+      <div>
+        <h1 class="page-title">{{ novel.title[lang] | default: novel.title.en }}</h1>
+        <p class="novel-meta">
+          <span class="badge badge-{{ novel.status }}">{% if novel.status == 'completed' %}{{ t.ui.completed }}{% else %}{{ t.ui.ongoing }}{% endif %}</span>
+          <span class="dot">·</span>{% if lang == "zh" %}{{ chapters.size }} {{ t.ui.chapter_unit }}{% else %}{{ chapters.size }} {% if chapters.size == 1 %}{{ t.ui.chapters_one }}{% else %}{{ t.ui.chapters }}{% endif %}{% endif %}
+        </p>
+      </div>
+    </header>
+
+    <div class="prose">
+      <p class="novel-blurb-lg">{{ novel.blurb[lang] | default: novel.blurb.en }}</p>
+      {{ content }}
+    </div>
+
+    <h2 class="toc-head">{{ t.ui.chapters }}</h2>
+    <ol class="toc-list">
+      {%- for ch in chapters -%}
+        <li>
+          <a href="{{ ch.url | relative_url }}">
+            <span class="toc-num">{{ ch.order }}</span>
+            <span class="toc-name">{{ ch.title }}</span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ol>
+  </article>
+</div>
