@@ -1,31 +1,36 @@
-# Novels. Each entry needs a `slug` that matches:
-#   * the `novel:` key in every chapter under _fictions_en/ and _fictions_zh/
-#   * a detail page at en/fictions/<slug>.md and zh/fictions/<slug>.md
+# Novels. Each is written in one language and is never translated, so `lang`
+# says which language tree it lives under and `title`/`blurb` are plain strings
+# in that language. Both /en/fictions/ and /zh/fictions/ list every novel.
+#
+# Each entry needs a `slug` that matches:
+#   * the folder under _fictions_zh/ (or _fictions_en/) holding its chapters
+#   * a detail page at <lang>/fictions/<slug>.md
+#
+# `volumes` is optional; when present the chapter list is grouped by it and a
+# chapter's `volume:` front matter must name one of these keys.
 
-- slug: the-glass-garden
-  status: ongoing        # ongoing | completed
-  cover: /assets/img/fictions/the-glass-garden.svg
-  title:
-    en: "The Glass Garden"
-    zh: "玻璃花园"
-  blurb:
-    en: >-
-      A greenhouse on a mountain line, kept by a woman nobody sends for any
-      more, and the passenger who gets off at the wrong stop to find it.
-    zh: >-
-      山线上的一座玻璃温室，一个再没有人来探望的守园人，
-      以及一个下错了站、于是找到了它的旅客。
-
-- slug: salt-and-signal
+- slug: chenbi
+  lang: zh
   status: completed
-  cover: /assets/img/fictions/salt-and-signal.svg
-  title:
-    en: "Salt and Signal"
-    zh: "盐与信号"
-  blurb:
-    en: >-
-      Two weeks on a tidal flat, a radio that receives more than it should,
-      and a family that has agreed not to talk about either.
-    zh: >-
-      潮间带上的两个星期，一台收到了不该收到的东西的收音机，
-      以及一个约好了对这两件事都闭口不谈的家庭。
+  cover: /assets/img/fictions/chenbi.svg
+  title: "沉璧 · 落雁洲七日"
+  series: "验状录 · 第一部"
+  blurb: >-
+    一个不会武功的仵作，被请上一座被洪水围困的孤岛，为一具二十年前的白骨写验状；
+    七日之内岛上死了三个人，而他手里唯一的兵器是一双看死人的眼睛。
+  meta: "武侠推理长篇 · 本格 · 孤岛封闭圈 · 二十六章 · 约七万一千字"
+  volumes:
+    - key: v1
+      title: "卷一 · 七月初一"
+    - key: v2
+      title: "卷二 · 七月初二"
+    - key: v3
+      title: "卷三 · 七月初三"
+    - key: v4
+      title: "卷四 · 七月初四"
+    - key: v5
+      title: "卷五 · 七月初五"
+    - key: v6
+      title: "卷六 · 七月初六"
+    - key: v7
+      title: "卷七 · 七月初七起"

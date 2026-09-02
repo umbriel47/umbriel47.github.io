@@ -37,19 +37,55 @@ percent-encoded links.
 
 ### A publication
 
-Add an entry to `_data/publications.yml`. Sorted by `year`, newest first. The
-title links to `links.journal`, falling back to `links.preprint`, then
-`links.pdf`.
+`_data/publications.yml` is **generated** — edit
+`script/publications_source.yml` instead and run:
+
+```sh
+python3 script/sync_publications.py
+```
+
+Add an entry with `key`, `year`, `kind` (`journal` or `preprint`), `authors`,
+`title`, `venue` and `venue_zh`. The script fills in the abstract and the link
+from PubMed, Crossref, arXiv, bioRxiv or OpenReview, preferring PubMed because
+Crossref mangles subscripts and markup for some publishers. Supply a `doi`,
+`arxiv` or `openreview` hint when you have one; the script reports anything it
+cannot resolve by title.
+
+Abstracts are cached in `script/.publications_cache.json` (untracked), so
+adding one paper does not re-fetch the rest. `--only KEY` refreshes one entry,
+`--dry-run` writes nothing.
+
+Titles and abstracts stay in English on both language pages: a paper title is a
+citable string, and a translated one cannot be searched for.
 
 ### A novel
 
-1. Add the novel to `_data/fictions.yml` with a `slug`, `status`, `cover`,
-   `title` and `blurb`.
-2. Create the detail pages `en/fictions/<slug>.md` and `zh/fictions/<slug>.md`
-   (front matter only — copy an existing one).
-3. Drop chapters into `_fictions_en/<slug>/` and `_fictions_zh/<slug>/`. Each
-   chapter needs `title:`, `novel: <slug>` and `order: <n>`. The sidebar
-   navigation and the previous/next links are derived from `order`.
+A novel is written in one language and is **not** translated. Both
+`/en/fictions/` and `/zh/fictions/` list every novel; an entry whose language
+differs from the current interface is tagged with its language and links into
+its own language tree.
+
+1. Add the novel to `_data/fictions.yml` with `slug`, `lang`, `status`,
+   `cover`, `title` and `blurb` — `title` and `blurb` are plain strings in the
+   novel's own language. `series`, `meta` and `volumes` are optional.
+2. Create the detail page `<lang>/fictions/<slug>.md` (front matter only —
+   copy an existing one).
+3. Put chapters in `_fictions_<lang>/<slug>/`. Each needs `title:`,
+   `novel: <slug>`, `order: <n>` and, if the novel has `volumes`, a `volume:`
+   naming one of their keys. The sidebar, the table of contents and the
+   previous/next links all derive from `order`.
+
+To import chapters that already exist as `NN-title.md` files with a `# ...`
+heading on the first line:
+
+```sh
+python3 script/import_novel.py <chapters dir> <slug> --lang zh
+```
+
+It strips the heading (the layout renders the title) and turns a lone `*`
+scene-break line into a styled element — Kramdown would otherwise read it as an
+empty list item. Volume assignments live in the `VOLUMES` table in that
+script.
 
 ### Art and music
 

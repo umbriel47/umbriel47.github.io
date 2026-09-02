@@ -435,3 +435,31 @@ html[lang^="zh"] .fiction-prose p { text-indent: 2em; }
   color: var(--ink); font-size: .95rem; min-width: 9rem;
 }
 .gate-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* volume grouping + fiction typography */
+.rail-volume {
+  margin: 1.1rem 0 .3rem; font-size: .74rem; letter-spacing: .06em;
+  color: var(--ink-faint); text-transform: none;
+}
+.rail-inner > .rail-volume:first-of-type { margin-top: .4rem; }
+.toc-volume {
+  margin: 1.6rem 0 .35rem; font-family: var(--font-serif); font-size: .95rem;
+  color: var(--ink-soft);
+}
+.toc-list + .toc-volume { margin-top: 1.8rem; }
+.novel-series { margin: 0 0 .25rem; font-size: .8rem; color: var(--ink-faint); letter-spacing: .02em; }
+.novel-subtle { margin: .5rem 0 0; font-size: .82rem; color: var(--ink-faint); }
+.lang-tag {
+  font-size: .72rem; border: 1px solid var(--rule); border-radius: 999px;
+  padding: .05rem .45rem; color: var(--ink-faint);
+}
+.scene-break {
+  text-align: center; margin: 2em 0; color: var(--ink-faint);
+  letter-spacing: .6em; text-indent: 0 !important;
+}
+.fiction-prose blockquote {
+  font-style: normal; background: var(--tint); border-left-color: var(--accent);
+  padding: .9em 1.1em; border-radius: 0 var(--radius) var(--radius) 0;
+}
+.fiction-prose blockquote p { text-indent: 0; margin-bottom: .5em; }
+.fiction-prose blockquote p:last-child { margin-bottom: 0; }

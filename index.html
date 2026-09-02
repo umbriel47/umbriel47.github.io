@@ -13,7 +13,7 @@ sitemap: false
   <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
   <link rel="alternate" hreflang="zh-Hans" href="{{ '/zh/' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <script>
     (function () {
       try {

@@ -6,3 +6,6 @@ vendor
 
 # Resolved per-machine: the local Ruby here is much older than CI's.
 Gemfile.lock
+
+# Abstract cache for script/sync_publications.py
+script/.publications_cache.json
