@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Resolved per-machine: the local Ruby here is much older than CI's.
+Gemfile.lock
