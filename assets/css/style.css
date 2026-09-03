@@ -463,3 +463,28 @@ html[lang^="zh"] .fiction-prose p { text-indent: 2em; }
 }
 .fiction-prose blockquote p { text-indent: 0; margin-bottom: .5em; }
 .fiction-prose blockquote p:last-child { margin-bottom: 0; }
+
+/* long-form technical posts: wider column for figures and tables, while the
+   running text keeps its reading measure */
+.prose-page.is-wide { max-width: 60rem; }
+.prose-page.is-wide .prose > figure,
+.prose-page.is-wide .prose > table,
+.prose-page.is-wide .prose > pre { max-width: 100%; }
+
+.prose figure { margin: 2.2em 0; }
+.prose figure img {
+  width: 100%; border: 1px solid var(--rule-soft); border-radius: var(--radius);
+  background: #fff;
+}
+.prose figcaption {
+  margin-top: .6rem; font-family: var(--font-sans); font-size: .82rem;
+  line-height: 1.55; color: var(--ink-faint);
+}
+
+.standfirst {
+  margin: 0 0 2.4rem; padding-left: 1rem; border-left: 2px solid var(--rule);
+  font-family: var(--font-sans); font-size: .875rem; line-height: 1.6;
+  color: var(--ink-soft); max-width: 46rem;
+}
+.standfirst p { margin: 0 0 .3rem; }
+.standfirst p:last-child { margin-bottom: 0; }

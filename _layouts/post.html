@@ -18,7 +18,7 @@ layout: default
   {%- endfor -%}
 {%- endif -%}
 
-<article class="wrap prose-page h-entry">
+<article class="wrap prose-page h-entry{% if page.wide %} is-wide{% endif %}">
   <header class="page-head">
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
