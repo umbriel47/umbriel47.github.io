@@ -488,3 +488,17 @@ html[lang^="zh"] .fiction-prose p { text-indent: 2em; }
 }
 .standfirst p { margin: 0 0 .3rem; }
 .standfirst p:last-child { margin-bottom: 0; }
+
+/* a display equation without pulling in a maths typesetter for one formula */
+.prose .equation {
+  margin: 1.6em 0; padding: .9em 1rem; background: var(--tint);
+  border-radius: var(--radius); text-align: center;
+  font-family: var(--font-serif); font-size: 1.02rem; text-indent: 0;
+}
+
+/* a lead image sits above the first heading, so it carries no caption */
+.prose-page .prose > figure.lead { margin-top: 0; }
+figure.lead { margin: 0 0 2.4rem; }
+figure.lead img {
+  width: 100%; border: 1px solid var(--rule-soft); border-radius: var(--radius);
+}
