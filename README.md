@@ -97,6 +97,26 @@ Edit `_data/arts.yml` and `_data/music.yml`. Art images go in
 GitHub Pages caps a site at roughly 1 GB with a 100 MB limit per file, so host
 large audio externally and use `embed:`.
 
+## WeChat
+
+No URL opens a WeChat account, so the entry point is a QR code the reader
+scans. `wechat` in `_config.yml` holds the account name, id and image paths.
+The QR was generated from the id via `open.weixin.qq.com/qr/code?username=<id>`
+and is committed rather than hot-linked, so no visitor IP reaches Tencent and
+the image cannot break underneath us. Regenerate it the same way if the account
+changes.
+
+It appears in three places: a labelled item in the footer on every page (a
+`<details>` disclosure, so it works without JavaScript), a compact card on each
+language's home page, and a full card at the end of every post — the last being
+the highest-intent moment.
+
+A post that first appeared on the account can set `wechat_url` in its front
+matter; the card then credits the account and links to the original.
+
+Scanning happens inside WeChat, so it cannot be measured. Only the "read the
+original" link is instrumented, as `/wechat/original`.
+
 ## Analytics
 
 Configured in `_config.yml` under `analytics`, and loaded **only** when

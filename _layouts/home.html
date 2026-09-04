@@ -9,6 +9,7 @@ layout: default
   <h1 class="hero-title">{{ page.heading | default: site.title }}</h1>
   {%- if page.subtitle %}<p class="hero-sub">{{ page.subtitle }}</p>{% endif -%}
   <div class="prose hero-bio">{{ content }}</div>
+  {%- include wechat-card.html lang=lang compact=true -%}
 </section>
 
 <section class="wrap section">

@@ -4,7 +4,7 @@
   params: lang
 {%- endcomment -%}
 {%- assign t = site.data.i18n[include.lang] -%}
-<aside class="wechat-card" aria-label="{{ t.ui.wechat }}">
+<aside class="wechat-card{% if include.compact %} is-compact{% endif %}" aria-label="{{ t.ui.wechat }}">
   <img class="wechat-card-qr" src="{{ site.wechat.qr | relative_url }}"
        alt="{{ t.ui.wechat_scan }}" loading="lazy" width="132" height="132">
   <div class="wechat-card-body">

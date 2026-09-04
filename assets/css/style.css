@@ -550,3 +550,21 @@ figure.lead img {
   /* keep the popover inside the viewport at the right-hand end of the row */
   .wechat-pop-panel { left: auto; right: 0; transform: none; }
 }
+
+/* The WeChat entry carries a visible label: a bare glyph among three other
+   glyphs is not discoverable, and a QR needs a word to explain itself. */
+.wechat-pop > summary { gap: .35rem; align-items: center; }
+.wechat-pop-label {
+  font-family: var(--font-sans); font-size: .8rem; line-height: 1;
+  white-space: nowrap;
+}
+.footer-social .wechat-pop { line-height: 1; }
+
+/* Compact variant for the home page, above the post list. */
+.wechat-card.is-compact {
+  margin: 2rem 0 0; padding: .9rem 1rem; gap: 1rem; max-width: var(--measure);
+}
+.wechat-card.is-compact .wechat-card-qr { width: 92px; height: 92px; }
+.wechat-card.is-compact .wechat-card-blurb { font-size: .86rem; margin-bottom: .35rem; }
+.wechat-card.is-compact .wechat-card-avatar { width: 28px; height: 28px; }
+.wechat-card.is-compact .wechat-card-name { font-size: .93rem; }
