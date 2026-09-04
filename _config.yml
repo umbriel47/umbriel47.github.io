@@ -43,6 +43,21 @@ plugins:
 feed:
   path: feed.xml
 
+# ---------------------------------------------------------------------------
+# Analytics
+# ---------------------------------------------------------------------------
+# Cookieless, aggregate-only. Nothing is stored in the visitor's browser, so no
+# consent banner is required. The script is loaded ONLY when JEKYLL_ENV is
+# production, so local previews never reach the counter.
+#
+# provider: goatcounter | umami | cloudflare | ""   ("" disables analytics)
+# site:     GoatCounter subdomain, Umami website id, or Cloudflare token
+# host:     self-hosted instance, if any (Umami / GoatCounter)
+analytics:
+  provider: goatcounter
+  site: ""            # <- your GoatCounter code, e.g. "aicracker"
+  host: ""
+
 sass:
   style: compressed
 

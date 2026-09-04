@@ -16,7 +16,9 @@ layout: default
     {%- for w in works -%}
       <li class="art-item">
         <figure>
-          <a href="{{ w.image | relative_url }}" target="_blank" rel="noopener">
+          <a href="{{ w.image | relative_url }}" target="_blank" rel="noopener"
+             data-track="/art/{{ w.key }}"
+             data-track-title="Art — {{ w.title.en | default: w.title[lang] | escape }}">
             <img src="{{ w.thumb | default: w.image | relative_url }}" alt="{{ w.title[lang] | default: w.title.en }}" loading="lazy">
           </a>
           <figcaption>

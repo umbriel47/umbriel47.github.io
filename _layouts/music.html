@@ -32,7 +32,9 @@ layout: default
           assets/audio (`audio:`) or an external player (`embed:`).
         {%- endcomment -%}
         {%- if r.audio -%}
-          <audio controls preload="none" src="{{ r.audio | relative_url }}">
+          <audio controls preload="none" src="{{ r.audio | relative_url }}"
+                 data-track="/music/{{ r.key }}"
+                 data-track-title="Music — {{ r.title.en | default: r.title[lang] | escape }}">
             <a href="{{ r.audio | relative_url }}">{{ t.ui.listen }}</a>
           </audio>
         {%- elsif r.embed -%}
@@ -42,7 +44,9 @@ layout: default
                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>
         {%- elsif r.link -%}
-          <p class="music-links"><a href="{{ r.link }}" target="_blank" rel="noopener">{{ t.ui.listen }} →</a></p>
+          <p class="music-links"><a href="{{ r.link }}" target="_blank" rel="noopener"
+             data-track="/music/{{ r.key }}"
+             data-track-title="Music — {{ r.title.en | default: r.title[lang] | escape }}">{{ t.ui.listen }} →</a></p>
         {%- endif -%}
       </li>
     {%- endfor -%}

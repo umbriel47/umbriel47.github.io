@@ -1,0 +1,59 @@
+{%- comment -%}
+  Loaded only in production, and only once `analytics.site` is filled in.
+  Every provider here is cookieless and stores no per-visitor identifier, so
+  the site needs no consent banner. If the script is blocked — by an ad
+  blocker, or from a network where the provider is unreachable — the page is
+  unaffected and the visit simply goes uncounted.
+{%- endcomment -%}
+{%- if jekyll.environment == "production" and site.analytics.site != "" -%}
+  {%- assign p = site.analytics.provider -%}
+
+  {%- if p == "goatcounter" -%}
+    {%- comment -%} A self-hosted `host` is used as-is; otherwise build the
+       hosted subdomain from `site`. {%- endcomment -%}
+    {%- if site.analytics.host and site.analytics.host != "" -%}
+      {%- assign gc = site.analytics.host -%}
+    {%- else -%}
+      {%- assign gc = "https://" | append: site.analytics.site | append: ".goatcounter.com" -%}
+    {%- endif -%}
+    <script>
+      window.goatcounter = { no_onload: true };
+      window.__analytics = {
+        provider: 'goatcounter',
+        event: function (name, title) {
+          if (window.goatcounter && window.goatcounter.count) {
+            window.goatcounter.count({ path: name, title: title || name, event: true });
+          }
+        }
+      };
+    </script>
+    <script data-goatcounter="{{ gc }}/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        if (window.goatcounter && window.goatcounter.count) window.goatcounter.count();
+      });
+    </script>
+
+  {%- elsif p == "umami" -%}
+    {%- if site.analytics.host and site.analytics.host != "" -%}
+      {%- assign um = site.analytics.host -%}
+    {%- else -%}
+      {%- assign um = "https://cloud.umami.is" -%}
+    {%- endif -%}
+    <script defer src="{{ um }}/script.js" data-website-id="{{ site.analytics.site }}"></script>
+    <script>
+      window.__analytics = {
+        provider: 'umami',
+        event: function (name, title) {
+          if (window.umami) window.umami.track(name, { title: title || name });
+        }
+      };
+    </script>
+
+  {%- elsif p == "cloudflare" -%}
+    {%- comment -%} Cloudflare Web Analytics has no custom-event API. {%- endcomment -%}
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "{{ site.analytics.site }}"}'></script>
+    <script>window.__analytics = { provider: 'cloudflare', event: function () {} };</script>
+  {%- endif -%}
+{%- endif -%}

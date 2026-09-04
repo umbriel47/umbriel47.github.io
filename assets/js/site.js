@@ -40,5 +40,31 @@
     });
   });
 
+  // Custom analytics events. Arts and Music are single pages, so a page view
+  // cannot attribute interest to one artwork or one track; an explicit
+  // interaction can. Fires only if an analytics provider actually loaded —
+  // when the script is blocked, these are silent no-ops.
+  function track(el) {
+    var a = window.__analytics;
+    if (!a || !a.event) return;
+    var name = el.getAttribute('data-track');
+    if (!name) return;
+    try { a.event(name, el.getAttribute('data-track-title')); } catch (e) {}
+  }
+
+  document.querySelectorAll('a[data-track]').forEach(function (el) {
+    el.addEventListener('click', function () { track(el); });
+  });
+
+  document.querySelectorAll('audio[data-track]').forEach(function (el) {
+    // `play` fires on every resume; count the track once per page view.
+    var counted = false;
+    el.addEventListener('play', function () {
+      if (counted) return;
+      counted = true;
+      track(el);
+    });
+  });
+
   void stored;
 })();

@@ -97,6 +97,43 @@ Edit `_data/arts.yml` and `_data/music.yml`. Art images go in
 GitHub Pages caps a site at roughly 1 GB with a 100 MB limit per file, so host
 large audio externally and use `embed:`.
 
+## Analytics
+
+Configured in `_config.yml` under `analytics`, and loaded **only** when
+`JEKYLL_ENV=production` — a local preview never reaches the counter.
+
+```yaml
+analytics:
+  provider: goatcounter   # goatcounter | umami | cloudflare | "" to disable
+  site: "aicracker"       # GoatCounter subdomain / Umami website id / CF token
+  host: ""                # set only for a self-hosted instance
+```
+
+All three providers are cookieless and store no per-visitor identifier, so the
+site needs no consent banner. If the script is blocked — by an ad blocker, or
+from a network where the provider is unreachable — the page is unaffected and
+the visit simply goes uncounted. Expect the totals to be an undercount.
+
+**Per-item events.** Arts and Music are one page each, so a page view cannot
+say *which* artwork or track drew attention. The layouts tag those elements
+with `data-track="/art/<key>"` and `data-track-title`, and `assets/js/site.js`
+fires an event when an artwork is opened full size or a track is played. Adding
+an item to `_data/arts.yml` or `_data/music.yml` needs no further wiring — the
+`key` is the event name. Externally embedded players (`embed:`) cannot be
+tracked; only local `audio:` files and outbound `link:` clicks are.
+
+**Reporting.** Each article exists twice, at `/en/blog/<slug>/` and
+`/zh/blog/<slug>/`, which analytics counts as two pages:
+
+```sh
+export GOATCOUNTER_SITE=aicracker
+export GOATCOUNTER_TOKEN=...        # Settings -> API tokens
+python3 script/traffic_report.py --days 30
+```
+
+merges the pair on the shared slug so one article reads as one number, while
+still showing the language split.
+
 ## Deployment
 
 Pushing to `branch2022` runs `.github/workflows/pages.yml`: build with Jekyll,
