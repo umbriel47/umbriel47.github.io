@@ -1,0 +1,29 @@
+{%- comment -%}
+  End-of-post call to action. Placed here because it is the highest-intent
+  moment: the reader has just finished the piece.
+  params: lang
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+<aside class="wechat-card" aria-label="{{ t.ui.wechat }}">
+  <img class="wechat-card-qr" src="{{ site.wechat.qr | relative_url }}"
+       alt="{{ t.ui.wechat_scan }}" loading="lazy" width="132" height="132">
+  <div class="wechat-card-body">
+    <div class="wechat-card-head">
+      <img class="wechat-card-avatar" src="{{ site.wechat.avatar | relative_url }}"
+           alt="" loading="lazy" width="34" height="34">
+      <div>
+        <p class="wechat-card-name">{{ site.wechat.name }}</p>
+        <p class="wechat-card-kicker">{{ t.ui.wechat }}</p>
+      </div>
+    </div>
+    <p class="wechat-card-blurb">{{ t.ui.wechat_blurb }}</p>
+    {%- if page.wechat_url -%}
+      <p class="wechat-card-link">
+        {{ t.ui.wechat_first }}「{{ site.wechat.name }}」·
+        <a href="{{ page.wechat_url }}" target="_blank" rel="noopener"
+           data-track="/wechat/original" data-track-title="WeChat — read original">{{ t.ui.wechat_read_original }} →</a>
+      </p>
+    {%- endif -%}
+    <p class="wechat-card-scan">{{ t.ui.wechat_scan }}</p>
+  </div>
+</aside>

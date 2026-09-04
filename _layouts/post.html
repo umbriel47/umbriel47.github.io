@@ -38,6 +38,8 @@ layout: default
     {{ content }}
   </div>
 
+  {%- include wechat-card.html lang=lang -%}
+
   <footer class="post-foot">
     <a class="back-link" href="{{ '/' | append: lang | append: '/blog/' | relative_url }}">← {{ t.ui.back_to_blog }}</a>
   </footer>

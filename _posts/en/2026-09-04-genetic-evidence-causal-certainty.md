@@ -6,6 +6,7 @@ lang: en
 ref: genetic-evidence-causal-certainty
 tags: [science]
 wide: true
+wechat_url: "https://mp.weixin.qq.com/s/eXH1YdOY9u3OfIHdgFilLQ"
 description: "Splitting the composite claim that genetic evidence doubles drug success into two stages — getting started and getting through. The effect sits almost entirely in the first; what does the work is certainty about the causal gene, not the statistical strength of the association."
 ---
 

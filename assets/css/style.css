@@ -502,3 +502,51 @@ figure.lead { margin: 0 0 2.4rem; }
 figure.lead img {
   width: 100%; border: 1px solid var(--rule-soft); border-radius: var(--radius);
 }
+
+/* --- WeChat: end-of-post card and footer popover ------------------------- */
+/* There is no URL that opens a WeChat account, so the entry point is a QR
+   code the reader scans with the app. */
+
+.wechat-card {
+  display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap;
+  margin: 3.2rem 0 0; padding: 1.2rem 1.3rem;
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  background: var(--bg-raise);
+}
+.wechat-card-qr {
+  width: 132px; height: 132px; flex: none; border-radius: 4px;
+  background: #fff; padding: 4px;
+}
+.wechat-card-body { flex: 1 1 15rem; min-width: 0; }
+.wechat-card-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .5rem; }
+.wechat-card-avatar { width: 34px; height: 34px; border-radius: 50%; flex: none; }
+.wechat-card-name {
+  margin: 0; font-family: var(--font-serif); font-weight: 600; font-size: 1rem;
+}
+.wechat-card-kicker { margin: 0; font-size: .72rem; color: var(--ink-faint); letter-spacing: .04em; }
+.wechat-card-blurb { margin: 0 0 .5rem; font-size: .9rem; color: var(--ink-soft); }
+.wechat-card-link { margin: 0 0 .4rem; font-size: .84rem; color: var(--ink-faint); }
+.wechat-card-scan { margin: 0; font-size: .78rem; color: var(--ink-faint); }
+
+.wechat-pop { position: relative; line-height: 0; }
+.wechat-pop > summary {
+  list-style: none; cursor: pointer; color: var(--ink-faint); display: inline-flex;
+}
+.wechat-pop > summary::-webkit-details-marker { display: none; }
+.wechat-pop > summary:hover, .wechat-pop[open] > summary { color: var(--accent); }
+.wechat-pop-panel {
+  position: absolute; bottom: calc(100% + .7rem); left: 50%; transform: translateX(-50%);
+  background: var(--bg-raise); border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: .7rem; text-align: center; line-height: 1.4; z-index: 30;
+  box-shadow: 0 10px 30px rgba(0,0,0,.14);
+}
+.wechat-pop-panel img { width: 128px; height: 128px; background: #fff; border-radius: 3px; }
+.wechat-pop-name { margin: .45rem 0 0; font-size: .85rem; font-family: var(--font-serif); font-weight: 600; }
+.wechat-pop-scan { margin: .1rem 0 0; font-size: .72rem; color: var(--ink-faint); white-space: nowrap; }
+
+@media (max-width: 560px) {
+  .wechat-card { gap: 1rem; }
+  .wechat-card-qr { width: 108px; height: 108px; }
+  /* keep the popover inside the viewport at the right-hand end of the row */
+  .wechat-pop-panel { left: auto; right: 0; transform: none; }
+}

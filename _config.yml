@@ -16,6 +16,16 @@ author:
 github_username: umbriel47
 linkedin_url: "https://www.linkedin.com/in/lipenglai/"
 
+# WeChat official account. There is no URL that opens an account, so the entry
+# point is a QR code the reader scans. `qr` was generated from `id` via
+# https://open.weixin.qq.com/qr/code?username=<id> and is served locally rather
+# than hot-linked, so no visitor IP reaches Tencent and the image cannot break.
+wechat:
+  name: "一目半"
+  id: "gh_16d891c75cca"
+  qr: /assets/img/wechat/yimuban-qr.jpg
+  avatar: /assets/img/wechat/yimuban-avatar.png
+
 # ---------------------------------------------------------------------------
 # Languages
 # ---------------------------------------------------------------------------

@@ -6,6 +6,7 @@ lang: zh
 ref: genetic-evidence-causal-certainty
 tags: [science]
 wide: true
+wechat_url: "https://mp.weixin.qq.com/s/eXH1YdOY9u3OfIHdgFilLQ"
 description: "把「遗传学证据使药物成功率翻倍」这个复合结局拆成入场端与推进端两段。效应主要在入场端；起作用的维度是因果基因的确定性，而非关联的统计强度。"
 ---
 

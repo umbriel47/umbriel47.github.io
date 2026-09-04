@@ -48,6 +48,13 @@ en:
     toggle_theme: Toggle colour scheme
     skip_to_content: Skip to content
     contact: Elsewhere
+    wechat: WeChat
+    wechat_follow: "Follow 一目半 on WeChat"
+    wechat_scan: Scan with WeChat to follow
+    wechat_blurb: >-
+      Essays here also go out on my WeChat account, usually in Chinese first.
+    wechat_first: First published on WeChat
+    wechat_read_original: Read the original
     copyright: All rights reserved.
 
 zh:
@@ -99,4 +106,11 @@ zh:
     toggle_theme: 切换配色
     skip_to_content: 跳到正文
     contact: 联系方式
+    wechat: 微信公众号
+    wechat_follow: "关注公众号「一目半」"
+    wechat_scan: 微信扫码关注
+    wechat_blurb: >-
+      这里的文章也会发在公众号上，通常中文版先发。
+    wechat_first: 本文首发于公众号
+    wechat_read_original: 阅读原文
     copyright: 版权所有。
