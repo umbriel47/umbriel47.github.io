@@ -105,7 +105,7 @@ Configured in `_config.yml` under `analytics`, and loaded **only** when
 ```yaml
 analytics:
   provider: goatcounter   # goatcounter | umami | cloudflare | "" to disable
-  site: "aicracker"       # GoatCounter subdomain / Umami website id / CF token
+  site: "umbriel"         # GoatCounter subdomain / Umami website id / CF token
   host: ""                # set only for a self-hosted instance
 ```
 
@@ -122,11 +122,17 @@ an item to `_data/arts.yml` or `_data/music.yml` needs no further wiring — the
 `key` is the event name. Externally embedded players (`embed:`) cannot be
 tracked; only local `audio:` files and outbound `link:` clicks are.
 
+GoatCounter's script deliberately ignores `localhost` and `127.0.0.1`, so the
+setup cannot be confirmed from a local preview — check the dashboard after the
+first deploy. The 404 page is counted too, since that is how broken inbound
+links surface; the root language gate is not, because it redirects immediately
+and would double-count every landing.
+
 **Reporting.** Each article exists twice, at `/en/blog/<slug>/` and
 `/zh/blog/<slug>/`, which analytics counts as two pages:
 
 ```sh
-export GOATCOUNTER_SITE=aicracker
+export GOATCOUNTER_SITE=umbriel
 export GOATCOUNTER_TOKEN=...        # Settings -> API tokens
 python3 script/traffic_report.py --days 30
 ```

@@ -16,22 +16,22 @@
     {%- else -%}
       {%- assign gc = "https://" | append: site.analytics.site | append: ".goatcounter.com" -%}
     {%- endif -%}
+    {%- comment -%}
+      count.js is async and records the pageview itself. Do NOT set
+      `no_onload` and call count() on window load instead: the script can
+      finish loading after that event has already fired, losing the pageview.
+    {%- endcomment -%}
+    <script data-goatcounter="{{ gc }}/count" async src="//gc.zgo.at/count.js"></script>
     <script>
-      window.goatcounter = { no_onload: true };
       window.__analytics = {
         provider: 'goatcounter',
+        // Custom events fire on user interaction, long after count.js is ready.
         event: function (name, title) {
           if (window.goatcounter && window.goatcounter.count) {
             window.goatcounter.count({ path: name, title: title || name, event: true });
           }
         }
       };
-    </script>
-    <script data-goatcounter="{{ gc }}/count" async src="//gc.zgo.at/count.js"></script>
-    <script>
-      window.addEventListener('load', function () {
-        if (window.goatcounter && window.goatcounter.count) window.goatcounter.count();
-      });
     </script>
 
   {%- elsif p == "umami" -%}

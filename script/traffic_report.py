@@ -20,7 +20,7 @@ import urllib.parse
 import urllib.request
 from datetime import date, timedelta
 
-SITE = os.environ.get("GOATCOUNTER_SITE", "")
+SITE = os.environ.get("GOATCOUNTER_SITE", "umbriel")
 TOKEN = os.environ.get("GOATCOUNTER_TOKEN", "")
 
 # /en/blog/<slug>/ and /zh/blog/<slug>/ are one piece of content.

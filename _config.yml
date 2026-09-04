@@ -55,7 +55,7 @@ feed:
 # host:     self-hosted instance, if any (Umami / GoatCounter)
 analytics:
   provider: goatcounter
-  site: ""            # <- your GoatCounter code, e.g. "aicracker"
+  site: "umbriel"     # https://umbriel.goatcounter.com
   host: ""
 
 sass:
