@@ -106,10 +106,11 @@ and is committed rather than hot-linked, so no visitor IP reaches Tencent and
 the image cannot break underneath us. Regenerate it the same way if the account
 changes.
 
-It appears in three places: a labelled item in the footer on every page (a
-`<details>` disclosure, so it works without JavaScript), a compact card on each
-language's home page, and a full card at the end of every post — the last being
-the highest-intent moment.
+It appears in three places: an icon in the footer on every page (a `<details>`
+disclosure, so it works without JavaScript), a compact card on each language's
+home page, and a full card at the end of every post — the last being the
+highest-intent moment. The home-page card is what makes the account
+discoverable; the footer icon only has to sit quietly alongside the others.
 
 A post that first appeared on the account can set `wechat_url` in its front
 matter; the card then credits the account and links to the original.

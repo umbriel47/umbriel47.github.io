@@ -551,14 +551,8 @@ figure.lead img {
   .wechat-pop-panel { left: auto; right: 0; transform: none; }
 }
 
-/* The WeChat entry carries a visible label: a bare glyph among three other
-   glyphs is not discoverable, and a QR needs a word to explain itself. */
-.wechat-pop > summary { gap: .35rem; align-items: center; }
-.wechat-pop-label {
-  font-family: var(--font-sans); font-size: .8rem; line-height: 1;
-  white-space: nowrap;
-}
-.footer-social .wechat-pop { line-height: 1; }
+/* The footer icon carries no label — the home-page card is what makes the
+   account discoverable, so this one only has to sit quietly with the others. */
 
 /* Compact variant for the home page, above the post list. */
 .wechat-card.is-compact {
