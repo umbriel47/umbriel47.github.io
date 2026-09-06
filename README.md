@@ -89,10 +89,10 @@ script.
 
 ### Charts in a post
 
-A post imported from WeChat keeps the author's original chart images in the
-Chinese version. The English version needs the labels in English, so those
-charts are rebuilt by `script/make_charts.py` as SVG under
-`_includes/charts/<post>/` and inlined with `{% include %}`.
+Charts imported from WeChat arrive as raster images with the labels burnt in,
+so they cannot be translated or themed. `script/make_charts.py` rebuilds them
+as SVG in both languages under `_includes/charts/<post>/{en,zh}/`, and the
+posts inline them with `{% include %}`.
 
 Inlined, not referenced through `<img>`: an SVG loaded via `<img>` is an
 isolated document, so it cannot see the page's `data-theme` and would not
@@ -102,6 +102,15 @@ both backgrounds.
 
 Every chart already prints its own title, so those figures carry no
 `<figcaption>` — it would repeat the same sentence twice.
+
+### Quotes in Chinese posts
+
+Kramdown infers quote direction from surrounding whitespace. Chinese has none,
+so a straight `"` becomes a closing quote at both ends. `script/fix_cjk_quotes.py`
+converts straight pairs in `_posts/zh/` to proper curly ones, masking fenced
+code, `{% highlight %}` blocks, indented code, inline code and HTML tags first —
+a quote inside a shell command is syntax, not punctuation. Run it after
+importing Chinese prose from anywhere.
 
 ### Art and music
 

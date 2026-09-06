@@ -1,26 +1,29 @@
 #!/usr/bin/env python3
-"""Generate the English charts for the AI-lag post as inline SVG.
+"""Generate the charts for the AI-lag post as inline SVG, in both languages.
 
     python3 script/make_charts.py
 
-The Chinese post keeps the author's original PNGs. The English versions are
-rebuilt here so the labels can be in English — and as SVG rather than raster,
-so they stay sharp and inherit the page's ink colour, which means they follow
-the site's light/dark toggle. They are inlined via {% include %}: an SVG
+Written as SVG rather than raster so the labels stay sharp and, more usefully,
+so text and axes can be currentColor: inlined via {% include %} the charts
+inherit the page's ink colour and follow the site's light/dark toggle. An SVG
 referenced through <img> is an isolated document and cannot see the toggle.
 
 Series colours are fixed and chosen to hold up on both backgrounds; everything
 else (text, axes, grid) is currentColor.
 """
 import os
+import sys
 
-OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                   "_includes", "charts", "ai-lag")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LANGS = ("en", "zh")
 
 PURPLE, LAV = "#5b4fc4", "#c3bcee"
 ORANGE, BLUE, GREEN, AMBER = "#d95f2b", "#2274bd", "#17a07a", "#c08419"
+# The CJK families are appended for both languages: an English chart may still
+# contain a Chinese glyph, and the fallback costs nothing.
 FONT = ('font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\','
-        "'Helvetica Neue',Arial,sans-serif\"")
+        "'Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB',"
+        "'Microsoft YaHei','Noto Sans CJK SC',sans-serif\"")
 
 
 def svg(w, h, body, desc):
@@ -51,51 +54,141 @@ def rect(x, y, w, h, fill, extra=""):
         x, y, max(w, 0), max(h, 0), fill, extra)
 
 
-def write(name, s):
-    open(os.path.join(OUT, name), "w", encoding="utf-8").write(s)
-    print("  %-12s %5d bytes" % (name, len(s)))
+def write(lang, name, s):
+    d = os.path.join(ROOT, "_includes", "charts", "ai-lag", lang)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, name), "w", encoding="utf-8").write(s)
+    print("  %s/%-9s %5d bytes" % (lang, name, len(s)))
+
+
+# ---------------------------------------------------------------------------
+# Label table. The Chinese strings are the ones on the author's original
+# charts; the English are their translations.
+# ---------------------------------------------------------------------------
+STR = {
+ "en": {
+  "f1_title": "Three industrial revolutions and AI: the lag from commercialisation "
+              "to broad adoption and measured productivity",
+  "f1_rows": [("Steam (UK)", "1776 Watt engine → 1850–1870 peak"),
+              ("Electricity (US)", "1882 Pearl Street → 1920s jump"),
+              ("IT (US)", "1981 PC → 1995–2005 acceleration"),
+              ("AI (projected)", "2022 ChatGPT → 2032–2035 deployment")],
+  "f1_years": "%d years", "f1_x": "Years from commercialisation",
+  "f1_leg1": "Commercialisation → adoption threshold",
+  "f1_leg2": "Adoption threshold → productivity visible",
+  "f2_title": "Britain's fixed power: steam vs water (Kanefsky / Crafts)",
+  "f2_steam": "Steam", "f2_water": "Water (approx.)",
+  "f2_y": "Installed horsepower, thousands (log scale)",
+  "f2_note": "Watt's patent 1769 → level pegging around 1830 → "
+             "high-pressure steam delivers after 1850",
+  "f3_title": "The same machine, different factor prices (Allen 2009)",
+  "f3_note": "Britain ~20,000 jennies by 1788; France ~900 by 1790; India 0",
+  "f3_y": "Return on investment in a spinning jenny (%)",
+  "f3_bars": [("Britain", "≈38%"), ("France", "≈9%"), ("India", "negative")],
+  "f4_title": "US manufacturing electrification: productivity only jumps once "
+              "the share passes about 50%",
+  "f4_sub": "Devine 1983 / David 1990",
+  "f4_a1": "1900–19: motors bolted to the line shaft",
+  "f4_a2": "or group drive — TFP under 1%/yr",
+  "f4_b1": "1919–29: unit drive spreads", "f4_b2": "manufacturing TFP above 5%/yr",
+  "f4_y": "Electric motors as a share of manufacturing mechanical power (%)",
+  "f5_title": "US firms using AI (Census BTOS, Dec 2025 – May 2026)",
+  "f5_rows": ["1–4 employees", "All firms", "Employment-weighted",
+              "100–249 employees", "250+ employees",
+              "Information / professional\nservices / finance, large firms"],
+  "f5_x": "Share of firms using AI in production over the previous two weeks",
+  "f5_note": "57% of adopters use it in three or fewer business functions — "
+             "shallow, “bolted to the line shaft” adoption",
+  "f6_title": "Capex of the four hyperscalers (2023–24 approximate)",
+  "f6_note": "Installation-period signature: financial capital leads, infrastructure "
+             "is built ahead of demand, power becomes the binding constraint",
+  "f6_y": "US$ billions",
+  "f7_title": "The AI wave's productivity J-curve and Perez phases "
+              "(synthesised projection, schematic)",
+  "f7_bands": [("Installation, early", "Compute arms race"),
+               ("Bottleneck and turn", "Energy and data bind, valuations reset"),
+               ("Organisational rebuild", "Unit-drive-style redesign"),
+               ("Full deployment", "TFP shows up")],
+  "f7_trough": "J-curve trough: complementary intangible investment is expensed, "
+               "not capitalised",
+  "f7_y": "Measured productivity contribution (schematic)",
+ },
+ "zh": {
+  "f1_title": "三次工业革命与 AI：从商业化到广泛采用与生产率显现的迟滞",
+  "f1_rows": [("蒸汽（英国）", "1776 首台商用瓦特机 → 1850–1870 贡献峰值"),
+              ("电力（美国）", "1882 珍珠街 → 1920s 生产率跃升"),
+              ("信息技术（美国）", "1981 PC → 1995–2005 生产率加速"),
+              ("AI（预测）", "2022 ChatGPT → 2032–2035 部署期")],
+  "f1_years": "%d 年", "f1_x": "自商业化起点起的年数",
+  "f1_leg1": "商业化 → 采用临界", "f1_leg2": "采用临界 → 生产率显现",
+  "f2_title": "英国固定动力：蒸汽 vs 水力（Kanefsky / Crafts）",
+  "f2_steam": "蒸汽", "f2_water": "水力（约）",
+  "f2_y": "装机马力（千，对数轴）",
+  "f2_note": "瓦特专利 1769 → 1830 年前后持平 → 1850 年后高压蒸汽兑现潜力",
+  "f3_title": "同一台机器，不同要素价格下的回报（Allen 2009）",
+  "f3_note": "英国 1788 年约 20,000 台；法国 1790 年约 900 台；印度 0",
+  "f3_y": "珍妮纺纱机投资回报率（%）",
+  "f3_bars": [("英国", "≈38%"), ("法国", "≈9%"), ("印度", "为负")],
+  "f4_title": "美国制造业电气化：份额跨过约 50% 后生产率才跃升",
+  "f4_sub": "Devine 1983 / David 1990",
+  "f4_a1": "1900–19：电机接总轴／分组驱动", "f4_a2": "TFP 年增 <1%",
+  "f4_b1": "1919–29：单机驱动普及", "f4_b2": "制造业 TFP 年增 >5%",
+  "f4_y": "电动机占制造业机械动力比例（%）",
+  "f5_title": "美国企业 AI 使用率（Census BTOS，2025.12–2026.05）",
+  "f5_rows": ["1–4 人", "总体", "就业加权", "100–249 人", "250 人以上",
+              "信息／专业服务／金融\n大企业"],
+  "f5_x": "过去两周在业务职能中使用 AI 的企业比例",
+  "f5_note": "采用者中 57% 仅在 ≤3 个业务职能使用 ——「接总轴」式浅层采用",
+  "f6_title": "四大超大规模云厂商资本开支（2023–24 为约数）",
+  "f6_note": "安装期特征：金融资本主导、基础设施超前建设；电力成为硬约束",
+  "f6_y": "十亿美元",
+  "f7_title": "AI 浪潮的生产力 J 曲线与 Perez 阶段（融合预测，示意）",
+  "f7_bands": [("安装期初期", "算力军备竞赛"),
+               ("瓶颈与转折", "能源／数据掣肘，估值调整"),
+               ("组织重构期", "单机驱动式重建"),
+               ("全面部署期", "TFP 显现")],
+  "f7_trough": "J 曲线谷底：互补无形投资被记为费用",
+  "f7_y": "可测生产率贡献（示意）",
+ },
+}
 
 
 # --- fig 1: lag from commercialisation to productivity ---------------------
-def fig1():
-    rows = [("Steam (UK)", 54, 25, "1776 Watt engine → 1850–1870 peak"),
-            ("Electricity (US)", 37, 6, "1882 Pearl Street → 1920s jump"),
-            ("IT (US)", 14, 5, "1981 PC → 1995–2005 acceleration"),
-            ("AI (projected)", 8, 3, "2022 ChatGPT → 2032–2035 deployment")]
+def fig1(lang):
+    T = STR[lang]
+    spans = [(54, 25), (37, 6), (14, 5), (8, 3)]
     W, H = 1080, 510
     x0, x1, top, bh, gap = 190, 940, 74, 40, 58
     sx = (x1 - x0) / 100.0
-    b = [txt(150, 34, "Three industrial revolutions and AI: the lag from commercialisation "
-                      "to broad adoption and measured productivity", 17, weight="600")]
-    for i, (lab, a, c, note) in enumerate(rows):
+    b = [txt(150, 34, T["f1_title"], 17, weight="600")]
+    for i, ((lab, note), (a, c)) in enumerate(zip(T["f1_rows"], spans)):
         y = top + i * (bh + gap)
         b.append(txt(x0 - 14, y + bh / 2 + 5, lab, 14, "end"))
         b.append(rect(x0, y, a * sx, bh, LAV))
         b.append(rect(x0 + a * sx, y, c * sx, bh, PURPLE))
-        b.append('  <text x="%.1f" y="%.1f" font-size="14" text-anchor="middle" fill="#2b2560">%d years</text>'
-                 % (x0 + a * sx / 2, y + bh / 2 + 5, a))
-        b.append('  <text x="%.1f" y="%.1f" font-size="13" text-anchor="middle" fill="#ffffff">+%d</text>'
-                 % (x0 + a * sx + c * sx / 2, y + bh / 2 + 5, c))
+        b.append(txt(x0 + a * sx / 2, y + bh / 2 + 5, T["f1_years"] % a, 14, "middle",
+                     fill="#2b2560"))
+        b.append(txt(x0 + a * sx + c * sx / 2, y + bh / 2 + 5, "+%d" % c, 13, "middle",
+                     fill="#ffffff"))
         b.append(txt(x0 + (a + c) * sx + 12, y + bh / 2 + 5, note, 12.5, op=".6"))
     ay = top + 4 * (bh + gap) - gap + 22
     b.append(line(x0, ay, x1, ay, ".35"))
     for v in range(0, 101, 20):
         b.append(line(x0 + v * sx, ay, x0 + v * sx, ay + 6, ".35"))
         b.append(txt(x0 + v * sx, ay + 24, str(v), 13, "middle", op=".7"))
-    b.append(txt((x0 + x1) / 2, ay + 48, "Years from commercialisation", 13, "middle", op=".7"))
+    b.append(txt((x0 + x1) / 2, ay + 48, T["f1_x"], 13, "middle", op=".7"))
     lx, ly = x0 + 430, top + 3 * (bh + gap) - 16
     b.append(rect(lx, ly, 22, 12, LAV))
-    b.append(txt(lx + 30, ly + 11, "Commercialisation → adoption threshold", 12.5, op=".75"))
+    b.append(txt(lx + 30, ly + 11, T["f1_leg1"], 12.5, op=".75"))
     b.append(rect(lx, ly + 22, 22, 12, PURPLE))
-    b.append(txt(lx + 30, ly + 33, "Adoption threshold → productivity visible", 12.5, op=".75"))
-    return svg(W, H, "\n".join(b),
-               "Bar chart of the lag from commercialisation to measured productivity for steam, "
-               "electricity, IT and AI")
+    b.append(txt(lx + 30, ly + 33, T["f1_leg2"], 12.5, op=".75"))
+    return svg(W, H, "\n".join(b), T["f1_title"])
 
 
 # --- fig 2: steam vs water, log scale --------------------------------------
-def fig2():
+def fig2(lang):
     import math
+    T = STR[lang]
     data = [("1800", 35, 120), ("1830", 160, 165), ("1870", 1700, 230)]
     W, H = 1080, 560
     x0, x1, ytop, ybot = 150, 1030, 78, 452
@@ -104,7 +197,7 @@ def fig2():
     def ypx(v):
         return ybot - (math.log10(v) - lo) / (hi - lo) * (ybot - ytop)
 
-    b = [txt(110, 36, "Britain's fixed power: steam vs water (Kanefsky / Crafts)", 17, weight="600")]
+    b = [txt(110, 36, T["f2_title"], 17, weight="600")]
     for e in (2, 3):
         for m in (1, 2, 3, 5):
             v = m * 10 ** e
@@ -115,30 +208,27 @@ def fig2():
     b.append(line(x0, ytop, x0, ybot, ".35"))
     b.append(line(x0, ybot, x1, ybot, ".35"))
     gw = (x1 - x0) / 3.0
-    for i, (yr, s, w) in enumerate(data):
+    for i, (yr, st, wt) in enumerate(data):
         cx = x0 + gw * (i + .5)
-        for j, (v, col) in enumerate(((s, ORANGE), (w, BLUE))):
+        for j, (v, col) in enumerate(((st, ORANGE), (wt, BLUE))):
             bx = cx - 130 + j * 132
             b.append(rect(bx, ypx(v), 118, ybot - ypx(v), col))
             b.append(txt(bx + 59, ypx(v) - 10, "%dk" % v, 13.5, "middle", weight="600"))
         b.append(txt(cx, ybot + 28, yr, 15, "middle"))
     b.append(rect(x0 + 28, ytop + 12, 24, 14, ORANGE))
-    b.append(txt(x0 + 60, ytop + 24, "Steam", 14))
+    b.append(txt(x0 + 60, ytop + 24, T["f2_steam"], 14))
     b.append(rect(x0 + 28, ytop + 38, 24, 14, BLUE))
-    b.append(txt(x0 + 60, ytop + 50, "Water (approx.)", 14))
-    b.append(txt(38, 300, "Installed horsepower, thousands (log scale)", 13, "middle",
-                 op=".75", extra=' transform="rotate(-90 38 300)"'))
-    b.append(txt((x0 + x1) / 2, ybot + 66,
-                 "Watt's patent 1769 → level pegging around 1830 → "
-                 "high-pressure steam delivers after 1850", 13, "middle", op=".65"))
-    return svg(W, H, "\n".join(b),
-               "Bar chart comparing installed steam and water horsepower in Britain in 1800, 1830 and 1870")
+    b.append(txt(x0 + 60, ytop + 50, T["f2_water"], 14))
+    b.append(txt(38, 300, T["f2_y"], 13, "middle", op=".75",
+                 extra=' transform="rotate(-90 38 300)"'))
+    b.append(txt((x0 + x1) / 2, ybot + 66, T["f2_note"], 13, "middle", op=".65"))
+    return svg(W, H, "\n".join(b), T["f2_title"])
 
 
 # --- fig 3: Allen factor prices --------------------------------------------
-def fig3():
-    data = [("Britain", 38, GREEN, "≈38%"), ("France", 9, AMBER, "≈9%"),
-            ("India", -3.5, ORANGE, "negative")]
+def fig3(lang):
+    T = STR[lang]
+    vals = [(38, GREEN), (9, AMBER), (-3.5, ORANGE)]
     W, H = 1080, 560
     x0, x1, ytop, ybot = 140, 1030, 96, 470
     vmax, vmin = 45, -10
@@ -146,28 +236,29 @@ def fig3():
     def ypx(v):
         return ybot - (v - vmin) / (vmax - vmin) * (ybot - ytop)
 
-    b = [txt(120, 36, "The same machine, different factor prices (Allen 2009)", 17, weight="600"),
-         txt(160, 74, "Britain ~20,000 jennies by 1788; France ~900 by 1790; India 0", 13, op=".6")]
+    b = [txt(120, 36, T["f3_title"], 17, weight="600"),
+         txt(160, 74, T["f3_note"], 13, op=".6")]
     for v in range(-10, 41, 10):
         b.append(line(x0, ypx(v), x1, ypx(v), ".08"))
         b.append(txt(x0 - 12, ypx(v) + 5, str(v), 13, "end", op=".7"))
     zero = ypx(0)
     b.append(line(x0, zero, x1, zero, ".45"))
     gw = (x1 - x0) / 3.0
-    for i, (lab, v, col, note) in enumerate(data):
+    for i, ((lab, note), (v, col)) in enumerate(zip(T["f3_bars"], vals)):
         cx = x0 + gw * (i + .5)
         y = ypx(v) if v > 0 else zero
         b.append(rect(cx - 90, y, 180, abs(ypx(v) - zero), col))
-        b.append(txt(cx, (ypx(v) - 12) if v > 0 else (ypx(v) + 26), note, 15, "middle", weight="600"))
+        b.append(txt(cx, (ypx(v) - 12) if v > 0 else (ypx(v) + 26), note, 15, "middle",
+                     weight="600"))
         b.append(txt(cx, ybot + 30, lab, 15, "middle"))
-    b.append(txt(28, 290, "Return on investment in a spinning jenny (%)", 13, "middle",
-                 op=".75", extra=' transform="rotate(-90 28 290)"'))
-    return svg(W, H, "\n".join(b),
-               "Bar chart of the return on investment in a spinning jenny in Britain, France and India")
+    b.append(txt(28, 290, T["f3_y"], 13, "middle", op=".75",
+                 extra=' transform="rotate(-90 28 290)"'))
+    return svg(W, H, "\n".join(b), T["f3_title"])
 
 
 # --- fig 4: US electrification ---------------------------------------------
-def fig4():
+def fig4(lang):
+    T = STR[lang]
     pts = [(1899, 5), (1909, 25), (1919, 53), (1929, 78)]
     W, H = 1080, 560
     x0, x1, ytop, ybot = 150, 1020, 88, 470
@@ -178,9 +269,8 @@ def fig4():
     def ypx(v):
         return ybot - v / 90.0 * (ybot - ytop)
 
-    b = [txt(130, 34, "US manufacturing electrification: productivity only jumps once the "
-                      "share passes about 50%", 17, weight="600"),
-         txt(130, 56, "Devine 1983 / David 1990", 13, op=".6")]
+    b = [txt(130, 34, T["f4_title"], 17, weight="600"),
+         txt(130, 56, T["f4_sub"], 13, op=".6")]
     b.append(rect(xpx(1919), ytop, xpx(1929) - xpx(1919), ybot - ytop, GREEN,
                   ' fill-opacity=".12"'))
     for v in range(0, 81, 20):
@@ -195,54 +285,47 @@ def fig4():
         b.append('  <circle cx="%.1f" cy="%.1f" r="6" fill="%s"/>' % (xpx(y), ypx(v), PURPLE))
         b.append(txt(xpx(y), ypx(v) - 16, "%d%%" % v, 14, "middle", weight="600"))
         b.append(txt(xpx(y), ybot + 30, str(y), 15, "middle"))
-    b.append(txt(xpx(1904) + 20, ypx(62), "1900–19: motors bolted to the line shaft", 13, "middle", op=".7"))
-    b.append(txt(xpx(1904) + 20, ypx(56), "or group drive — TFP under 1%/yr", 13, "middle", op=".7"))
-    b.append(txt((xpx(1919) + xpx(1929)) / 2, ytop + 24, "1919–29: unit drive spreads", 13, "middle",
+    b.append(txt(xpx(1904) + 20, ypx(62), T["f4_a1"], 13, "middle", op=".7"))
+    b.append(txt(xpx(1904) + 20, ypx(56), T["f4_a2"], 13, "middle", op=".7"))
+    b.append(txt((xpx(1919) + xpx(1929)) / 2, ytop + 24, T["f4_b1"], 13, "middle",
                  weight="600", op=".85"))
-    b.append(txt((xpx(1919) + xpx(1929)) / 2, ytop + 42, "manufacturing TFP above 5%/yr", 13, "middle",
-                 op=".8"))
-    b.append(txt(30, 290, "Electric motors as a share of manufacturing mechanical power (%)", 12.5,
-                 "middle", op=".75", extra=' transform="rotate(-90 30 290)"'))
-    return svg(W, H, "\n".join(b),
-               "Line chart of electric motors as a share of US manufacturing power, 1899 to 1929")
+    b.append(txt((xpx(1919) + xpx(1929)) / 2, ytop + 42, T["f4_b2"], 13, "middle", op=".8"))
+    b.append(txt(30, 290, T["f4_y"], 12.5, "middle", op=".75",
+                 extra=' transform="rotate(-90 30 290)"'))
+    return svg(W, H, "\n".join(b), T["f4_title"])
 
 
 # --- fig 5: AI adoption -----------------------------------------------------
-def fig5():
-    rows = [("1–4 employees", 18, "<20%", "#cfcbc4"),
-            ("All firms", 18.5, "17–20%", "#8b8781"),
-            ("Employment-weighted", 32, "32%", PURPLE),
-            ("100–249 employees", 32, "32%", PURPLE),
-            ("250+ employees", 37, "37%", PURPLE),
-            ("Information / professional\nservices / finance, large firms", 55, "50–60%", GREEN)]
+def fig5(lang):
+    T = STR[lang]
+    vals = [(18, "<20%", "#cfcbc4"), (18.5, "17–20%", "#8b8781"),
+            (32, "32%", PURPLE), (32, "32%", PURPLE), (37, "37%", PURPLE),
+            (55, "50–60%", GREEN)]
     W, H = 1080, 560
     x0, x1, top, bh, gap = 330, 950, 92, 34, 26
     sx = (x1 - x0) / 70.0
-    b = [txt(300, 36, "US firms using AI (Census BTOS, Dec 2025 – May 2026)", 17, weight="600")]
-    for i, (lab, v, note, col) in enumerate(rows):
+    b = [txt(300, 36, T["f5_title"], 17, weight="600")]
+    for i, (lab, (v, note, col)) in enumerate(zip(T["f5_rows"], vals)):
         y = top + i * (bh + gap)
         lines = lab.split("\n")
         for k, l in enumerate(lines):
             b.append(txt(x0 - 16, y + bh / 2 + 5 - (len(lines) - 1) * 8 + k * 16, l, 13.5, "end"))
         b.append(rect(x0, y, v * sx, bh, col))
         b.append(txt(x0 + v * sx + 12, y + bh / 2 + 5, note, 13.5, weight="600"))
-    ay = top + len(rows) * (bh + gap) - gap + 16
+    ay = top + len(vals) * (bh + gap) - gap + 16
     b.append(line(x0, ay, x1, ay, ".35"))
     for v in range(0, 71, 10):
         b.append(line(x0 + v * sx, ay, x0 + v * sx, ay + 6, ".35"))
         b.append(txt(x0 + v * sx, ay + 24, str(v), 13, "middle", op=".7"))
-    b.append(txt((x0 + x1) / 2, ay + 48,
-                 "Share of firms using AI in production over the previous two weeks", 13, "middle", op=".7"))
+    b.append(txt((x0 + x1) / 2, ay + 48, T["f5_x"], 13, "middle", op=".7"))
     # The original had this note overlapping the bar labels; it sits on its own line here.
-    b.append(txt(300, 64,
-                 "57% of adopters use it in three or fewer business functions — shallow, "
-                 "“bolted to the line shaft” adoption", 13, op=".6"))
-    return svg(W, H, "\n".join(b),
-               "Bar chart of the share of US firms using AI, by firm size and sector")
+    b.append(txt(300, 64, T["f5_note"], 13, op=".6"))
+    return svg(W, H, "\n".join(b), T["f5_title"])
 
 
 # --- fig 6: hyperscaler capex ----------------------------------------------
-def fig6():
+def fig6(lang):
+    T = STR[lang]
     data = [("2023", 150, LAV, "≈150"), ("2024", 230, LAV, "≈230"),
             ("2025", 388, PURPLE, "388"), ("2026E", 630, ORANGE, "≈630")]
     W, H = 1080, 560
@@ -251,9 +334,8 @@ def fig6():
     def ypx(v):
         return ybot - v / 700.0 * (ybot - ytop)
 
-    b = [txt(130, 36, "Capex of the four hyperscalers (2023–24 approximate)", 17, weight="600"),
-         txt(180, 74, "Installation-period signature: financial capital leads, infrastructure is built "
-                      "ahead of demand, power becomes the binding constraint", 12.5, op=".6")]
+    b = [txt(130, 36, T["f6_title"], 17, weight="600"),
+         txt(180, 74, T["f6_note"], 12.5, op=".6")]
     for v in range(0, 701, 100):
         b.append(line(x0, ypx(v), x1, ypx(v), ".08"))
         b.append(txt(x0 - 12, ypx(v) + 5, str(v), 13, "end", op=".7"))
@@ -264,26 +346,24 @@ def fig6():
         b.append(rect(cx - 80, ypx(v), 160, ybot - ypx(v), col))
         b.append(txt(cx, ypx(v) - 12, note, 15, "middle", weight="600"))
         b.append(txt(cx, ybot + 30, lab, 15, "middle"))
-    b.append(txt(28, 290, "US$ billions", 13, "middle", op=".75",
+    b.append(txt(28, 290, T["f6_y"], 13, "middle", op=".75",
                  extra=' transform="rotate(-90 28 290)"'))
-    return svg(W, H, "\n".join(b), "Bar chart of combined capital expenditure by the four hyperscalers")
+    return svg(W, H, "\n".join(b), T["f6_title"])
 
 
 # --- fig 7: J curve ---------------------------------------------------------
-def fig7():
+def fig7(lang):
+    T = STR[lang]
     W, H = 1080, 500
     x0, x1, ytop, ybot = 110, 1040, 60, 410
 
     def xpx(y):
         return x0 + (y - 2022) / 14.0 * (x1 - x0)
 
-    bands = [(2022, 2025.5, "#8b8781", "Installation, early", "Compute arms race"),
-             (2025.5, 2028.5, ORANGE, "Bottleneck and turn", "Energy and data bind, valuations reset"),
-             (2028.5, 2031.5, PURPLE, "Organisational rebuild", "Unit-drive-style redesign"),
-             (2031.5, 2036, GREEN, "Full deployment", "TFP shows up")]
-    b = [txt(90, 30, "The AI wave's productivity J-curve and Perez phases "
-                     "(synthesised projection, schematic)", 16, weight="600")]
-    for a, c, col, t1, t2 in bands:
+    spans = [(2022, 2025.5, "#8b8781"), (2025.5, 2028.5, ORANGE),
+             (2028.5, 2031.5, PURPLE), (2031.5, 2036, GREEN)]
+    b = [txt(90, 30, T["f7_title"], 16, weight="600")]
+    for (a, c, col), (t1, t2) in zip(spans, T["f7_bands"]):
         b.append(rect(xpx(a), ytop, xpx(c) - xpx(a), ybot - ytop, col, ' fill-opacity=".10"'))
         mid = (xpx(a) + xpx(c)) / 2
         b.append(txt(mid, ytop + 22, t1, 13, "middle", weight="600", op=".85"))
@@ -298,22 +378,20 @@ def fig7():
                  xpx(2024), base + 6, xpx(2026.2), base + 78, xpx(2027.4), base + 82,
                  xpx(2029.4), base + 40, xpx(2030.2), base - 30,
                  xpx(2033), base - 120, xpx(2036), base - 128, PURPLE))
-    b.append(txt(xpx(2027.4), base + 102,
-                 "J-curve trough: complementary intangible investment is expensed, not capitalised",
-                 12.5, "middle", op=".7", fill=ORANGE))
+    b.append(txt(xpx(2027.4), base + 102, T["f7_trough"], 12.5, "middle", op=".7",
+                 fill=ORANGE))
     b.append(line(x0, ybot, x1, ybot, ".35"))
     for y in range(2022, 2037, 2):
         b.append(line(xpx(y), ybot, xpx(y), ybot + 6, ".35"))
         b.append(txt(xpx(y), ybot + 26, str(y), 13, "middle", op=".7"))
-    b.append(txt(26, 235, "Measured productivity contribution (schematic)", 12.5, "middle",
-                 op=".75", extra=' transform="rotate(-90 26 235)"'))
-    return svg(W, H, "\n".join(b),
-               "Schematic J-curve of AI productivity with four Perez phases from 2022 to 2036")
+    b.append(txt(26, 235, T["f7_y"], 12.5, "middle", op=".75",
+                 extra=' transform="rotate(-90 26 235)"'))
+    return svg(W, H, "\n".join(b), T["f7_title"])
 
 
 if __name__ == "__main__":
-    os.makedirs(OUT, exist_ok=True)
-    for n, f in (("fig1.svg", fig1), ("fig2.svg", fig2), ("fig3.svg", fig3),
-                 ("fig4.svg", fig4), ("fig5.svg", fig5), ("fig6.svg", fig6),
-                 ("fig7.svg", fig7)):
-        write(n, f())
+    for lang in LANGS:
+        for n, f in (("fig1.svg", fig1), ("fig2.svg", fig2), ("fig3.svg", fig3),
+                     ("fig4.svg", fig4), ("fig5.svg", fig5), ("fig6.svg", fig6),
+                     ("fig7.svg", fig7)):
+            write(lang, n, f(lang))

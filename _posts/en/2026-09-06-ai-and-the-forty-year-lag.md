@@ -25,7 +25,7 @@ That year the IBM PC had been on sale for six years and corporate IT spending wa
 This is not peculiar to computers. Wind back a century: the electric motor had a commercial grid from 1882, but in 1899 motors accounted for only 5% of the mechanical power in American factories, and manufacturing productivity did not jump until the 1920s. Further back still, Watt received his patent for the separate condenser in 1769, but steam did not overtake water power until the 1830s — and steam's peak contribution to British growth came roughly a century after Watt's invention.
 
 <figure>
-  {%- include charts/ai-lag/fig1.svg -%}
+  {%- include charts/ai-lag/en/fig1.svg -%}
 </figure>
 
 Every time a general-purpose technology appears, it goes through a long lag in which the technology already exists but the returns refuse to arrive. Sixty years, forty, twenty — the lag is shortening, but it has never gone to zero.
@@ -39,7 +39,7 @@ The story of the steam engine shows better than any other how far apart "the tec
 The Newcomen engine could pump water out of mines by 1712, but it burned coal so extravagantly that it was only worth running at the pithead, where coal was effectively free. Watt's separate condenser improved thermal efficiency enormously — and even so, Britain's installed steam capacity in 1800 was only about 35,000 horsepower against well over a hundred thousand for water. The reason is simple: in most places, water was cheaper.
 
 <figure>
-  {%- include charts/ai-lag/fig2.svg -%}
+  {%- include charts/ai-lag/en/fig2.svg -%}
 </figure>
 
 For steam to take off, a whole series of things outside the steam engine itself had to arrive:
@@ -55,7 +55,7 @@ The economic historian Robert Allen adds a sharper explanation: where a technolo
 Eighteenth-century Britain had expensive labour, cheap coal and cheap capital, which made substituting machines for people the best deal available. The same spinning jenny returned about 38% on investment in Britain, about 9% in France, and a negative return in India. The result: roughly twenty thousand jennies in Britain by 1788, about nine hundred in France by 1790, and none at all in India.
 
 <figure>
-  {%- include charts/ai-lag/fig3.svg -%}
+  {%- include charts/ai-lag/en/fig3.svg -%}
 </figure>
 
 This explains two things. First, invention has a direction — people in high-wage regions set out to invent labour-saving machines. Second, diffusion has a threshold: a new technology is initially profitable only in a narrow niche, and the niche widens only as a long series of small improvements reduces its dependence on the expensive factor. The steam engine's route — from the pithead, to the Cornish tin mines where there was no coal but coal prices were highest, then to all of Britain and the world — is exactly that widening niche.
@@ -69,7 +69,7 @@ The story of electricity shows something else: even once a technology pays, the 
 In his classic 1990 paper *The Dynamo and the Computer*, Paul David set out a series of figures: electric motors as a share of mechanical power in US manufacturing were about 5% in 1899, 25% in 1909, 53% in 1919 and 78% in 1929. Manufacturing total factor productivity grew by less than 1% a year from 1900 to 1919 — then jumped above 5% between 1919 and 1929.
 
 <figure>
-  {%- include charts/ai-lag/fig4.svg -%}
+  {%- include charts/ai-lag/en/fig4.svg -%}
 </figure>
 
 Why did productivity not move until the motor's share passed half?
@@ -123,7 +123,7 @@ The technology appeared with deep learning in 2012 and the Transformer in 2017. 
 The adoption data supports that reading. US Census Bureau business surveys show that between late 2025 and mid-2026, the share of firms using AI in production ran between 17% and 20%; about 37% among firms with more than 250 employees; and 50–60% among large firms in information, professional services and finance. But 57% of adopters use it in three or fewer business functions — writing emails, drafting marketing copy, answering customer questions. This looks a great deal like electricity in 1909: the share is no longer small, but the use is mostly the shallow, bolted-to-the-line-shaft kind.
 
 <figure>
-  {%- include charts/ai-lag/fig5.svg -%}
+  {%- include charts/ai-lag/en/fig5.svg -%}
 </figure>
 
 The micro-level productivity evidence is very Solow-like too. A Danish study covering 25,000 workers across 7,000 workplaces found that AI chat tools saved about 3% of working hours on average, with a precisely zero effect on earnings and hours worked. Individual adoption has genuinely broken records — ChatGPT passed a hundred million users in two months, and within two years roughly four in ten working-age Americans had used it — but fast individual adoption is not fast organisational adoption.
@@ -131,7 +131,7 @@ The micro-level productivity evidence is very Solow-like too. A Danish study cov
 The capital cycle is in the middle of its installation phase. The four largest hyperscalers plan roughly $630 billion of combined capital expenditure in 2026, more than 60% above 2025. That is the classic signature of an installation period: financial capital in the lead, infrastructure built ahead of demand, valuations detached from cash flow.
 
 <figure>
-  {%- include charts/ai-lag/fig6.svg -%}
+  {%- include charts/ai-lag/en/fig6.svg -%}
 </figure>
 
 But one thing is completely unlike the information revolution: energy is once again a hard constraint. The core inputs of the software era were talent and venture capital, and the marginal capital requirement was very low. AI's frontier threshold is fixed capital in the tens of billions, and data-centre power demand is racing grid expansion — Microsoft has disclosed an $80 billion backlog of cloud orders constrained by power supply rather than by demand. Structurally this resembles the first and second industrial revolutions far more than the third.
@@ -149,7 +149,7 @@ The two camps can in fact be reconciled by the J-curve: Acemoglu is describing t
 Combining the tempo of the three revolutions with current adoption, capital and energy data, a synthesised projection looks like this:
 
 <figure>
-  {%- include charts/ai-lag/fig7.svg -%}
+  {%- include charts/ai-lag/en/fig7.svg -%}
 </figure>
 
 - **2022–2025, early installation:** a compute arms race, with firms running scattered pilots.

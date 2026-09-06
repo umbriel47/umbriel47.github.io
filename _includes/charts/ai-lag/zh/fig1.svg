@@ -1,0 +1,46 @@
+<svg class="chart" viewBox="0 0 1080 510" role="img" aria-label="三次工业革命与 AI：从商业化到广泛采用与生产率显现的迟滞" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>三次工业革命与 AI：从商业化到广泛采用与生产率显现的迟滞</title>
+  <text x="150.0" y="34.0" font-size="17" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">三次工业革命与 AI：从商业化到广泛采用与生产率显现的迟滞</text>
+  <text x="176.0" y="99.0" font-size="14" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">蒸汽（英国）</text>
+  <rect x="190.0" y="74.0" width="405.0" height="40.0" fill="#c3bcee"/>
+  <rect x="595.0" y="74.0" width="187.5" height="40.0" fill="#5b4fc4"/>
+  <text x="392.5" y="99.0" font-size="14" text-anchor="middle" font-weight="400" fill="#2b2560" fill-opacity="1">54 年</text>
+  <text x="688.8" y="99.0" font-size="13" text-anchor="middle" font-weight="400" fill="#ffffff" fill-opacity="1">+25</text>
+  <text x="794.5" y="99.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">1776 首台商用瓦特机 → 1850–1870 贡献峰值</text>
+  <text x="176.0" y="197.0" font-size="14" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">电力（美国）</text>
+  <rect x="190.0" y="172.0" width="277.5" height="40.0" fill="#c3bcee"/>
+  <rect x="467.5" y="172.0" width="45.0" height="40.0" fill="#5b4fc4"/>
+  <text x="328.8" y="197.0" font-size="14" text-anchor="middle" font-weight="400" fill="#2b2560" fill-opacity="1">37 年</text>
+  <text x="490.0" y="197.0" font-size="13" text-anchor="middle" font-weight="400" fill="#ffffff" fill-opacity="1">+6</text>
+  <text x="524.5" y="197.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">1882 珍珠街 → 1920s 生产率跃升</text>
+  <text x="176.0" y="295.0" font-size="14" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">信息技术（美国）</text>
+  <rect x="190.0" y="270.0" width="105.0" height="40.0" fill="#c3bcee"/>
+  <rect x="295.0" y="270.0" width="37.5" height="40.0" fill="#5b4fc4"/>
+  <text x="242.5" y="295.0" font-size="14" text-anchor="middle" font-weight="400" fill="#2b2560" fill-opacity="1">14 年</text>
+  <text x="313.8" y="295.0" font-size="13" text-anchor="middle" font-weight="400" fill="#ffffff" fill-opacity="1">+5</text>
+  <text x="344.5" y="295.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">1981 PC → 1995–2005 生产率加速</text>
+  <text x="176.0" y="393.0" font-size="14" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">AI（预测）</text>
+  <rect x="190.0" y="368.0" width="60.0" height="40.0" fill="#c3bcee"/>
+  <rect x="250.0" y="368.0" width="22.5" height="40.0" fill="#5b4fc4"/>
+  <text x="220.0" y="393.0" font-size="14" text-anchor="middle" font-weight="400" fill="#2b2560" fill-opacity="1">8 年</text>
+  <text x="261.2" y="393.0" font-size="13" text-anchor="middle" font-weight="400" fill="#ffffff" fill-opacity="1">+3</text>
+  <text x="284.5" y="393.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">2022 ChatGPT → 2032–2035 部署期</text>
+  <line x1="190.0" y1="430.0" x2="940.0" y2="430.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <line x1="190.0" y1="430.0" x2="190.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="190.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">0</text>
+  <line x1="340.0" y1="430.0" x2="340.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="340.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">20</text>
+  <line x1="490.0" y1="430.0" x2="490.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="490.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">40</text>
+  <line x1="640.0" y1="430.0" x2="640.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="640.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">60</text>
+  <line x1="790.0" y1="430.0" x2="790.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="790.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">80</text>
+  <line x1="940.0" y1="430.0" x2="940.0" y2="436.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="940.0" y="454.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">100</text>
+  <text x="565.0" y="478.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">自商业化起点起的年数</text>
+  <rect x="620.0" y="352.0" width="22.0" height="12.0" fill="#c3bcee"/>
+  <text x="650.0" y="363.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".75">商业化 → 采用临界</text>
+  <rect x="620.0" y="374.0" width="22.0" height="12.0" fill="#5b4fc4"/>
+  <text x="650.0" y="385.0" font-size="12" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".75">采用临界 → 生产率显现</text>
+</svg>
