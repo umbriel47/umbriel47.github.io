@@ -1,0 +1,42 @@
+<svg class="chart" viewBox="0 0 1080 560" role="img" aria-label="Bar chart of the share of US firms using AI, by firm size and sector" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <title>Bar chart of the share of US firms using AI, by firm size and sector</title>
+  <text x="300.0" y="36.0" font-size="17" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">US firms using AI (Census BTOS, Dec 2025 – May 2026)</text>
+  <text x="314.0" y="114.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">1–4 employees</text>
+  <rect x="330.0" y="92.0" width="159.4" height="34.0" fill="#cfcbc4"/>
+  <text x="501.4" y="114.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">&lt;20%</text>
+  <text x="314.0" y="174.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">All firms</text>
+  <rect x="330.0" y="152.0" width="163.9" height="34.0" fill="#8b8781"/>
+  <text x="505.9" y="174.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">17–20%</text>
+  <text x="314.0" y="234.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">Employment-weighted</text>
+  <rect x="330.0" y="212.0" width="283.4" height="34.0" fill="#5b4fc4"/>
+  <text x="625.4" y="234.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">32%</text>
+  <text x="314.0" y="294.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">100–249 employees</text>
+  <rect x="330.0" y="272.0" width="283.4" height="34.0" fill="#5b4fc4"/>
+  <text x="625.4" y="294.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">32%</text>
+  <text x="314.0" y="354.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">250+ employees</text>
+  <rect x="330.0" y="332.0" width="327.7" height="34.0" fill="#5b4fc4"/>
+  <text x="669.7" y="354.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">37%</text>
+  <text x="314.0" y="406.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">Information / professional</text>
+  <text x="314.0" y="422.0" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">services / finance, large firms</text>
+  <rect x="330.0" y="392.0" width="487.1" height="34.0" fill="#17a07a"/>
+  <text x="829.1" y="414.0" font-size="13" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">50–60%</text>
+  <line x1="330.0" y1="442.0" x2="950.0" y2="442.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <line x1="330.0" y1="442.0" x2="330.0" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="330.0" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">0</text>
+  <line x1="418.6" y1="442.0" x2="418.6" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="418.6" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">10</text>
+  <line x1="507.1" y1="442.0" x2="507.1" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="507.1" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">20</text>
+  <line x1="595.7" y1="442.0" x2="595.7" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="595.7" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">30</text>
+  <line x1="684.3" y1="442.0" x2="684.3" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="684.3" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">40</text>
+  <line x1="772.9" y1="442.0" x2="772.9" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="772.9" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">50</text>
+  <line x1="861.4" y1="442.0" x2="861.4" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="861.4" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">60</text>
+  <line x1="950.0" y1="442.0" x2="950.0" y2="448.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <text x="950.0" y="466.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">70</text>
+  <text x="640.0" y="490.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">Share of firms using AI in production over the previous two weeks</text>
+  <text x="300.0" y="64.0" font-size="13" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">57% of adopters use it in three or fewer business functions — shallow, “bolted to the line shaft” adoption</text>
+</svg>

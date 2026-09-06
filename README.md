@@ -87,6 +87,22 @@ scene-break line into a styled element — Kramdown would otherwise read it as a
 empty list item. Volume assignments live in the `VOLUMES` table in that
 script.
 
+### Charts in a post
+
+A post imported from WeChat keeps the author's original chart images in the
+Chinese version. The English version needs the labels in English, so those
+charts are rebuilt by `script/make_charts.py` as SVG under
+`_includes/charts/<post>/` and inlined with `{% include %}`.
+
+Inlined, not referenced through `<img>`: an SVG loaded via `<img>` is an
+isolated document, so it cannot see the page's `data-theme` and would not
+follow the light/dark toggle. Inline, the text and axes are `currentColor` and
+track the theme; only the data series carry fixed colours, chosen to hold up on
+both backgrounds.
+
+Every chart already prints its own title, so those figures carry no
+`<figcaption>` — it would repeat the same sentence twice.
+
 ### Art and music
 
 Edit `_data/arts.yml` and `_data/music.yml`. Art images go in

@@ -562,3 +562,12 @@ figure.lead img {
 .wechat-card.is-compact .wechat-card-blurb { font-size: .86rem; margin-bottom: .35rem; }
 .wechat-card.is-compact .wechat-card-avatar { width: 28px; height: 28px; }
 .wechat-card.is-compact .wechat-card-name { font-size: .93rem; }
+
+/* Inline chart SVGs. Inlined rather than referenced through <img> so they
+   inherit the page's ink colour and follow the light/dark toggle — an SVG
+   loaded via <img> is an isolated document the toggle cannot reach. */
+.prose svg.chart {
+  display: block; width: 100%; height: auto;
+  color: var(--ink);
+}
+.prose figure > svg.chart { margin: 0; }

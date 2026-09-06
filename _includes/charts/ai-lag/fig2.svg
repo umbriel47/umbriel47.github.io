@@ -1,0 +1,35 @@
+<svg class="chart" viewBox="0 0 1080 560" role="img" aria-label="Bar chart comparing installed steam and water horsepower in Britain in 1800, 1830 and 1870" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <title>Bar chart comparing installed steam and water horsepower in Britain in 1800, 1830 and 1870</title>
+  <text x="110.0" y="36.0" font-size="17" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">Britain's fixed power: steam vs water (Kanefsky / Crafts)</text>
+  <line x1="150.0" y1="340.4" x2="1030.0" y2="340.4" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <line x1="150.0" y1="284.5" x2="1030.0" y2="284.5" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <line x1="150.0" y1="251.9" x2="1030.0" y2="251.9" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <line x1="150.0" y1="210.8" x2="1030.0" y2="210.8" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <line x1="150.0" y1="154.9" x2="1030.0" y2="154.9" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <line x1="150.0" y1="99.1" x2="1030.0" y2="99.1" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/>
+  <text x="138.0" y="345.4" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".7">100</text>
+  <text x="138.0" y="159.9" font-size="13" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".7">1,000</text>
+  <line x1="150.0" y1="78.0" x2="150.0" y2="452.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <line x1="150.0" y1="452.0" x2="1030.0" y2="452.0" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+  <rect x="166.7" y="424.9" width="118.0" height="27.1" fill="#d95f2b"/>
+  <text x="225.7" y="414.9" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">35k</text>
+  <rect x="298.7" y="325.7" width="118.0" height="126.3" fill="#2274bd"/>
+  <text x="357.7" y="315.7" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">120k</text>
+  <text x="296.7" y="480.0" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1800</text>
+  <rect x="460.0" y="302.5" width="118.0" height="149.5" fill="#d95f2b"/>
+  <text x="519.0" y="292.5" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">160k</text>
+  <rect x="592.0" y="300.0" width="118.0" height="152.0" fill="#2274bd"/>
+  <text x="651.0" y="290.0" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">165k</text>
+  <text x="590.0" y="480.0" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1830</text>
+  <rect x="753.3" y="112.2" width="118.0" height="339.8" fill="#d95f2b"/>
+  <text x="812.3" y="102.2" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">1700k</text>
+  <rect x="885.3" y="273.3" width="118.0" height="178.7" fill="#2274bd"/>
+  <text x="944.3" y="263.3" font-size="13" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">230k</text>
+  <text x="883.3" y="480.0" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1870</text>
+  <rect x="178.0" y="90.0" width="24.0" height="14.0" fill="#d95f2b"/>
+  <text x="210.0" y="102.0" font-size="14" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Steam</text>
+  <rect x="178.0" y="116.0" width="24.0" height="14.0" fill="#2274bd"/>
+  <text x="210.0" y="128.0" font-size="14" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Water (approx.)</text>
+  <text x="38.0" y="300.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".75" transform="rotate(-90 38 300)">Installed horsepower, thousands (log scale)</text>
+  <text x="590.0" y="518.0" font-size="13" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".65">Watt's patent 1769 → level pegging around 1830 → high-pressure steam delivers after 1850</text>
+</svg>
