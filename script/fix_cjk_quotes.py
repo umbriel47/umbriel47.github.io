@@ -9,9 +9,9 @@ closing quote at both ends — 」四十年」 rather than 「四十年」. Conv
 source to the correct characters sidesteps the guess entirely, and leaves
 English posts (where the inference works) untouched.
 
-Code and HTML are masked before substitution: a straight quote inside a shell
-command, a Ruby snippet or an HTML attribute is syntax, not punctuation, and
-must survive untouched.
+Code, HTML and kramdown attribute lists are masked before substitution: a
+straight quote inside a shell command, a Ruby snippet, an HTML attribute or a
+{: start="5"} is syntax, not punctuation, and must survive untouched.
 """
 import argparse
 import glob
@@ -30,6 +30,7 @@ PROTECT = [
     re.compile(r"^(?:\t| {4,}).*$", re.M),                   # indented code
     re.compile(r"`[^`\n]*`"),                                # inline code
     re.compile(r"<[^>]*>"),                                  # html tags
+    re.compile(r"\{:[^}\n]*\}"),                             # kramdown IAL
 ]
 
 
