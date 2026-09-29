@@ -1,0 +1,56 @@
+<svg class="chart" viewBox="0 0 1080 810" role="img" aria-label="MHS 分层架构：安全限值在设备层强制执行" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>MHS 分层架构：安全限值在设备层强制执行</title>
+  <text x="36" y="44" font-size="19" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">MHS 分层架构：安全限值在设备层强制执行</text>
+  <rect x="36" y="76" width="1008" height="80" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="540" y="108" font-size="17" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">智能体（Claude 或任意模型的 agent harness）</text>
+  <text x="540" y="136" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">推理、规划、读取数据、实时改参数；遇到风险操作可暂停等待人工确认</text>
+  <line x1="196" y1="156" x2="196" y2="176" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M196 182 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="36" y="182" width="320" height="90" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="196" y="218" font-size="17" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">MCP</text>
+  <text x="196" y="248" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">逐步调用，交互式探索</text>
+  <line x1="540" y1="156" x2="540" y2="176" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M540 182 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="380" y="182" width="320" height="90" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="540" y="218" font-size="17" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">命令行 CLI</text>
+  <text x="540" y="248" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">脚本化操作与调试</text>
+  <line x1="884" y1="156" x2="884" y2="176" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M884 182 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="724" y="182" width="320" height="90" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="884" y="218" font-size="17" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">代码文件（API）</text>
+  <text x="884" y="248" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">串联多设备指令，跑长任务</text>
+  <line x1="196" y1="272" x2="196" y2="300" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M196 306 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <line x1="540" y1="272" x2="540" y2="300" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M540 306 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <line x1="884" y1="272" x2="884" y2="300" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M884 306 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="36" y="306" width="1008" height="170" rx="10" fill="#2274bd" fill-opacity=".08" stroke="#2274bd" stroke-opacity="1" stroke-width="2.5"/>
+  <text x="58" y="342" font-size="17" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">MHS 标准驱动（核心层）</text>
+  <text x="58" y="376" font-size="15" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">一小组原语，如 read（读取温度）、write（设定温度）</text>
+  <text x="58" y="402" font-size="15" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">标准化发现 + MHS 状态字典：多程序共享读写设备数据</text>
+  <text x="58" y="428" font-size="15" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">自然语言标签 → 参考文件：能测什么、能调什么、安全限值是多少</text>
+  <text x="58" y="454" font-size="15" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">设备级安全限值：超出厂商规格的指令在执行前被拦截</text>
+  <line x1="540" y1="476" x2="540" y2="504" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M540 510 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="36" y="510" width="1008" height="80" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="540" y="543" font-size="17" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">厂商原生接口</text>
+  <text x="540" y="572" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".7">SDK / API 等；无 API 的仪器可暂以模拟 GUI 操作接入（CMU 案例）</text>
+  <line x1="540" y1="590" x2="540" y2="618" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M540 624 l-5 -8 h10 z" fill="currentColor" fill-opacity=".35"/>
+  <rect x="36" y="624" width="1008" height="128" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5"/>
+  <text x="58" y="656" font-size="17" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">物理设备</text>
+  <rect x="58" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="129" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">移液工作站</text>
+  <rect x="222" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="293" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">读板仪</text>
+  <rect x="386" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="457" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">机械臂</text>
+  <rect x="550" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="621" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">显微镜</text>
+  <rect x="714" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="785" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">激光与光学</text>
+  <rect x="878" y="674" width="142" height="58" rx="10" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5"/>
+  <text x="949" y="709" font-size="15" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">qPCR / 相机</text>
+  <text x="36" y="790" font-size="14" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">长任务由代码串联、设备以原生速度执行；智能体只在需要推理的节点介入</text>
+</svg>
