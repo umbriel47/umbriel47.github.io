@@ -3,10 +3,14 @@ layout: default
 ---
 {%- assign lang = page.lang | default: site.default_lang -%}
 {%- assign t = site.data.i18n[lang] -%}
-{%- assign words = content | strip_html | number_of_words -%}
+{%- comment -%} Plain number_of_words splits on whitespace, which Chinese has
+   none of, so a whole paragraph counted as one word. "cjk" counts each
+   character, which is what the 350-per-minute rate assumes. {%- endcomment -%}
 {%- if lang == 'zh' -%}
+  {%- assign words = content | strip_html | number_of_words: "cjk" -%}
   {%- assign minutes = words | divided_by: 350 | plus: 1 -%}
 {%- else -%}
+  {%- assign words = content | strip_html | number_of_words -%}
   {%- assign minutes = words | divided_by: 220 | plus: 1 -%}
 {%- endif -%}
 
@@ -18,6 +22,22 @@ layout: default
   {%- endfor -%}
 {%- endif -%}
 
+{%- comment -%}
+  Public view count, read from GoatCounter's visitor-counter API ("Allow
+  adding visitor counts on your website" must stay on in its settings). The
+  two language versions are one article, so both paths are summed. Production
+  only, like the tracking script itself; site.js fills it in and leaves it
+  hidden if the request fails or nothing has been counted yet.
+{%- endcomment -%}
+{%- assign counter = nil -%}
+{%- if jekyll.environment == "production" and site.analytics.provider == "goatcounter" and site.analytics.site != "" -%}
+  {%- if site.analytics.host and site.analytics.host != "" -%}
+    {%- assign counter = site.analytics.host -%}
+  {%- else -%}
+    {%- assign counter = "https://" | append: site.analytics.site | append: ".goatcounter.com" -%}
+  {%- endif -%}
+{%- endif -%}
+
 <article class="wrap prose-page h-entry{% if page.wide %} is-wide{% endif %}">
   <header class="page-head">
     <p class="post-meta">
@@ -25,6 +45,7 @@ layout: default
         {%- if lang == 'zh' -%}{{ page.date | date: "%Y年%-m月%-d日" }}{%- else -%}{{ page.date | date: "%B %-d, %Y" }}{%- endif -%}
       </time>
       <span class="dot">·</span>{{ minutes }} {{ t.ui.read_time }}
+      {%- if counter %}<span class="post-views" data-views="{{ counter }}" data-views-paths="{{ page.url }}{% if twin %} {{ twin.url }}{% endif %}" hidden><span class="dot">·</span><span data-views-n></span> {{ t.ui.views }}</span>{% endif -%}
       {%- if twin %}<span class="dot">·</span><a href="{{ twin.url | relative_url }}" lang="{{ site.data.i18n[other].html_lang }}">{{ t.ui.translation_available }}</a>{% endif -%}
     </p>
     <h1 class="page-title p-name">{{ page.title }}</h1>
