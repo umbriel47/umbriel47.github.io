@@ -28,9 +28,9 @@ MHS（Model Hardware Standard，模型硬件标准）是 Anthropic 于 2026 年 
 
 MHS 的官方定义是“一种供 AI 智能体安全操作物理设备的共享规范”，首批面向科研实验室与先进制造商。公开案例涉及显微镜、移液工作站、机械臂、读板仪、qPCR 仪、离心机、相机、激光器等设备。
 
-要解决的问题：实验室或工厂集成一套硬件通常需要数周到数月；设备接口互不兼容，只能依赖专家编写定制集成代码；大量操作知识（安全范围、物理特性）只存在于手册和工程师的经验中。Anthropic 技术人员 Alek Kemeny 表示：“目前没有一种把模型连到物理设备的通用方式。”（据 R&D World）
+**要解决的问题**：实验室或工厂集成一套硬件通常需要数周到数月；设备接口互不兼容，只能依赖专家编写定制集成代码；大量操作知识（安全范围、物理特性）只存在于手册和工程师的经验中。Anthropic 技术人员 Alek Kemeny 表示：“目前没有一种把模型连到物理设备的通用方式。”（据 R&D World）
 
-与 MCP 的关系：MCP（Model Context Protocol，模型上下文协议）负责承载工具调用，MHS 负责描述工具背后的设备——它能测什么、能调什么、有哪些安全限值。按设计，MHS 与模型无关：任何智能体框架都可以通过 MCP、命令行（CLI）或代码 API 访问它。Kemeny 曾把 MCP 比作“AI 连接软件的 USB”（据 Fortune），MHS 可以理解为把这个接口延伸到了硬件。
+**与 MCP 的关系**：MCP（Model Context Protocol，模型上下文协议）负责承载工具调用，MHS 负责描述工具背后的设备——它能测什么、能调什么、有哪些安全限值。按设计，MHS 与模型无关：任何智能体框架都可以通过 MCP、命令行（CLI）或代码 API 访问它。Kemeny 曾把 MCP 比作“AI 连接软件的 USB”（据 Fortune），MHS 可以理解为把这个接口延伸到了硬件。
 
 | 维度 | MCP | MHS |
 |---|---|---|
@@ -83,7 +83,7 @@ Tetsuwan 用 MHS 替换了原有的调度器：实验方案中写明所需离心
 | 2026-06-30 | Claude Science 公测 | 科研工作台：多智能体 + 60 多项技能 + 算力调度，但不含硬件控制 |
 | 2026-08-27 | MHS 研究预览发布；同日发布科学家支持计划 | 首次正式进入物理 AI 领域；与 HHMI Janelia 联合开发 |
 
-起源：MHS 源于 Anthropic Beneficial Deployments 团队的 Alek Kemeny 与 HHMI Janelia Spruston 实验室博士后 Arco Bast 的合作：Bast 为让多台仪器互通而编写的共享内存字典，演变为今天的 MHS 状态字典。立项时间与团队规模未公开。
+**起源**：MHS 源于 Anthropic Beneficial Deployments 团队的 Alek Kemeny 与 HHMI Janelia Spruston 实验室博士后 Arco Bast 的合作：Bast 为让多台仪器互通而编写的共享内存字典，演变为今天的 MHS 状态字典。立项时间与团队规模未公开。
 
 ## 现状：研究预览与首批概念验证
 

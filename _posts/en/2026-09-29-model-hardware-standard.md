@@ -28,9 +28,9 @@ This review makes three main judgments:
 
 The official definition of MHS is "a shared specification for AI agents to safely operate physical equipment", aimed first at research labs and advanced manufacturers. The public cases involve microscopes, liquid-handling workstations, robot arms, plate readers, qPCR machines, centrifuges, cameras and lasers.
 
-The problem it addresses: integrating a set of hardware in a lab or factory usually takes weeks to months. Device interfaces are mutually incompatible, so integration depends on experts writing custom code. Much of the operating knowledge — safe ranges, physical characteristics — lives only in manuals and engineers' experience. Alek Kemeny of Anthropic's technical staff put it this way: "There's currently no universal way to connect a model to physical equipment." (via R&D World)
+**The problem it addresses:** integrating a set of hardware in a lab or factory usually takes weeks to months. Device interfaces are mutually incompatible, so integration depends on experts writing custom code. Much of the operating knowledge — safe ranges, physical characteristics — lives only in manuals and engineers' experience. Alek Kemeny of Anthropic's technical staff put it this way: "There's currently no universal way to connect a model to physical equipment." (via R&D World)
 
-Relationship to MCP: MCP (Model Context Protocol) carries the tool calls; MHS describes the device behind the tool — what it can measure, what it can adjust, what its safety limits are. By design MHS is model-agnostic: any agent framework can reach it through MCP, a command line (CLI) or a code API. Kemeny has compared MCP to "a USB for AI connecting to software" (via Fortune); MHS can be seen as extending that port to hardware.
+**Relationship to MCP:** MCP (Model Context Protocol) carries the tool calls; MHS describes the device behind the tool — what it can measure, what it can adjust, what its safety limits are. By design MHS is model-agnostic: any agent framework can reach it through MCP, a command line (CLI) or a code API. Kemeny has compared MCP to "a USB for AI connecting to software" (via Fortune); MHS can be seen as extending that port to hardware.
 
 | Dimension | MCP | MHS |
 |---|---|---|
@@ -83,7 +83,7 @@ On the timeline, MHS is not an isolated product but the third step on a path Ant
 | 2026-06-30 | Claude Science public beta | Research workbench: multi-agent + 60+ skills + compute scheduling, but no hardware control |
 | 2026-08-27 | MHS research preview; scientist support programme announced the same day | First formal entry into physical AI; co-developed with HHMI Janelia |
 
-Origins: MHS grew out of a collaboration between Alek Kemeny of Anthropic's Beneficial Deployments team and Arco Bast, a postdoc in the Spruston lab at HHMI Janelia. The shared-memory dictionary Bast wrote to get several instruments talking to each other evolved into today's MHS state dictionary. When the project started and how large the team is have not been disclosed.
+**Origins:** MHS grew out of a collaboration between Alek Kemeny of Anthropic's Beneficial Deployments team and Arco Bast, a postdoc in the Spruston lab at HHMI Janelia. The shared-memory dictionary Bast wrote to get several instruments talking to each other evolved into today's MHS state dictionary. When the project started and how large the team is have not been disclosed.
 
 ## Current status: research preview and first proofs of concept
 
