@@ -186,6 +186,14 @@ python3 script/traffic_report.py --days 30
 merges the pair on the shared slug so one article reads as one number, while
 still showing the language split.
 
+**Public view count.** Each post's header shows a view count after the reading
+time, the sum of both language versions. `assets/js/site.js` reads it from
+GoatCounter's public counter (`/counter/<path>.json`), which works only while
+**Settings → Allow adding visitor counts on your website** is on. If the
+request fails or the count is zero, nothing is shown: an ad blocker or an
+unreachable network hides the number rather than displaying a false 0. Like
+the tracking script, the count is rendered only in production builds.
+
 ## Deployment
 
 Pushing to `branch2022` runs `.github/workflows/pages.yml`: build with Jekyll,

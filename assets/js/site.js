@@ -66,5 +66,34 @@
     });
   });
 
+  // Article view count: sum GoatCounter's public counter over every path the
+  // layout lists (an article and its translation). Any failure — blocked,
+  // unreachable, slow — leaves the count hidden rather than showing a wrong 0.
+  document.querySelectorAll('[data-views]').forEach(function (el) {
+    var base = el.getAttribute('data-views');
+    var paths = (el.getAttribute('data-views-paths') || '').split(' ').filter(Boolean);
+    if (!base || !paths.length || !window.fetch) return;
+    var ctrl = window.AbortController ? new AbortController() : null;
+    if (ctrl) setTimeout(function () { ctrl.abort(); }, 6000);
+    Promise.all(paths.map(function (p) {
+      return fetch(base + '/counter/' + encodeURIComponent(p) + '.json',
+                   ctrl ? { signal: ctrl.signal } : {})
+        .then(function (r) {
+          // 404 just means the path has no visits yet.
+          if (r.status === 404) return 0;
+          if (!r.ok) throw new Error(r.status);
+          // Counts arrive as strings formatted with the account's thousands
+          // separator ("1,234" or "1 234"); keep the digits only.
+          return r.json().then(function (j) { return parseInt(String(j.count).replace(/\D/g, ''), 10) || 0; });
+        });
+    })).then(function (counts) {
+      var total = counts.reduce(function (a, b) { return a + b; }, 0);
+      if (!total) return;
+      el.querySelector('[data-views-n]').textContent =
+        total.toLocaleString(document.documentElement.lang || undefined);
+      el.hidden = false;
+    }).catch(function () {});
+  });
+
   void stored;
 })();
