@@ -20,6 +20,7 @@ en:
     read_more: Read
     read_time: min read
     views: views
+    views_one: view
     posted_on: Published
     updated_on: Updated
     no_posts: Nothing here yet.
@@ -78,6 +79,7 @@ zh:
     read_more: 阅读
     read_time: 分钟
     views: 次阅读
+    views_one: 次阅读
     posted_on: 发表于
     updated_on: 更新于
     no_posts: 暂时还没有内容。

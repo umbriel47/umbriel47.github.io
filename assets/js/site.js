@@ -91,6 +91,10 @@
       if (!total) return;
       el.querySelector('[data-views-n]').textContent =
         total.toLocaleString(document.documentElement.lang || undefined);
+      if (total === 1) {
+        var label = el.querySelector('[data-views-label]');
+        label.textContent = label.getAttribute('data-one');
+      }
       el.hidden = false;
     }).catch(function () {});
   });

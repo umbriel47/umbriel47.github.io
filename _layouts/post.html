@@ -45,7 +45,7 @@ layout: default
         {%- if lang == 'zh' -%}{{ page.date | date: "%Y年%-m月%-d日" }}{%- else -%}{{ page.date | date: "%B %-d, %Y" }}{%- endif -%}
       </time>
       <span class="dot">·</span>{{ minutes }} {{ t.ui.read_time }}
-      {%- if counter %}<span class="post-views" data-views="{{ counter }}" data-views-paths="{{ page.url }}{% if twin %} {{ twin.url }}{% endif %}" hidden><span class="dot">·</span><span data-views-n></span> {{ t.ui.views }}</span>{% endif -%}
+      {%- if counter %}<span class="post-views" data-views="{{ counter }}" data-views-paths="{{ page.url }}{% if twin %} {{ twin.url }}{% endif %}" hidden><span class="dot">·</span><span data-views-n></span> <span data-views-label data-one="{{ t.ui.views_one }}">{{ t.ui.views }}</span></span>{% endif -%}
       {%- if twin %}<span class="dot">·</span><a href="{{ twin.url | relative_url }}" lang="{{ site.data.i18n[other].html_lang }}">{{ t.ui.translation_available }}</a>{% endif -%}
     </p>
     <h1 class="page-title p-name">{{ page.title }}</h1>
