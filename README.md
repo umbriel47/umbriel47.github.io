@@ -103,6 +103,11 @@ both backgrounds.
 Every chart already prints its own title, so those figures carry no
 `<figcaption>` — it would repeat the same sentence twice.
 
+A fixed series colour that holds up as a fill or stroke can still be too dark
+to read as *text* on the dark background. Give such text `class="accent-text"`
+and `assets/css/style.css` lightens it in dark mode (CSS beats the SVG's `fill`
+attribute). `script/make_lab_diagrams.py` does this for its purple labels.
+
 ### Quotes in Chinese posts
 
 Kramdown infers quote direction from surrounding whitespace. Chinese has none,

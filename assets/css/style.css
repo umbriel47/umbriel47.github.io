@@ -571,3 +571,10 @@ figure.lead img {
   color: var(--ink);
 }
 .prose figure > svg.chart { margin: 0; }
+/* A chart's fixed accent colour holds up as a fill or stroke on both
+   backgrounds, but as text it is too dark to read on the dark one; text
+   tagged .accent-text gets a lighter shade there. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .prose svg.chart .accent-text { fill: #a99ff0; }
+}
+html[data-theme="dark"] .prose svg.chart .accent-text { fill: #a99ff0; }

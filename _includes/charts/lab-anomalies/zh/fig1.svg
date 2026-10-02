@@ -1,0 +1,26 @@
+<svg class="chart" viewBox="0 0 1080 690" role="img" aria-label="编码是有损转译：操作步骤进入标准化流程，异常感知与情境判断留在漏斗之外" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>编码是有损转译：操作步骤进入标准化流程，异常感知与情境判断留在漏斗之外</title>
+  <rect x="40" y="80" width="300" height="380" rx="14" fill="none" fill-opacity="0" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2"/>
+  <text x="190" y="140" font-size="24" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">手工流程</text>
+  <line x1="80" y1="165" x2="300" y2="165" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="1.5"/>
+  <text x="190" y="214" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">操作步骤</text>
+  <text class="accent-text" x="190" y="279" font-size="19" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">感觉反馈</text>
+  <text class="accent-text" x="190" y="344" font-size="19" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">情境线索</text>
+  <text class="accent-text" x="190" y="409" font-size="19" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">异常信号</text>
+  <line x1="345" y1="270" x2="392" y2="270" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <path d="M400 110 H680 L580 330 V420 H500 V330 Z" fill="#5b4fc4"/>
+  <text x="540" y="192" font-size="20" text-anchor="middle" font-weight="500" fill="#fff" fill-opacity="1">编码进</text>
+  <text x="540" y="226" font-size="20" text-anchor="middle" font-weight="500" fill="#fff" fill-opacity="1">协议与数据</text>
+  <line x1="615" y1="270" x2="732" y2="270" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="740" y="80" width="300" height="380" rx="14" fill="none" fill-opacity="0" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <text x="890" y="140" font-size="24" text-anchor="middle" font-weight="600" fill="currentColor" fill-opacity="1">标准化流程</text>
+  <line x1="780" y1="165" x2="1000" y2="165" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="1.5"/>
+  <text x="890" y="244" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">协议步骤</text>
+  <text x="890" y="309" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">仪器读数</text>
+  <text x="890" y="374" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">质控参数</text>
+  <line x1="510" y1="425" x2="450" y2="528" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <line x1="540" y1="425" x2="540" y2="528" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <line x1="570" y1="425" x2="630" y2="528" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="270" y="540" width="540" height="110" rx="14" fill="none" fill-opacity="0" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <text x="540" y="604" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">未被编码：异常感知、情境判断</text>
+</svg>

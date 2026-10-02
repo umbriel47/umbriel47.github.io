@@ -1,0 +1,36 @@
+<svg class="chart" viewBox="0 0 1080 700" role="img" aria-label="Two feedback loops: in the manual process an anomaly reaches human judgment and corrects the method; in the automated process it is logged as noise or rerun, and the loop never passes through judgment" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>Two feedback loops: in the manual process an anomaly reaches human judgment and corrects the method; in the automated process it is logged as noise or rerun, and the loop never passes through judgment</title>
+  <text class="accent-text" x="45" y="66" font-size="22" text-anchor="start" font-weight="500" fill="#5b4fc4" fill-opacity="1">Manual loop</text>
+  <rect x="45" y="100" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2"/>
+  <text x="150" y="151" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Anomaly occurs</text>
+  <line x1="258" y1="145" x2="302" y2="145" stroke="#5b4fc4" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="305" y="100" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2"/>
+  <text x="410" y="139" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">A person</text>
+  <text x="410" y="163" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">notices</text>
+  <line x1="518" y1="145" x2="562" y2="145" stroke="#5b4fc4" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="565" y="100" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2"/>
+  <text x="670" y="139" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Real or</text>
+  <text x="670" y="163" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">spurious?</text>
+  <line x1="778" y1="145" x2="822" y2="145" stroke="#5b4fc4" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="825" y="100" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity="1" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2"/>
+  <text x="930" y="139" font-size="19" text-anchor="middle" font-weight="500" fill="#fff" fill-opacity="1">Method</text>
+  <text x="930" y="163" font-size="19" text-anchor="middle" font-weight="500" fill="#fff" fill-opacity="1">corrected</text>
+  <path d="M930 190 V240 H150 V190" fill="none" stroke="#5b4fc4" stroke-width="2"/>
+  <text class="accent-text" x="540" y="288" font-size="21" text-anchor="middle" font-weight="500" fill="#5b4fc4" fill-opacity="1">The ability to correct errors is trained again and again</text>
+  <line x1="45" y1="360" x2="1035" y2="360" stroke="#5b4fc4" stroke-opacity=".4" stroke-width="1.5"/>
+  <text x="45" y="426" font-size="22" text-anchor="start" font-weight="500" fill="currentColor" fill-opacity="1">Automated loop</text>
+  <rect x="45" y="460" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <text x="150" y="511" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Anomaly occurs</text>
+  <line x1="258" y1="505" x2="302" y2="505" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="305" y="460" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <text x="410" y="499" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Logged as noise</text>
+  <text x="410" y="523" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">or simply rerun</text>
+  <line x1="518" y1="505" x2="562" y2="505" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="565" y="460" width="210" height="90" rx="14" fill="none" fill-opacity="0" stroke="#5b4fc4" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 5"/>
+  <text class="accent-text" x="670" y="511" font-size="19" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity=".6">No record</text>
+  <line x1="778" y1="505" x2="822" y2="505" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <rect x="825" y="460" width="210" height="90" rx="14" fill="#5b4fc4" fill-opacity=".07" stroke="currentColor" stroke-opacity=".85" stroke-width="2"/>
+  <text x="930" y="511" font-size="19" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Back to start</text>
+  <path d="M930 550 V600 H150 V550" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="540" y="648" font-size="21" text-anchor="middle" font-weight="500" fill="currentColor" fill-opacity="1">The chance to correct errors no longer arises</text>
+</svg>
