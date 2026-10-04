@@ -1,0 +1,50 @@
+<svg class="chart" viewBox="0 0 1080 1016" role="img" aria-label="Where $100 of AI capex goes (broker estimate)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>Where $100 of AI capex goes (broker estimate)</title>
+  <text x="40.0" y="58.0" font-size="26" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">Where $100 of AI capex goes (broker estimate)</text>
+  <rect x="40.0" y="100.0" width="498.0" height="54.0" fill="currentColor" fill-opacity=".92"/>
+  <text x="290.0" y="134.0" font-size="20" text-anchor="middle" style="fill: var(--bg, #fff)">50</text>
+  <rect x="540.0" y="100.0" width="148.0" height="54.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="615.0" y="134.0" font-size="20" text-anchor="middle" font-weight="400" fill="#fff" fill-opacity="1">15</text>
+  <rect x="690.0" y="100.0" width="198.0" height="54.0" fill="#8b80e6" fill-opacity="1"/>
+  <text x="790.0" y="134.0" font-size="20" text-anchor="middle" font-weight="400" fill="#fff" fill-opacity="1">20</text>
+  <rect x="890.0" y="100.0" width="73.0" height="54.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="927.5" y="134.0" font-size="18" text-anchor="middle" font-weight="400" fill="#1b1640" fill-opacity="1">7.5</text>
+  <rect x="965.0" y="100.0" width="73.0" height="54.0" fill="#d6d1f7" fill-opacity="1"/>
+  <text x="1002.5" y="134.0" font-size="18" text-anchor="middle" font-weight="400" fill="#1b1640" fill-opacity="1">7.5</text>
+  <rect x="40.0" y="186.0" width="12.0" height="28.0" fill="currentColor" fill-opacity=".92"/>
+  <text x="64.0" y="210.0" font-size="24" fill="currentColor">Semiconductors <tspan font-weight="700">50</tspan></text>
+  <rect x="40.0" y="238.0" width="348.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="390.0" y="238.0" width="208.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <rect x="600.0" y="238.0" width="138.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="40.0" y="302.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Accelerators 25 · Memory 15 · CPUs, other chips &amp; server manufacturing 10</text>
+  <rect x="40.0" y="326.0" width="12.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="64.0" y="350.0" font-size="24" fill="currentColor">Networking <tspan font-weight="700">15</tspan></text>
+  <rect x="40.0" y="378.0" width="75.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="117.0" y="378.0" width="61.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <rect x="180.0" y="378.0" width="40.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="222.0" y="378.0" width="26.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="40.0" y="442.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Optical modules 5.5 · Switches 4.5 · Network processors 3 · Cables 2</text>
+  <rect x="40.0" y="466.0" width="12.0" height="28.0" fill="#8b80e6" fill-opacity="1"/>
+  <text x="64.0" y="490.0" font-size="24" fill="currentColor">Power <tspan font-weight="700">20</tspan></text>
+  <rect x="40.0" y="518.0" width="138.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="180.0" y="518.0" width="89.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <rect x="271.0" y="518.0" width="47.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="40.0" y="582.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Grid connection &amp; on-site generation 10 · Power distribution 6.5 · On-site electrical wiring 3.5</text>
+  <rect x="40.0" y="606.0" width="12.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="64.0" y="630.0" font-size="24" fill="currentColor">Cooling <tspan font-weight="700">7.5</tspan></text>
+  <rect x="40.0" y="658.0" width="33.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="75.0" y="658.0" width="26.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <rect x="103.0" y="658.0" width="19.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="124.0" y="658.0" width="19.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="40.0" y="722.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Chillers &amp; cooling towers 2.5 · Coolant distribution units 2 · Cold plates 1.5 · Other 1.5</text>
+  <rect x="40.0" y="746.0" width="12.0" height="28.0" fill="#d6d1f7" fill-opacity="1"/>
+  <text x="64.0" y="770.0" font-size="24" fill="currentColor">Buildings &amp; construction <tspan font-weight="700">7.5</tspan></text>
+  <rect x="40.0" y="798.0" width="54.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <rect x="96.0" y="798.0" width="33.0" height="28.0" fill="#b3abf0" fill-opacity="1"/>
+  <rect x="131.0" y="798.0" width="12.0" height="28.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="40.0" y="862.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Shell &amp; structure 4 · Fit-out &amp; services 2.5 · Land &amp; site 1</text>
+  <line x1="40.0" y1="882.0" x2="1040.0" y2="882.0" stroke="#5b4fc4" stroke-opacity=".4" stroke-width="1.5"/>
+  <text class="accent-text" x="40.0" y="916.0" font-size="21" text-anchor="start" font-weight="600" fill="#5b4fc4" fill-opacity="1">Second-tier flow: wafer fab equipment (WFE), labelled 8</text>
+  <text x="40.0" y="952.0" font-size="18" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Paid by chipmakers out of revenue, so not additive to the 100 above; the original's sub-items sum to 18, not 8</text>
+  <text x="40.0" y="994.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".7">Units: US dollars. High-level estimates from BNP Paribas Equity Research (Aug 2026, via a16z Growth), redrawn by 一目半 (Yimuban)</text>
+</svg>

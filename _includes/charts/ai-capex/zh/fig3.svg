@@ -1,0 +1,31 @@
+<svg class="chart" viewBox="0 0 1080 812" role="img" aria-label="最近一个季度毛利率" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>最近一个季度毛利率</title>
+  <text x="40.0" y="58.0" font-size="26" text-anchor="start" font-weight="600" fill="currentColor" fill-opacity="1">最近一个季度毛利率</text>
+  <text x="40.0" y="138.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">美光（存储）</text>
+  <rect x="330.0" y="112.0" width="609.0" height="36.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="949.0" y="138.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">87.0%</text>
+  <text x="40.0" y="218.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">英伟达（加速器）</text>
+  <rect x="330.0" y="192.0" width="525.0" height="36.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="865.0" y="218.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">75.0%</text>
+  <text x="40.0" y="298.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">博通（定制芯片）</text>
+  <rect x="330.0" y="272.0" width="525.0" height="36.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="865.0" y="298.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">约 75%</text>
+  <text x="40.0" y="378.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">台积电（代工）</text>
+  <rect x="330.0" y="352.0" width="473.9" height="36.0" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="813.9" y="378.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">67.7%</text>
+  <text x="40.0" y="458.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Arista（交换机）</text>
+  <rect x="330.0" y="432.0" width="443.8" height="36.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="783.8" y="458.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">63.4%</text>
+  <text x="40.0" y="538.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">ASML（光刻）</text>
+  <rect x="330.0" y="512.0" width="378.0" height="36.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="718.0" y="538.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">54.0%</text>
+  <text x="40.0" y="618.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Coherent（光模块）</text>
+  <rect x="330.0" y="592.0" width="281.4" height="36.0" fill="#b3abf0" fill-opacity="1"/>
+  <text x="621.4" y="618.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">40.2%</text>
+  <text x="40.0" y="698.0" font-size="20" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">鸿海（整机组装）</text>
+  <rect x="330.0" y="672.0" width="42.7" height="36.0" fill="currentColor" fill-opacity=".92"/>
+  <text x="382.7" y="698.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">6.1%</text>
+  <line x1="330.0" y1="98.0" x2="330.0" y2="722.0" stroke="currentColor" stroke-opacity=".9" stroke-width="1.5"/>
+  <text x="40.0" y="762.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".75">美光、台积电、ASML、鸿海为 GAAP 或公司口径；英伟达 GAAP 与非 GAAP 相同；</text>
+  <text x="40.0" y="788.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".75">博通、Arista、Coherent 为非 GAAP</text>
+</svg>
