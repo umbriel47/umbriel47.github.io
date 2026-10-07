@@ -1,0 +1,25 @@
+<svg class="chart" viewBox="0 0 1080 720" role="img" aria-label="How conservation constraints compress the prediction space: a few conservation relations cut a large space of unconstrained possible states down to a narrow band, and experimental observations fall inside it" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>How conservation constraints compress the prediction space: a few conservation relations cut a large space of unconstrained possible states down to a narrow band, and experimental observations fall inside it</title>
+  <line x1="130" y1="620" x2="130" y2="52" stroke="currentColor" stroke-opacity="1" stroke-width="3"/>
+  <path d="M0 0 L-20 -11 L-20 11 Z" fill="currentColor" transform="translate(130 42) rotate(-90)"/>
+  <line x1="130" y1="620" x2="1020" y2="620" stroke="currentColor" stroke-opacity="1" stroke-width="3"/>
+  <path d="M0 0 L-20 -11 L-20 11 Z" fill="currentColor" transform="translate(1030 620) rotate(0)"/>
+  <text x="580" y="680" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">State variable 1</text>
+  <text x="70" y="335" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1" transform="rotate(-90 70 335)">State variable 2</text>
+  <rect x="190" y="90" width="790" height="480" rx="28" fill="#5b4fc4" fill-opacity=".07" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <text x="215" y="145" font-size="24" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Unconstrained possible states</text>
+  <text class="accent-text" x="950" y="133" font-size="26" text-anchor="end" font-weight="700" fill="#5b4fc4" fill-opacity="1">Conservation constraint</text>
+  <path d="M220 520 L800 157 L940 197 L360 560 Z" fill="#5b4fc4" fill-opacity=".25"/>
+  <line x1="220" y1="520" x2="800" y2="157" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5"/>
+  <line x1="290" y1="540" x2="870" y2="177" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5"/>
+  <line x1="360" y1="560" x2="940" y2="197" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5"/>
+  <text x="400" y="255" font-size="24" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">Allowed states</text>
+  <line x1="432" y1="270" x2="493" y2="357" stroke="currentColor" stroke-opacity="1" stroke-width="2.5"/>
+  <path d="M450 418 l7.6 15.4 17 2.5 -12.3 12 2.9 16.9 -15.2 -8 -15.2 8 2.9 -16.9 -12.3 -12 17 -2.5 z" fill="currentColor"/>
+  <line x1="466" y1="460" x2="520" y2="505" stroke="currentColor" stroke-opacity="1" stroke-width="2.5"/>
+  <text x="525" y="535" font-size="24" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Experimental observation</text>
+  <text class="accent-text" x="825" y="455" font-size="21" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">The stronger the constraint,</text>
+  <text class="accent-text" x="825" y="483" font-size="21" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">the narrower the allowed region</text>
+  <line x1="848" y1="420" x2="795" y2="305" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5"/>
+  <path d="M0 0 L-22 -12 L-22 12 Z" fill="#5b4fc4" transform="translate(786 296) rotate(-115)"/>
+</svg>

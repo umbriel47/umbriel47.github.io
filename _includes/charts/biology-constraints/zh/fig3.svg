@@ -1,0 +1,32 @@
+<svg class="chart" viewBox="0 0 1080 580" role="img" aria-label="生物学中候选约束的三个来源：物理约束、量上的不变量和标度关系，汇总后要回答哪些是真约束、哪些只是拟合" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>生物学中候选约束的三个来源：物理约束、量上的不变量和标度关系，汇总后要回答哪些是真约束、哪些只是拟合</title>
+  <rect x="45" y="40" width="300" height="320" rx="22" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <text x="195" y="100" font-size="26" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">物理约束</text>
+  <line x1="85" y1="125" x2="305" y2="125" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <text x="195" y="188" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">能量</text>
+  <text x="195" y="248" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">扩散</text>
+  <text x="195" y="308" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">温度</text>
+  <rect x="390" y="40" width="300" height="320" rx="22" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <text x="540" y="100" font-size="26" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">量上的不变量</text>
+  <line x1="430" y1="125" x2="650" y2="125" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <text x="540" y="213" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">化学计量</text>
+  <text x="540" y="273" font-size="24" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">序列保守</text>
+  <rect x="735" y="40" width="300" height="320" rx="22" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <text x="885" y="100" font-size="26" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">标度关系</text>
+  <line x1="775" y1="125" x2="995" y2="125" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="2"/>
+  <line x1="790" y1="290" x2="980" y2="160" stroke="#5b4fc4" stroke-opacity="1" stroke-width="4"/>
+  <circle cx="820" cy="262" r="7" fill="#5b4fc4" fill-opacity=".55"/>
+  <circle cx="862" cy="247" r="7" fill="#5b4fc4" fill-opacity=".55"/>
+  <circle cx="900" cy="212" r="7" fill="#5b4fc4" fill-opacity=".55"/>
+  <circle cx="945" cy="196" r="7" fill="#5b4fc4" fill-opacity=".55"/>
+  <text class="accent-text" x="885" y="335" font-size="23" text-anchor="middle" font-weight="400" fill="#5b4fc4" fill-opacity="1">能否跨类群外推？</text>
+  <line x1="195" y1="360" x2="195" y2="470" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <line x1="540" y1="360" x2="540" y2="470" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <line x1="193" y1="470" x2="785" y2="470" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <path d="M0 0 L-26 -14 L-26 14 Z" fill="#5b4fc4" transform="translate(800 470) rotate(0)"/>
+  <line x1="885" y1="360" x2="885" y2="400" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <path d="M0 0 L-24 -13 L-24 13 Z" fill="#5b4fc4" transform="translate(885 418) rotate(90)"/>
+  <rect x="805" y="418" width="160" height="104" rx="14" fill="currentColor"/>
+  <text x="885" y="486" font-size="44" text-anchor="middle" font-weight="700" style="fill: var(--bg, #fff)">?</text>
+  <text x="440" y="528" font-size="25" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">哪些是真约束，哪些只是拟合</text>
+</svg>
