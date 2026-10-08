@@ -1,0 +1,40 @@
+<svg class="chart" viewBox="0 0 1080 720" role="img" aria-label="意识在实在中的位置：从物理主义到观念论的谱系，以及 Laszlo、Glattfelder 和 Kastrup 的大致位置；每类立场下方标注它需要支付的主要解释代价" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>意识在实在中的位置：从物理主义到观念论的谱系，以及 Laszlo、Glattfelder 和 Kastrup 的大致位置；每类立场下方标注它需要支付的主要解释代价</title>
+  <text x="540" y="60" font-size="27" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">什么是最基本的？</text>
+  <text x="70" y="140" font-size="22" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">物质</text>
+  <text x="1010" y="140" font-size="22" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">心智 / 意识</text>
+  <line x1="60" y1="250" x2="990" y2="250" stroke="currentColor" stroke-opacity="1" stroke-width="3"/>
+  <path d="M0 0 L-30 -16 L-30 16 Z" fill="currentColor" transform="translate(70 250) rotate(0)"/>
+  <path d="M0 0 L-30 -16 L-30 16 Z" fill="currentColor" transform="translate(1012 250) rotate(0)"/>
+  <text x="150" y="207" font-size="24" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">物理主义</text>
+  <circle cx="150" cy="250" r="16" fill="currentColor"/>
+  <text x="390" y="207" font-size="24" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">双面一元论</text>
+  <circle cx="390" cy="250" r="16" fill="#8b80e6"/>
+  <text x="620" y="207" font-size="24" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">泛心论</text>
+  <circle cx="620" cy="250" r="16" fill="#8b80e6"/>
+  <text x="900" y="207" font-size="24" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">观念论</text>
+  <circle cx="900" cy="250" r="16" fill="#5b4fc4"/>
+  <rect x="300" y="290" width="180" height="56" rx="28" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <text class="accent-text" x="390" y="325" font-size="20" text-anchor="middle" font-weight="700" fill="#5b4fc4" fill-opacity="1">Glattfelder 2019</text>
+  <line x1="485" y1="318" x2="740" y2="318" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3" stroke-dasharray="8 8"/>
+  <path d="M0 0 L-22 -12 L-22 12 Z" fill="#5b4fc4" transform="translate(764 318) rotate(0)"/>
+  <rect x="770" y="290" width="260" height="56" rx="28" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <text class="accent-text" x="900" y="325" font-size="20" text-anchor="middle" font-weight="700" fill="#5b4fc4" fill-opacity="1">Glattfelder 2025</text>
+  <rect x="770" y="358" width="260" height="56" rx="28" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <text class="accent-text" x="900" y="393" font-size="20" text-anchor="middle" font-weight="700" fill="#5b4fc4" fill-opacity="1">Kastrup 分析观念论</text>
+  <rect x="770" y="426" width="260" height="56" rx="28" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3"/>
+  <text class="accent-text" x="900" y="461" font-size="20" text-anchor="middle" font-weight="700" fill="#5b4fc4" fill-opacity="1">Laszlo 后期</text>
+  <text x="540" y="558" font-size="22" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">各自需要支付的解释代价</text>
+  <rect x="60" y="590" width="220" height="90" rx="12" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="2.5"/>
+  <text x="170" y="629" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">主观体验</text>
+  <text x="170" y="655" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">从何而来</text>
+  <rect x="300" y="590" width="220" height="90" rx="12" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="2.5"/>
+  <text x="410" y="629" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">「两面」为何</text>
+  <text x="410" y="655" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">恰好对应</text>
+  <rect x="540" y="590" width="220" height="90" rx="12" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="2.5"/>
+  <text x="650" y="629" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">组合问题：</text>
+  <text x="650" y="655" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">微体验如何成「我」</text>
+  <rect x="780" y="590" width="220" height="90" rx="12" style="fill: var(--bg, #fff)" stroke="#5b4fc4" stroke-opacity=".5" stroke-width="2.5"/>
+  <text x="890" y="629" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">解组合问题；</text>
+  <text x="890" y="655" font-size="20" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">物理规律为何稳定</text>
+</svg>
