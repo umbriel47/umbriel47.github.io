@@ -1,0 +1,88 @@
+<svg class="chart" viewBox="0 0 1080 1434" role="img" aria-label="Machines and mathematical proof: a seventy-year timeline" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>Machines and mathematical proof: a seventy-year timeline</title>
+  <text x="60.0" y="62.0" font-size="28" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">Machines and mathematical proof: a seventy-year timeline</text>
+  <text x="60.0" y="104.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".65">Dates are when events were announced or completed; most 2026 results have not been peer reviewed</text>
+  <line x1="230.0" y1="160.0" x2="230.0" y2="1312.0" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="60" y="172" width="960" height="44" rx="6" style="fill: var(--bg, #fff)"/>
+  <rect x="60" y="172" width="960" height="44" rx="6" fill="#5b4fc4" fill-opacity=".12"/>
+  <text x="80.0" y="201.0" font-size="18" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">Phase 1 · Symbolic reasoning and computer-assisted proof (1956–2019)</text>
+  <text x="200.0" y="251.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1956</text>
+  <circle cx="230" cy="244" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="251.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Logic Theorist proves 38 of the first 52 theorems in chapter 2 of Principia</text>
+  <text x="200.0" y="297.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1958–60</text>
+  <circle cx="230" cy="290" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="297.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Hao Wang proves hundreds of Principia's propositions mechanically on an IBM 704</text>
+  <text x="200.0" y="343.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1965</text>
+  <circle cx="230" cy="336" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="343.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Robinson's resolution principle founds first-order automated theorem proving</text>
+  <text x="200.0" y="389.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1967</text>
+  <circle cx="230" cy="382" r="9" fill="currentColor"/>
+  <text x="256.0" y="389.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">de Bruijn starts Automath, one of the first proof-checking languages</text>
+  <text x="200.0" y="435.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1976</text>
+  <circle cx="230" cy="428" r="9" fill="#b3abf0"/>
+  <text x="256.0" y="435.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Four colour theorem: Appel and Haken's computer-assisted proof</text>
+  <text x="200.0" y="481.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1996</text>
+  <circle cx="230" cy="474" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="481.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">EQP proves the Robbins conjecture, a famous open problem solved by a prover</text>
+  <text x="200.0" y="527.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2005</text>
+  <circle cx="230" cy="520" r="9" fill="currentColor"/>
+  <text x="256.0" y="527.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Gonthier et al. formalise the four colour theorem in Coq</text>
+  <text x="200.0" y="573.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2013</text>
+  <circle cx="230" cy="566" r="9" fill="currentColor"/>
+  <text x="256.0" y="573.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">The Lean prover is born; the community builds mathlib from 2017</text>
+  <text x="200.0" y="619.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2014</text>
+  <circle cx="230" cy="612" r="9" fill="currentColor"/>
+  <text x="256.0" y="619.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Flyspeck completes the formal proof of the Kepler conjecture</text>
+  <rect x="60" y="662" width="960" height="44" rx="6" style="fill: var(--bg, #fff)"/>
+  <rect x="60" y="662" width="960" height="44" rx="6" fill="#5b4fc4" fill-opacity=".12"/>
+  <text x="80.0" y="691.0" font-size="18" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">Phase 2 · Neural networks and large language models (2020–2026)</text>
+  <text x="200.0" y="741.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2020.09</text>
+  <circle cx="230" cy="734" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="741.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI GPT-f: a language model writes proofs accepted into Metamath</text>
+  <text x="200.0" y="787.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2021.12</text>
+  <circle cx="230" cy="780" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="787.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">DeepMind and mathematicians: ML guides new results in knot and representation theory</text>
+  <text x="200.0" y="833.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2022.07</text>
+  <circle cx="230" cy="826" r="9" fill="currentColor"/>
+  <text x="256.0" y="833.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Liquid Tensor Experiment done: Scholze's theorem fully checked in Lean</text>
+  <text x="200.0" y="879.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2023.12</text>
+  <circle cx="230" cy="872" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="879.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">FunSearch: LLM-guided program search improves cap-set lower bounds</text>
+  <text x="200.0" y="925.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2024.07</text>
+  <circle cx="230" cy="918" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="925.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">AlphaProof + AlphaGeometry 2 reach IMO silver-medal level</text>
+  <text x="200.0" y="971.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2025.07</text>
+  <circle cx="230" cy="964" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="971.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI and Gemini Deep Think reach the gold-medal score at IMO 2025</text>
+  <text x="200.0" y="1017.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2025.10</text>
+  <circle cx="230" cy="1010" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1017.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">The GPT-5 “Erdős problems” episode: the answers were existing literature</text>
+  <text x="200.0" y="1063.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.02</text>
+  <circle cx="230" cy="1056" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1063.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">First Proof: 11 mathematicians test AI on 10 unpublished problems</text>
+  <text x="200.0" y="1109.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.05</text>
+  <circle cx="230" cy="1102" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1109.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI model disproves Erdős's 1946 unit-distance conjecture; checked externally</text>
+  <text x="200.0" y="1155.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.07</text>
+  <circle cx="230" cy="1148" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1155.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Anthropic researcher posts a 3-D Jacobian-conjecture counterexample, credited to Claude</text>
+  <text x="200.0" y="1201.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.08</text>
+  <circle cx="230" cy="1194" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1201.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI's ten “Astra” results with Lean certificates; Anthropic lifts the ζ critical-line share to 67.2%</text>
+  <text x="200.0" y="1247.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.09</text>
+  <circle cx="230" cy="1240" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1247.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI claims a Navier–Stokes blow-up result; Fields medallists criticise rushed releases</text>
+  <text x="200.0" y="1293.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.10</text>
+  <circle cx="230" cy="1286" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1293.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI releases 722 manuscripts in 372 result families</text>
+  <circle cx="69" cy="1362" r="9" fill="#5b4fc4"/>
+  <text x="86.0" y="1368.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Automated reasoning</text>
+  <circle cx="309" cy="1362" r="9" fill="#b3abf0"/>
+  <text x="326.0" y="1368.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Computer-assisted proof</text>
+  <circle cx="589" cy="1362" r="9" fill="currentColor"/>
+  <text x="606.0" y="1368.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Formalisation &amp; proof assistants</text>
+  <circle cx="69" cy="1394" r="9" fill="#d95f2b"/>
+  <text x="86.0" y="1400.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">ML / LLMs</text>
+  <circle cx="309" cy="1394" r="9" fill="#8a86a3"/>
+  <text x="326.0" y="1400.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Benchmarks &amp; controversy</text>
+</svg>

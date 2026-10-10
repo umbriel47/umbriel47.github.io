@@ -1,0 +1,88 @@
+<svg class="chart" viewBox="0 0 1080 1402" role="img" aria-label="机器与数学证明：七十年时间线" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>机器与数学证明：七十年时间线</title>
+  <text x="60.0" y="62.0" font-size="28" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">机器与数学证明：七十年时间线</text>
+  <text x="60.0" y="104.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".65">年份为事件公布或完成时间；2026 年的多数结果尚未经过同行评审</text>
+  <line x1="230.0" y1="160.0" x2="230.0" y2="1312.0" stroke="#5b4fc4" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="60" y="172" width="960" height="44" rx="6" style="fill: var(--bg, #fff)"/>
+  <rect x="60" y="172" width="960" height="44" rx="6" fill="#5b4fc4" fill-opacity=".12"/>
+  <text x="80.0" y="201.0" font-size="20" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">第一阶段 · 符号推理与计算机辅助证明（1956–2019）</text>
+  <text x="200.0" y="251.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1956</text>
+  <circle cx="230" cy="244" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="251.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">逻辑理论家：证明《数学原理》第二章前 52 条定理中的 38 条</text>
+  <text x="200.0" y="297.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1958–60</text>
+  <circle cx="230" cy="290" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="297.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">王浩在 IBM 704 上机械证明《数学原理》中的数百条命题</text>
+  <text x="200.0" y="343.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1965</text>
+  <circle cx="230" cy="336" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="343.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Robinson 提出归结原理，奠定一阶自动定理证明的基础</text>
+  <text x="200.0" y="389.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1967</text>
+  <circle cx="230" cy="382" r="9" fill="currentColor"/>
+  <text x="256.0" y="389.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">de Bruijn 启动 Automath，最早的证明检验语言之一</text>
+  <text x="200.0" y="435.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1976</text>
+  <circle cx="230" cy="428" r="9" fill="#b3abf0"/>
+  <text x="256.0" y="435.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">四色定理：Appel 与 Haken 的计算机辅助证明</text>
+  <text x="200.0" y="481.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">1996</text>
+  <circle cx="230" cy="474" r="9" fill="#5b4fc4"/>
+  <text x="256.0" y="481.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">EQP 程序证明 Robbins 猜想，自动证明器解决的著名开放问题</text>
+  <text x="200.0" y="527.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2005</text>
+  <circle cx="230" cy="520" r="9" fill="currentColor"/>
+  <text x="256.0" y="527.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Gonthier 等用 Coq 完成四色定理的形式化证明</text>
+  <text x="200.0" y="573.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2013</text>
+  <circle cx="230" cy="566" r="9" fill="currentColor"/>
+  <text x="256.0" y="573.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Lean 定理证明器诞生；2017 年起社区建设 mathlib</text>
+  <text x="200.0" y="619.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2014</text>
+  <circle cx="230" cy="612" r="9" fill="currentColor"/>
+  <text x="256.0" y="619.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Flyspeck 完成开普勒猜想的形式化证明</text>
+  <rect x="60" y="662" width="960" height="44" rx="6" style="fill: var(--bg, #fff)"/>
+  <rect x="60" y="662" width="960" height="44" rx="6" fill="#5b4fc4" fill-opacity=".12"/>
+  <text x="80.0" y="691.0" font-size="20" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">第二阶段 · 神经网络与大语言模型（2020–2026）</text>
+  <text x="200.0" y="741.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2020.09</text>
+  <circle cx="230" cy="734" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="741.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI GPT-f：语言模型为 Metamath 生成被收录的证明</text>
+  <text x="200.0" y="787.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2021.12</text>
+  <circle cx="230" cy="780" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="787.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">DeepMind 与数学家合作，机器学习引导纽结论与表示论新发现</text>
+  <text x="200.0" y="833.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2022.07</text>
+  <circle cx="230" cy="826" r="9" fill="currentColor"/>
+  <text x="256.0" y="833.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Liquid Tensor 实验完成，Scholze 的定理被 Lean 完整核验</text>
+  <text x="200.0" y="879.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2023.12</text>
+  <circle cx="230" cy="872" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="879.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">FunSearch：LLM 引导的程序搜索改进帽集下界</text>
+  <text x="200.0" y="925.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2024.07</text>
+  <circle cx="230" cy="918" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="925.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">AlphaProof + AlphaGeometry 2 达到 IMO 银牌水平</text>
+  <text x="200.0" y="971.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2025.07</text>
+  <circle cx="230" cy="964" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="971.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI 与 Gemini Deep Think 在 IMO 2025 达到金牌分数线</text>
+  <text x="200.0" y="1017.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2025.10</text>
+  <circle cx="230" cy="1010" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1017.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">GPT-5「解决埃尔德什问题」风波：答案实为已有文献</text>
+  <text x="200.0" y="1063.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.02</text>
+  <circle cx="230" cy="1056" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1063.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">First Proof：11 位数学家用 10 道未发表问题测试 AI</text>
+  <text x="200.0" y="1109.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.05</text>
+  <circle cx="230" cy="1102" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1109.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI 模型否定埃尔德什 1946 年单位距离猜想，获外部数学家核查</text>
+  <text x="200.0" y="1155.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.07</text>
+  <circle cx="230" cy="1148" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1155.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Anthropic 研究者发布雅可比猜想三维反例，归功于 Claude 模型</text>
+  <text x="200.0" y="1201.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.08</text>
+  <circle cx="230" cy="1194" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1201.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI「Astra」十项结果附 Lean 证书；Anthropic 将 ζ 零点临界线占比下界提至 67.2%</text>
+  <text x="200.0" y="1247.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.09</text>
+  <circle cx="230" cy="1240" r="9" fill="#8a86a3"/>
+  <text x="256.0" y="1247.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI 宣称 Navier–Stokes 爆破方向结果；Fields 奖得主联名批评仓促发布</text>
+  <text x="200.0" y="1293.0" font-size="19" text-anchor="end" font-weight="700" fill="currentColor" fill-opacity="1">2026.10</text>
+  <circle cx="230" cy="1286" r="9" fill="#d95f2b"/>
+  <text x="256.0" y="1293.0" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">OpenAI 公开 722 篇手稿、372 个结果族</text>
+  <circle cx="69" cy="1362" r="9" fill="#5b4fc4"/>
+  <text x="86.0" y="1368.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">自动推理</text>
+  <circle cx="269" cy="1362" r="9" fill="#b3abf0"/>
+  <text x="286.0" y="1368.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">计算机辅助证明</text>
+  <circle cx="469" cy="1362" r="9" fill="currentColor"/>
+  <text x="486.0" y="1368.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">形式化与证明助手</text>
+  <circle cx="669" cy="1362" r="9" fill="#d95f2b"/>
+  <text x="686.0" y="1368.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">机器学习 / 大模型</text>
+  <circle cx="869" cy="1362" r="9" fill="#8a86a3"/>
+  <text x="886.0" y="1368.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">评测与争议</text>
+</svg>

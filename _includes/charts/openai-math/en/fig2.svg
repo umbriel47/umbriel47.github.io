@@ -1,0 +1,66 @@
+<svg class="chart" viewBox="0 0 1080 746" role="img" aria-label="When were these problems first posed?" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>When were these problems first posed?</title>
+  <text x="60.0" y="58.0" font-size="28" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">When were these problems first posed?</text>
+  <text x="60.0" y="98.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".65">The 283 datable result families, counted by the decade the problem was first posed;</text>
+  <text x="60.0" y="122.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".65">89 more could not be dated reliably and are excluded</text>
+  <line x1="90.0" y1="600.0" x2="1030.0" y2="600.0" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="605.0" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">0</text>
+  <line x1="90.0" y1="526.5" x2="1030.0" y2="526.5" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="531.5" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">10</text>
+  <line x1="90.0" y1="453.0" x2="1030.0" y2="453.0" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="458.0" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">20</text>
+  <line x1="90.0" y1="379.5" x2="1030.0" y2="379.5" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="384.5" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">30</text>
+  <line x1="90.0" y1="306.0" x2="1030.0" y2="306.0" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="311.0" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">40</text>
+  <line x1="90.0" y1="232.5" x2="1030.0" y2="232.5" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
+  <text x="80.0" y="237.5" font-size="15" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".6">50</text>
+  <rect x="110.0" y="592.6" width="46.0" height="7.3" fill="#b3abf0" fill-opacity="1"/>
+  <text x="133.0" y="584.6" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">1</text>
+  <text x="133.0" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1870</text>
+  <text x="190.4" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1880</text>
+  <text x="247.8" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1890</text>
+  <rect x="282.2" y="563.2" width="46.0" height="36.8" fill="#b3abf0" fill-opacity="1"/>
+  <text x="305.2" y="555.2" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">5</text>
+  <text x="305.2" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1900</text>
+  <rect x="339.6" y="592.6" width="46.0" height="7.3" fill="#b3abf0" fill-opacity="1"/>
+  <text x="362.6" y="584.6" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">1</text>
+  <text x="362.6" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1910</text>
+  <rect x="397.0" y="585.3" width="46.0" height="14.7" fill="#b3abf0" fill-opacity="1"/>
+  <text x="420.0" y="577.3" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">2</text>
+  <text x="420.0" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1920</text>
+  <rect x="454.4" y="548.5" width="46.0" height="51.4" fill="#b3abf0" fill-opacity="1"/>
+  <text x="477.4" y="540.5" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">7</text>
+  <text x="477.4" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1930</text>
+  <rect x="511.8" y="541.2" width="46.0" height="58.8" fill="#b3abf0" fill-opacity="1"/>
+  <text x="534.8" y="533.2" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">8</text>
+  <text x="534.8" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1940</text>
+  <rect x="569.2" y="475.1" width="46.0" height="124.9" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="592.2" y="467.1" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">17</text>
+  <text x="592.2" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1950</text>
+  <rect x="626.6" y="445.6" width="46.0" height="154.3" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="649.6" y="437.6" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">21</text>
+  <text x="649.6" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1960</text>
+  <rect x="684.0" y="217.8" width="46.0" height="382.2" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="707.0" y="209.8" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">52</text>
+  <text x="707.0" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1970</text>
+  <rect x="741.4" y="261.9" width="46.0" height="338.1" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="764.4" y="253.9" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">46</text>
+  <text x="764.4" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1980</text>
+  <rect x="798.8" y="313.4" width="46.0" height="286.6" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="821.8" y="305.4" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">39</text>
+  <text x="821.8" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">1990</text>
+  <rect x="856.2" y="291.3" width="46.0" height="308.7" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="879.2" y="283.3" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">42</text>
+  <text x="879.2" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">2000</text>
+  <rect x="913.6" y="350.1" width="46.0" height="249.9" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="936.6" y="342.1" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">34</text>
+  <text x="936.6" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">2010</text>
+  <rect x="971.0" y="541.2" width="46.0" height="58.8" fill="#5b4fc4" fill-opacity="1"/>
+  <text x="994.0" y="533.2" font-size="16" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">8</text>
+  <text x="994.0" y="627.0" font-size="14" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity=".6">2020</text>
+  <path d="M764.4 632 l-9 12 h18 z" fill="#d95f2b"/>
+  <text x="764.4" y="664" font-size="15" text-anchor="middle" fill="#d95f2b">median 1986</text>
+  <text x="60.0" y="697.0" font-size="17" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Quartiles: 1971 / 1986 / 2004  ·  posed before 1950: 24  ·  posed from 2010 on: 42</text>
+  <text x="60.0" y="726.0" font-size="14" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".6">Decade of first posing, mostly from the literature and surveys; individual years may be off by a few years (sampled check in the text)</text>
+</svg>
