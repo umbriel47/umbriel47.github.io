@@ -1,0 +1,71 @@
+<svg class="chart" viewBox="0 0 1080 700" role="img" aria-label="Review cadence and expected value per project (illustrative model)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>Review cadence and expected value per project (illustrative model)</title>
+  <line x1="140.0" y1="600.0" x2="1000.0" y2="600.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="126.0" y="606.0" font-size="17" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">0</text>
+  <line x1="140.0" y1="450.0" x2="1000.0" y2="450.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="126.0" y="456.0" font-size="17" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">1</text>
+  <line x1="140.0" y1="300.0" x2="1000.0" y2="300.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="126.0" y="306.0" font-size="17" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">2</text>
+  <line x1="140.0" y1="150.0" x2="1000.0" y2="150.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="126.0" y="156.0" font-size="17" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">3</text>
+  <line x1="140.0" y1="300.0" x2="1000.0" y2="300.0" stroke="currentColor" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <text x="1000.0" y="328.0" font-size="17" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">Never stop: 2.0</text>
+  <line x1="140.0" y1="600.0" x2="1000.0" y2="600.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="140.0" y1="600.0" x2="140.0" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="140.0" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Weekly</text>
+  <line x1="389.7" y1="600.0" x2="389.7" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="389.7" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Monthly</text>
+  <line x1="576.8" y1="600.0" x2="576.8" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="576.8" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Quarterly</text>
+  <line x1="694.9" y1="600.0" x2="694.9" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="694.9" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">6 months</text>
+  <line x1="812.9" y1="600.0" x2="812.9" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="812.9" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1 yr</text>
+  <line x1="930.9" y1="600.0" x2="930.9" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="930.9" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">2 yrs</text>
+  <line x1="1000.0" y1="600.0" x2="1000.0" y2="608.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="1000.0" y="634.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">3 yrs</text>
+  <text x="570.0" y="674.0" font-size="18" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">Review interval (log scale)</text>
+  <text x="58.0" y="355.0" font-size="16" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1" transform="rotate(-90 58 355)">Expected value per project (units: one year's development cost)</text>
+  <polyline points="140.0,127.5 258.0,129.0 389.7,129.0 507.8,132.0 576.8,133.5 694.9,138.0 812.9,148.5 882.0,159.0 930.9,171.0 1000.0,204.0" fill="none" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="140.0" cy="127.5" r="5.5" fill="#5b4fc4"/>
+  <circle cx="258.0" cy="129.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="389.7" cy="129.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="507.8" cy="132.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="576.8" cy="133.5" r="5.5" fill="#5b4fc4"/>
+  <circle cx="694.9" cy="138.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="812.9" cy="148.5" r="5.5" fill="#5b4fc4"/>
+  <circle cx="882.0" cy="159.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="930.9" cy="171.0" r="5.5" fill="#5b4fc4"/>
+  <circle cx="1000.0" cy="204.0" r="5.5" fill="#5b4fc4"/>
+  <polyline points="140.0,544.5 258.0,381.0 389.7,256.5 507.8,198.0 576.8,178.5 694.9,160.5 812.9,160.5 882.0,168.0 930.9,177.0 1000.0,208.5" fill="none" stroke="#8b80e6" stroke-opacity="1" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="14 8"/>
+  <circle cx="140.0" cy="544.5" r="5.5" fill="#8b80e6"/>
+  <circle cx="258.0" cy="381.0" r="5.5" fill="#8b80e6"/>
+  <circle cx="389.7" cy="256.5" r="5.5" fill="#8b80e6"/>
+  <circle cx="507.8" cy="198.0" r="5.5" fill="#8b80e6"/>
+  <circle cx="576.8" cy="178.5" r="5.5" fill="#8b80e6"/>
+  <circle cx="694.9" cy="160.5" r="5.5" fill="#8b80e6"/>
+  <circle cx="812.9" cy="160.5" r="5.5" fill="#8b80e6"/>
+  <circle cx="882.0" cy="168.0" r="5.5" fill="#8b80e6"/>
+  <circle cx="930.9" cy="177.0" r="5.5" fill="#8b80e6"/>
+  <circle cx="1000.0" cy="208.5" r="5.5" fill="#8b80e6"/>
+  <polyline points="140.0,171.0 258.0,171.0 389.7,171.0 507.8,171.0 576.8,171.0 694.9,171.0 812.9,171.0 882.0,229.5 930.9,171.0 1000.0,238.5" fill="none" stroke="currentColor" stroke-opacity="1" stroke-width="3.5" stroke-linejoin="round" stroke-dasharray="3 6"/>
+  <circle cx="140.0" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="258.0" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="389.7" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="507.8" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="576.8" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="694.9" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="812.9" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="882.0" cy="229.5" r="5.5" fill="currentColor"/>
+  <circle cx="930.9" cy="171.0" r="5.5" fill="currentColor"/>
+  <circle cx="1000.0" cy="238.5" r="5.5" fill="currentColor"/>
+  <rect x="465.0" y="393.0" width="520.0" height="132.0" rx="8" style="fill: var(--bg, #fff)"/>
+  <rect x="465.0" y="393.0" width="520.0" height="132.0" rx="8" fill="#5b4fc4" fill-opacity=".04" stroke="currentColor" stroke-width="0.6"/>
+  <line x1="483.0" y1="425.0" x2="531.0" y2="425.0" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5"/>
+  <text x="545.0" y="431.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Continuous information, no review cost</text>
+  <line x1="483.0" y1="463.0" x2="531.0" y2="463.0" stroke="#8b80e6" stroke-opacity="1" stroke-width="3.5" stroke-dasharray="14 8"/>
+  <text x="545.0" y="469.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Continuous information, review cost 0.02 each</text>
+  <line x1="483.0" y1="501.0" x2="531.0" y2="501.0" stroke="currentColor" stroke-opacity="1" stroke-width="3.5" stroke-dasharray="3 6"/>
+  <text x="545.0" y="507.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Information only at the year-2 and year-4 readouts</text>
+</svg>

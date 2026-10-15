@@ -1,0 +1,52 @@
+<svg class="chart" viewBox="0 0 1080 890" role="img" aria-label="A deterministic illustrative model of hand-off timing" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>A deterministic illustrative model of hand-off timing</title>
+  <text x="140.0" y="54.0" font-size="18" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">A   Rate of expected-value growth: original developer vs potential acquirer</text>
+  <line x1="140.0" y1="90.0" x2="140.0" y2="380.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="140.0" y1="380.0" x2="1030.0" y2="380.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="140.0" y1="380.0" x2="140.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="288.0" y1="380.0" x2="288.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="436.0" y1="380.0" x2="436.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="584.0" y1="380.0" x2="584.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="732.0" y1="380.0" x2="732.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="880.0" y1="380.0" x2="880.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="1028.0" y1="380.0" x2="1028.0" y2="387.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="90.0" y="215.0" font-size="18" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1" transform="rotate(-90 90 215)">Rate</text>
+  <polyline points="140.0,101.3 147.4,109.2 154.8,116.8 162.2,124.1 169.6,131.2 177.0,138.1 184.4,144.7 191.8,151.1 199.2,157.3 206.6,163.3 214.0,169.0 221.4,174.6 228.8,179.9 236.2,185.1 243.6,190.1 251.0,194.9 258.4,199.6 265.8,204.1 273.2,208.4 280.6,212.6 288.0,216.7 295.4,220.6 302.8,224.3 310.2,228.0 317.6,231.5 325.0,234.9 332.4,238.2 339.8,241.3 347.2,244.4 354.6,247.3 362.0,250.2 369.4,252.9 376.8,255.6 384.2,258.1 391.6,260.6 399.0,263.0 406.4,265.3 413.8,267.5 421.2,269.7 428.6,271.8 436.0,273.8 443.4,275.7 450.8,277.6 458.2,279.4 465.6,281.1 473.0,282.8 480.4,284.4 487.8,286.0 495.2,287.5 502.6,288.9 510.0,290.3 517.4,291.7 524.8,293.0 532.2,294.3 539.6,295.5 547.0,296.7 554.4,297.8 561.8,298.9 569.2,300.0 576.6,301.0 584.0,302.0 591.4,303.0 598.8,303.9 606.2,304.8 613.6,305.6 621.0,306.5 628.4,307.3 635.8,308.0 643.2,308.8 650.6,309.5 658.0,310.2 665.4,310.9 672.8,311.5 680.2,312.2 687.6,312.8 695.0,313.3 702.4,313.9 709.8,314.5 717.2,315.0 724.6,315.5 732.0,316.0 739.4,316.4 746.8,316.9 754.2,317.3 761.6,317.8 769.0,318.2 776.4,318.6 783.8,319.0 791.2,319.3 798.6,319.7 806.0,320.0 813.4,320.4 820.8,320.7 828.2,321.0 835.6,321.3 843.0,321.6 850.4,321.9 857.8,322.1 865.2,322.4 872.6,322.6 880.0,322.9 887.4,323.1 894.8,323.3 902.2,323.6 909.6,323.8 917.0,324.0 924.4,324.2 931.8,324.4 939.2,324.5 946.6,324.7 954.0,324.9 961.4,325.1 968.8,325.2 976.2,325.4 983.6,325.5 991.0,325.7 998.4,325.8 1005.8,325.9 1013.2,326.1 1020.6,326.2 1028.0,326.3" fill="none" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5" stroke-linejoin="round"/>
+  <line x1="140.0" y1="302.0" x2="1030.0" y2="302.0" stroke="currentColor" stroke-opacity="1" stroke-width="3" stroke-dasharray="10 6"/>
+  <text class="accent-text" x="185.0" y="133.0" font-size="16" text-anchor="start" font-weight="400" fill="#5b4fc4" fill-opacity="1">Original developer (e.g. an early-discovery company)</text>
+  <text x="1030.0" y="288.0" font-size="16" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">Potential acquirer (e.g. a large pharma company)</text>
+  <line x1="584.0" y1="302.0" x2="584.0" y2="380.0" stroke="#5b4fc4" stroke-opacity=".8" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <circle cx="584.0" cy="302.0" r="8" fill="#5b4fc4"/>
+  <text class="accent-text" x="600.0" y="368.0" font-size="16" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">Curves cross: the optimal transfer time</text>
+  <text x="140.0" y="452.0" font-size="18" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">B   Joint value V(τ) by transfer time τ</text>
+  <line x1="140.0" y1="490.0" x2="140.0" y2="800.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="140.0" y1="800.0" x2="1030.0" y2="800.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <line x1="140.0" y1="800.0" x2="140.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="140.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">0</text>
+  <line x1="288.0" y1="800.0" x2="288.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="288.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1</text>
+  <line x1="436.0" y1="800.0" x2="436.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="436.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">2</text>
+  <line x1="584.0" y1="800.0" x2="584.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="584.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">3</text>
+  <line x1="732.0" y1="800.0" x2="732.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="732.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">4</text>
+  <line x1="880.0" y1="800.0" x2="880.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="880.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">5</text>
+  <line x1="1028.0" y1="800.0" x2="1028.0" y2="807.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="1028.0" y="834.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">6</text>
+  <text x="1052.0" y="836.0" font-size="18" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">yrs</text>
+  <polyline points="140.0,760.0 147.4,748.3 154.8,737.1 162.2,726.3 169.6,716.0 177.0,706.1 184.4,696.6 191.8,687.4 199.2,678.7 206.6,670.2 214.0,662.2 221.4,654.5 228.8,647.1 236.2,640.0 243.6,633.2 251.0,626.7 258.4,620.5 265.8,614.5 273.2,608.9 280.6,603.4 288.0,598.3 295.4,593.3 302.8,588.6 310.2,584.1 317.6,579.8 325.0,575.7 332.4,571.8 339.8,568.1 347.2,564.6 354.6,561.3 362.0,558.1 369.4,555.2 376.8,552.3 384.2,549.6 391.6,547.1 399.0,544.7 406.4,542.5 413.8,540.4 421.2,538.4 428.6,536.5 436.0,534.8 443.4,533.2 450.8,531.7 458.2,530.3 465.6,529.0 473.0,527.8 480.4,526.7 487.8,525.7 495.2,524.8 502.6,524.0 510.0,523.3 517.4,522.6 524.8,522.0 532.2,521.5 539.6,521.1 547.0,520.8 554.4,520.5 561.8,520.3 569.2,520.1 576.6,520.0 584.0,520.0 591.4,520.0 598.8,520.1 606.2,520.3 613.6,520.4 621.0,520.7 628.4,521.0 635.8,521.3 643.2,521.7 650.6,522.1 658.0,522.6 665.4,523.1 672.8,523.6 680.2,524.2 687.6,524.8 695.0,525.5 702.4,526.2 709.8,526.9 717.2,527.7 724.6,528.4 732.0,529.3 739.4,530.1 746.8,531.0 754.2,531.9 761.6,532.8 769.0,533.7 776.4,534.7 783.8,535.7 791.2,536.7 798.6,537.8 806.0,538.8 813.4,539.9 820.8,541.0 828.2,542.1 835.6,543.3 843.0,544.4 850.4,545.6 857.8,546.8 865.2,548.0 872.6,549.2 880.0,550.4 887.4,551.7 894.8,552.9 902.2,554.2 909.6,555.5 917.0,556.8 924.4,558.1 931.8,559.4 939.2,560.7 946.6,562.1 954.0,563.4 961.4,564.8 968.8,566.2 976.2,567.6 983.6,568.9 991.0,570.3 998.4,571.8 1005.8,573.2 1013.2,574.6 1020.6,576.0 1028.0,577.5" fill="none" stroke="#5b4fc4" stroke-opacity="1" stroke-width="3.5" stroke-linejoin="round"/>
+  <line x1="436.0" y1="534.8" x2="584.0" y2="534.8" stroke="currentColor" stroke-opacity=".4" stroke-width="1" stroke-dasharray="3 3"/>
+  <circle cx="584.0" cy="520.0" r="9" fill="#5b4fc4"/>
+  <text class="accent-text" x="584.0" y="498.0" font-size="17" text-anchor="middle" font-weight="700" fill="#5b4fc4" fill-opacity="1">Continuous evaluation: τ ≈ 3.0 yrs</text>
+  <path d="M140.0 749.0 l11 11 l-11 11 l-11 -11 z" fill="currentColor"/>
+  <path d="M436.0 523.8 l11 11 l-11 11 l-11 -11 z" fill="currentColor"/>
+  <path d="M732.0 518.3 l11 11 l-11 11 l-11 -11 z" fill="currentColor"/>
+  <path d="M1028.0 566.5 l11 11 l-11 11 l-11 -11 z" fill="currentColor"/>
+  <text x="414.0" y="542.8" font-size="16" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity="1">Transfer at year 2: loses 0.16</text>
+  <text x="754.0" y="537.3" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Transfer at year 4: loses 0.10</text>
+  <path d="M166.0 765.0 l8 8 l-8 8 l-8 -8 z" fill="currentColor"/>
+  <text x="182.0" y="780.0" font-size="16" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">Stage gates allow decisions only at years 0, 2, 4 and 6</text>
+  <text x="140.0" y="867.0" font-size="15" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".55">Illustrative model: with grid spacing h, the expected loss from missing the optimum is about |V″|·h²/24</text>
+</svg>

@@ -1,0 +1,139 @@
+<svg class="chart" viewBox="0 0 1080 870" role="img" aria-label="三种连续性：观测、信念更新与行动" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>三种连续性：观测、信念更新与行动</title>
+  <rect x="30.0" y="60.0" width="150.0" height="140.0" rx="12" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="105.0" y="140.0" font-size="28" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">观测</text>
+  <rect x="30.0" y="230.0" width="150.0" height="330.0" rx="12" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="105.0" y="405.0" font-size="28" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">信念</text>
+  <rect x="30.0" y="590.0" width="150.0" height="200.0" rx="12" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="105.0" y="700.0" font-size="28" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">行动</text>
+  <line x1="369.7" y1="170.0" x2="369.7" y2="145.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="460.6" y1="170.0" x2="460.6" y2="143.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="636.7" y1="170.0" x2="636.7" y2="154.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="214.9" y1="170.0" x2="214.9" y2="139.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="384.4" y1="170.0" x2="384.4" y2="151.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="891.4" y1="170.0" x2="891.4" y2="146.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="781.8" y1="170.0" x2="781.8" y2="146.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="645.9" y1="170.0" x2="645.9" y2="153.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="643.0" y1="170.0" x2="643.0" y2="138.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="566.1" y1="170.0" x2="566.1" y2="141.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="668.1" y1="170.0" x2="668.1" y2="154.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="727.9" y1="170.0" x2="727.9" y2="144.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="413.3" y1="170.0" x2="413.3" y2="155.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="801.8" y1="170.0" x2="801.8" y2="146.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="700.8" y1="170.0" x2="700.8" y2="138.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="697.5" y1="170.0" x2="697.5" y2="137.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="477.8" y1="170.0" x2="477.8" y2="140.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="512.0" y1="170.0" x2="512.0" y2="137.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="811.0" y1="170.0" x2="811.0" y2="154.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="299.5" y1="170.0" x2="299.5" y2="151.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="870.6" y1="170.0" x2="870.6" y2="147.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="637.3" y1="170.0" x2="637.3" y2="150.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="555.1" y1="170.0" x2="555.1" y2="148.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="447.4" y1="170.0" x2="447.4" y2="144.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="608.1" y1="170.0" x2="608.1" y2="137.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="675.4" y1="170.0" x2="675.4" y2="137.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="795.5" y1="170.0" x2="795.5" y2="136.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="668.0" y1="170.0" x2="668.0" y2="152.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="798.4" y1="170.0" x2="798.4" y2="136.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="828.7" y1="170.0" x2="828.7" y2="144.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="697.3" y1="170.0" x2="697.3" y2="151.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="778.4" y1="170.0" x2="778.4" y2="144.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="402.0" y1="170.0" x2="402.0" y2="154.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="793.8" y1="170.0" x2="793.8" y2="136.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="266.8" y1="170.0" x2="266.8" y2="140.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="488.5" y1="170.0" x2="488.5" y2="153.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="408.2" y1="170.0" x2="408.2" y2="140.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="806.8" y1="170.0" x2="806.8" y2="155.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="629.0" y1="170.0" x2="629.0" y2="155.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="700.5" y1="170.0" x2="700.5" y2="149.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="812.4" y1="170.0" x2="812.4" y2="136.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="553.8" y1="170.0" x2="553.8" y2="136.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="419.1" y1="170.0" x2="419.1" y2="154.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="618.8" y1="170.0" x2="618.8" y2="155.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="341.7" y1="170.0" x2="341.7" y2="147.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="626.2" y1="170.0" x2="626.2" y2="152.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="235.1" y1="170.0" x2="235.1" y2="138.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="421.9" y1="170.0" x2="421.9" y2="136.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="823.2" y1="170.0" x2="823.2" y2="148.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="522.8" y1="170.0" x2="522.8" y2="145.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="649.2" y1="170.0" x2="649.2" y2="144.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="590.9" y1="170.0" x2="590.9" y2="143.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="853.5" y1="170.0" x2="853.5" y2="145.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="502.7" y1="170.0" x2="502.7" y2="141.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="369.5" y1="170.0" x2="369.5" y2="150.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="879.1" y1="170.0" x2="879.1" y2="145.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="583.4" y1="170.0" x2="583.4" y2="155.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="491.7" y1="170.0" x2="491.7" y2="144.4" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="219.6" y1="170.0" x2="219.6" y2="143.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="641.1" y1="170.0" x2="641.1" y2="154.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="637.8" y1="170.0" x2="637.8" y2="146.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="673.5" y1="170.0" x2="673.5" y2="148.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="692.6" y1="170.0" x2="692.6" y2="141.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="221.1" y1="170.0" x2="221.1" y2="154.8" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="671.3" y1="170.0" x2="671.3" y2="136.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="378.7" y1="170.0" x2="378.7" y2="146.9" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="613.9" y1="170.0" x2="613.9" y2="149.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="456.4" y1="170.0" x2="456.4" y2="149.7" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="460.0" y1="170.0" x2="460.0" y2="144.1" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="412.7" y1="170.0" x2="412.7" y2="148.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="737.6" y1="170.0" x2="737.6" y2="155.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="597.8" y1="170.0" x2="597.8" y2="141.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="419.3" y1="170.0" x2="419.3" y2="151.5" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="759.3" y1="170.0" x2="759.3" y2="151.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="334.9" y1="170.0" x2="334.9" y2="147.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="686.5" y1="170.0" x2="686.5" y2="154.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="427.5" y1="170.0" x2="427.5" y2="149.3" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="779.8" y1="170.0" x2="779.8" y2="147.2" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="794.9" y1="170.0" x2="794.9" y2="152.6" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <line x1="437.7" y1="170.0" x2="437.7" y2="143.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2.5"/>
+  <rect x="430.4" y="78.0" width="6.0" height="92.0" rx="0" fill="#5b4fc4" fill-opacity="1"/>
+  <text class="accent-text" x="445.4" y="96.0" font-size="20" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">读出</text>
+  <rect x="663.8" y="78.0" width="6.0" height="92.0" rx="0" fill="#5b4fc4" fill-opacity="1"/>
+  <text class="accent-text" x="678.8" y="96.0" font-size="20" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">读出</text>
+  <line x1="200.0" y1="170.0" x2="900.0" y2="170.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="200.0" y="195.0" font-size="18" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".55">入组、安全性、生物标志物、外部证据持续到达</text>
+  <rect x="200.0" y="360.2" width="700.0" height="116.0" rx="0" fill="#5b4fc4" fill-opacity=".08"/>
+  <line x1="200.0" y1="360.2" x2="900.0" y2="360.2" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="200.0" y1="476.2" x2="900.0" y2="476.2" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="200.0" y1="250.0" x2="200.0" y2="540.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="190.0" y="258.0" font-size="16" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1</text>
+  <text x="190.0" y="546.0" font-size="16" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">0</text>
+  <text x="212.0" y="274.0" font-size="18" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">后验成功概率 π(t)：随证据连续更新，读出时跳跃</text>
+  <text class="accent-text" x="912.0" y="367.2" font-size="20" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">加码边界</text>
+  <text x="912.0" y="425.2" font-size="19" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity=".5">不行动区间</text>
+  <text class="accent-text" x="912.0" y="483.2" font-size="20" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">终止边界</text>
+  <polyline points="200.0,432.7 202.4,435.1 204.9,432.7 207.3,434.9 209.7,437.8 212.2,444.5 214.6,446.7 217.0,440.4 219.4,438.5 221.9,432.7 224.3,431.9 226.7,430.2 229.2,429.8 231.5,433.6 233.8,421.3 236.2,411.3 238.5,401.2 240.8,405.2 243.2,409.5 245.5,408.4 247.8,404.5 250.2,395.7 252.5,389.2 254.8,388.1 257.2,394.4 259.5,394.6 261.9,394.3 264.2,400.8 266.5,392.0 268.9,390.7 271.2,385.2 273.5,391.4 275.9,398.3 278.2,402.7 280.5,405.6 282.9,403.8 285.2,404.4 287.5,409.5 290.0,415.7 292.4,419.2 294.8,411.5 297.2,416.7 299.7,415.3 302.1,412.7 304.5,422.3 307.0,422.1 309.4,413.9 311.8,426.8 314.3,429.0 316.7,429.8 319.3,432.2 321.9,426.2 324.5,423.8 327.1,430.3 329.7,422.2 332.3,415.2 334.9,406.3 337.4,394.3 340.0,389.2 342.4,383.9 344.7,387.6 347.0,379.0 349.4,378.4 351.7,376.7 354.0,380.2 356.4,381.7 358.7,380.6 361.0,367.7 363.4,376.1 365.7,380.8 368.0,374.7 370.4,366.0 372.7,366.0 375.1,360.2 377.6,371.7 380.1,364.9 382.6,365.1 385.1,367.7 387.6,357.0 390.1,345.4 392.6,339.9 395.0,340.2 397.4,339.3 399.8,331.0 402.2,328.9 404.6,327.5 407.0,325.9 409.4,337.7 411.8,331.4 414.2,327.2 416.6,325.7 419.0,340.2 421.4,346.1 423.8,342.6 426.3,356.0 428.7,359.0 431.1,354.4 433.4,412.4 435.9,420.9 438.4,410.7 440.9,407.3 443.4,408.4 445.9,406.5 448.4,402.5 450.9,401.8 453.4,394.6 455.9,399.0 458.4,401.7 460.9,395.2 463.4,395.2 465.9,400.9 468.4,395.0 470.8,382.4 473.3,381.9 475.7,387.4 478.1,385.0 480.6,382.7 483.0,381.3 485.4,369.0 487.9,372.3 490.3,361.0 492.7,365.8 495.2,367.5 497.6,360.2 500.0,353.4 502.4,348.2 504.9,346.4 507.3,345.8 509.7,345.2 512.2,341.9 514.6,343.4 517.0,341.9 519.5,338.6 521.9,339.0 524.3,334.5 526.8,331.2 529.1,320.0 531.4,319.5 533.8,323.9 536.1,327.9 538.4,329.6 540.8,325.3 543.1,329.1 545.4,328.3 547.8,318.2 550.1,336.2 552.4,345.0 554.8,345.0 557.1,344.1 559.4,344.2 561.8,348.6 564.2,345.8 566.7,345.4 569.1,350.1 571.6,336.0 574.1,335.2 576.5,340.1 579.0,342.1 581.4,344.9 583.9,346.7 586.3,365.5 588.8,370.0 591.3,365.0 593.7,373.9 596.2,375.7 598.6,371.0 601.1,366.9 603.5,358.8 606.0,371.1 608.5,374.7 610.8,379.8 613.2,378.8 615.6,374.8 618.0,394.9 620.4,390.9 622.8,403.1 625.2,401.7 627.5,414.2 629.9,416.1 632.3,411.4 634.7,415.3 637.1,417.1 639.5,415.0 641.9,417.0 644.3,420.6 646.6,413.8 649.0,410.0 651.4,414.9 653.8,400.3 656.2,410.6 658.6,407.7 661.0,412.4 666.8,461.7 669.7,467.2 672.6,469.0 675.6,473.9 678.5,476.2 680.8,483.7 683.1,491.1 685.5,484.9 687.8,488.8 690.1,493.1 692.5,500.3 694.8,489.9 697.1,482.9 699.5,471.3 701.8,475.0 704.1,472.8 706.5,477.8 708.8,470.7 711.1,458.3 713.5,461.7 715.9,451.5 718.3,444.9 720.7,445.8 723.1,458.1 725.5,448.9 727.9,449.2 730.3,452.8 732.7,450.0 735.1,447.1 737.5,437.3 739.9,443.5 742.3,436.0 744.7,426.2 747.1,416.7 749.5,417.6 751.9,422.1 754.3,415.3 756.8,411.9 759.2,408.5 761.6,396.8 764.0,395.8 766.5,407.8 768.9,407.6 771.3,416.8 773.8,408.9 776.2,404.3 778.6,405.5 781.1,403.0 783.5,395.0 785.8,398.6 788.2,394.2 790.5,398.6 792.8,396.0 795.2,390.6 797.5,384.4 799.8,392.7 802.2,391.2 804.5,407.2 806.8,418.2 809.3,434.0 811.7,430.4 814.1,441.5 816.6,444.8 819.0,449.3 821.4,452.7 823.9,459.7 826.3,461.5 828.7,453.3 831.2,456.3 833.6,456.1 836.0,453.0 838.5,458.9 841.0,471.6 843.5,479.8 846.0,477.6 848.5,492.7 851.0,501.2 853.5,499.4 855.9,492.0 858.2,489.5 860.5,482.0 862.9,478.6 865.2,483.7 867.5,491.3 869.9,493.0 872.2,484.7 874.5,486.0 876.9,489.3 879.2,491.9 881.5,499.3 883.9,497.6 886.2,502.8 888.5,498.1 890.9,510.8 893.2,506.3 895.5,508.0 897.9,518.0 900.2,511.0" fill="none" stroke="#5b4fc4" stroke-opacity="1" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="375.1" y1="360.2" x2="375.1" y2="740.0" stroke="#5b4fc4" stroke-opacity=".8" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <circle cx="375.1" cy="360.2" r="8" style="fill: var(--bg, #fff)" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="678.5" y1="476.2" x2="678.5" y2="740.0" stroke="#5b4fc4" stroke-opacity=".8" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <circle cx="678.5" cy="476.2" r="8" style="fill: var(--bg, #fff)" stroke="currentColor" stroke-width="2.5"/>
+  <text x="200.0" y="621.0" font-size="20" text-anchor="start" font-weight="700" fill="currentColor" fill-opacity="1">阶段门：只在固定时点决策</text>
+  <line x1="200.0" y1="650.0" x2="900.0" y2="650.0" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M200.0 640.0 l10 10 l-10 10 l-10 -10 z" fill="currentColor"/>
+  <path d="M433.4 640.0 l10 10 l-10 10 l-10 -10 z" fill="currentColor"/>
+  <path d="M666.8 640.0 l10 10 l-10 10 l-10 -10 z" fill="currentColor"/>
+  <path d="M900.2 640.0 l10 10 l-10 10 l-10 -10 z" fill="currentColor"/>
+  <text class="accent-text" x="200.0" y="711.0" font-size="20" text-anchor="start" font-weight="700" fill="#5b4fc4" fill-opacity="1">信念流决策：信念越过边界时触发评审</text>
+  <line x1="200.0" y1="740.0" x2="900.0" y2="740.0" stroke="#5b4fc4" stroke-opacity=".6" stroke-width="2"/>
+  <circle cx="375.1" cy="740.0" r="11" fill="#5b4fc4"/>
+  <text class="accent-text" x="393.1" y="774.0" font-size="19" text-anchor="start" font-weight="400" fill="#5b4fc4" fill-opacity="1">加码评审</text>
+  <circle cx="678.5" cy="740.0" r="11" fill="#5b4fc4"/>
+  <text class="accent-text" x="696.5" y="774.0" font-size="19" text-anchor="start" font-weight="400" fill="#5b4fc4" fill-opacity="1">终止评审</text>
+  <line x1="200.0" y1="810.0" x2="910.0" y2="810.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <path d="M0 0 L-18 -9 L-18 9 Z" fill="currentColor" transform="translate(922.0 810.0) rotate(0)"/>
+  <line x1="200.0" y1="810.0" x2="200.0" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="200.0" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">0</text>
+  <line x1="316.7" y1="810.0" x2="316.7" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="316.7" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">1</text>
+  <line x1="433.4" y1="810.0" x2="433.4" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="433.4" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">2</text>
+  <line x1="550.1" y1="810.0" x2="550.1" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="550.1" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">3</text>
+  <line x1="666.8" y1="810.0" x2="666.8" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="666.8" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">4</text>
+  <line x1="783.5" y1="810.0" x2="783.5" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="783.5" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">5</text>
+  <line x1="900.2" y1="810.0" x2="900.2" y2="818.0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+  <text x="900.2" y="843.0" font-size="17" text-anchor="middle" font-weight="400" fill="currentColor" fill-opacity="1">6</text>
+  <text x="940.0" y="845.0" font-size="18" text-anchor="start" font-weight="400" fill="currentColor" fill-opacity="1">年</text>
+</svg>

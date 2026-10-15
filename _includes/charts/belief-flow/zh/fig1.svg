@@ -1,0 +1,94 @@
+<svg class="chart" viewBox="0 0 1080 1230" role="img" aria-label="与本文相关的四条理论脉络：统计决策与序贯分析、动态规划与最优停止、实物期权与资产定价、临床试验设计与监管" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <title>与本文相关的四条理论脉络：统计决策与序贯分析、动态规划与最优停止、实物期权与资产定价、临床试验设计与监管</title>
+  <line x1="90.0" y1="150.0" x2="1060.0" y2="150.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="156.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1930</text>
+  <line x1="90.0" y1="254.0" x2="1060.0" y2="254.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="260.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1940</text>
+  <line x1="90.0" y1="358.0" x2="1060.0" y2="358.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="364.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1950</text>
+  <line x1="90.0" y1="462.0" x2="1060.0" y2="462.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="468.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1960</text>
+  <line x1="90.0" y1="566.0" x2="1060.0" y2="566.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="572.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1970</text>
+  <line x1="90.0" y1="670.0" x2="1060.0" y2="670.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="676.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1980</text>
+  <line x1="90.0" y1="774.0" x2="1060.0" y2="774.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="780.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">1990</text>
+  <line x1="90.0" y1="878.0" x2="1060.0" y2="878.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="884.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">2000</text>
+  <line x1="90.0" y1="982.0" x2="1060.0" y2="982.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="988.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">2010</text>
+  <line x1="90.0" y1="1086.0" x2="1060.0" y2="1086.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="1092.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">2020</text>
+  <line x1="90.0" y1="1190.0" x2="1060.0" y2="1190.0" stroke="currentColor" stroke-opacity=".1" stroke-width="1"/>
+  <text x="70.0" y="1196.0" font-size="18" text-anchor="end" font-weight="400" fill="currentColor" fill-opacity=".5">2030</text>
+  <rect x="100.0" y="40.0" width="220.0" height="70.0" rx="10" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="210.0" y="84.0" font-size="21" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">统计决策与序贯分析</text>
+  <line x1="118.0" y1="150.0" x2="118.0" y2="1190.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2"/>
+  <circle cx="118.0" cy="181.2" r="7" fill="currentColor"/>
+  <text x="136.0" y="187.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1933 </tspan><tspan font-weight="400" fill="currentColor">Thompson 抽样</tspan></text>
+  <circle cx="118.0" cy="306.0" r="7" fill="currentColor"/>
+  <text x="136.0" y="312.0" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1945 </tspan><tspan font-weight="400" fill="currentColor">Wald 序贯检验</tspan></text>
+  <circle cx="118.0" cy="358.0" r="7" fill="currentColor"/>
+  <text x="136.0" y="364.0" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1950 </tspan><tspan font-weight="400" fill="currentColor">Wald 统计决策函数</tspan></text>
+  <circle cx="118.0" cy="472.4" r="7" fill="currentColor"/>
+  <text x="136.0" y="478.4" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1961 </tspan><tspan font-weight="400" fill="currentColor">Raiffa–Schlaifer</tspan></text>
+  <circle cx="118.0" cy="524.4" r="7" fill="currentColor"/>
+  <text x="136.0" y="530.4" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1966 </tspan><tspan font-weight="400" fill="currentColor">Howard 信息价值</tspan></text>
+  <circle cx="118.0" cy="566.0" r="7" fill="currentColor"/>
+  <text x="136.0" y="572.0" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1970 </tspan><tspan font-weight="400" fill="currentColor">DeGroot 最优决策</tspan></text>
+  <rect x="340.0" y="40.0" width="220.0" height="70.0" rx="10" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="450.0" y="84.0" font-size="21" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">动态规划与最优停止</text>
+  <line x1="358.0" y1="150.0" x2="358.0" y2="1190.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2"/>
+  <circle cx="358.0" cy="430.8" r="7" fill="currentColor"/>
+  <text x="376.0" y="436.8" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1957 </tspan><tspan font-weight="400" fill="currentColor">Bellman 动态规划</tspan></text>
+  <circle cx="358.0" cy="493.2" r="7" fill="currentColor"/>
+  <text x="376.0" y="499.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1963 </tspan><tspan font-weight="400" fill="currentColor">Shiryaev 最快检测</tspan></text>
+  <circle cx="358.0" cy="514.0" r="7" fill="currentColor"/>
+  <line x1="364.0" y1="518.0" x2="374.0" y2="515.2" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/>
+  <text x="376.0" y="523.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1965 </tspan><tspan font-weight="400" fill="currentColor">Åström 信念状态</tspan></text>
+  <circle cx="358.0" cy="597.2" r="7" fill="currentColor"/>
+  <text x="376.0" y="603.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1973 </tspan><tspan font-weight="400" fill="currentColor">Smallwood–Sondik</tspan></text>
+  <circle cx="358.0" cy="659.6" r="7" fill="currentColor"/>
+  <text x="376.0" y="665.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1979 </tspan><tspan font-weight="400" fill="currentColor">Gittins 指数</tspan></text>
+  <circle cx="358.0" cy="888.4" r="7" fill="currentColor"/>
+  <text x="376.0" y="894.4" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">2001 </tspan><tspan font-weight="400" fill="currentColor">Moscarini–Smith</tspan></text>
+  <circle cx="358.0" cy="930.0" r="7" fill="currentColor"/>
+  <text x="376.0" y="936.0" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">2005 </tspan><tspan font-weight="400" fill="currentColor">Keller–Rady–Cripps</tspan></text>
+  <rect x="580.0" y="40.0" width="220.0" height="70.0" rx="10" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="690.0" y="84.0" font-size="21" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">实物期权与资产定价</text>
+  <line x1="598.0" y1="150.0" x2="598.0" y2="1190.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2"/>
+  <circle cx="598.0" cy="597.2" r="7" fill="currentColor"/>
+  <text x="616.0" y="603.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1973 </tspan><tspan font-weight="400" fill="currentColor">Black–Scholes 定价</tspan></text>
+  <circle cx="598.0" cy="638.8" r="7" fill="currentColor"/>
+  <text x="616.0" y="644.8" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1977 </tspan><tspan font-weight="400" fill="currentColor">Myers 实物期权</tspan></text>
+  <circle cx="598.0" cy="659.6" r="7" fill="currentColor"/>
+  <line x1="604.0" y1="663.6" x2="614.0" y2="660.8" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/>
+  <text x="616.0" y="668.8" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1979 </tspan><tspan font-weight="400" fill="currentColor">Geske 复合期权</tspan></text>
+  <circle cx="598.0" cy="732.4" r="7" fill="currentColor"/>
+  <text x="616.0" y="738.4" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1986 </tspan><tspan font-weight="400" fill="currentColor">McDonald–Siegel</tspan></text>
+  <circle cx="598.0" cy="763.6" r="7" fill="currentColor"/>
+  <text x="616.0" y="769.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1989 </tspan><tspan font-weight="400" fill="currentColor">Dixit 不行动区间</tspan></text>
+  <circle cx="598.0" cy="815.6" r="7" fill="currentColor"/>
+  <text x="616.0" y="821.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1994 </tspan><tspan font-weight="400" fill="currentColor">Dixit–Pindyck</tspan></text>
+  <circle cx="598.0" cy="909.2" r="7" fill="currentColor"/>
+  <text x="616.0" y="915.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">2003 </tspan><tspan font-weight="400" fill="currentColor">Pástor–Veronesi</tspan></text>
+  <rect x="820.0" y="40.0" width="220.0" height="70.0" rx="10" fill="#5b4fc4" fill-opacity=".1"/>
+  <text x="930.0" y="84.0" font-size="21" text-anchor="middle" font-weight="700" fill="currentColor" fill-opacity="1">临床试验设计与监管</text>
+  <line x1="838.0" y1="150.0" x2="838.0" y2="1190.0" stroke="#b3abf0" stroke-opacity="1" stroke-width="2"/>
+  <circle cx="838.0" cy="555.6" r="7" fill="currentColor"/>
+  <text x="856.0" y="561.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1969 </tspan><tspan font-weight="400" fill="currentColor">Armitage 重复检验</tspan></text>
+  <circle cx="838.0" cy="638.8" r="7" fill="currentColor"/>
+  <text x="856.0" y="644.8" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1977 </tspan><tspan font-weight="400" fill="currentColor">Pocock 成组序贯</tspan></text>
+  <circle cx="838.0" cy="659.6" r="7" fill="currentColor"/>
+  <line x1="844.0" y1="663.6" x2="854.0" y2="660.8" stroke="currentColor" stroke-opacity=".4" stroke-width="1"/>
+  <text x="856.0" y="668.8" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1979 </tspan><tspan font-weight="400" fill="currentColor">O'Brien–Fleming</tspan></text>
+  <circle cx="838.0" cy="701.2" r="7" fill="currentColor"/>
+  <text x="856.0" y="707.2" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" fill="currentColor">1983 </tspan><tspan font-weight="400" fill="currentColor">Lan–DeMets 消耗函数</tspan></text>
+  <circle cx="838.0" cy="971.6" r="7" fill="#5b4fc4"/>
+  <text x="856.0" y="977.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" class="accent-text" fill="#5b4fc4">2009 </tspan><tspan font-weight="400" class="accent-text" fill="#5b4fc4">I-SPY 2 平台试验</tspan></text>
+  <circle cx="838.0" cy="1075.6" r="7" fill="#5b4fc4"/>
+  <text x="856.0" y="1081.6" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" class="accent-text" fill="#5b4fc4">2019 </tspan><tspan font-weight="400" class="accent-text" fill="#5b4fc4">FDA 适应性设计</tspan></text>
+  <circle cx="838.0" cy="1148.4" r="7" fill="#5b4fc4"/>
+  <text x="856.0" y="1154.4" font-size="18" text-anchor="start" style="paint-order: stroke; stroke: var(--bg, #fff); stroke-width: 5px"><tspan font-weight="700" class="accent-text" fill="#5b4fc4">2026 </tspan><tspan font-weight="400" class="accent-text" fill="#5b4fc4">FDA 贝叶斯草案</tspan></text>
+</svg>
